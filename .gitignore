@@ -1,3 +1,12 @@
+# test scripts
+/test
+
+# macOS
+.DS_Store
+
+# Node artifact files
+node_modules/
+
 # History files
 .Rhistory
 .Rapp.history
@@ -18,6 +27,7 @@
 /*.Rcheck/
 
 # RStudio files
+*.Rproj
 .Rproj.user/
 
 # produced vignettes
