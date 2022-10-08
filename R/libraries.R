@@ -5,6 +5,7 @@
 #' Dependencies used in the app
 dependencies <- c(
   "rjson",
+  "jsonlite",
   "shiny",
   "dplyr",
   "janitor",
