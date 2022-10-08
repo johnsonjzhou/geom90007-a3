@@ -19,7 +19,8 @@ dependencies <- c(
   "sp",
   "glue",
   "colorspace",
-  "htmltools"
+  "htmltools",
+  "pracma"
 )
 
 #' Attempts to load packages and install them if required
