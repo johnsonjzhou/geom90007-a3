@@ -17,7 +17,7 @@ load_json <- function(filename, ...) {
 
 #' Queries the Socrata API to get data
 #' @param dataset The name of the dataset required.
-#' @param params A list of parameters to apply to the query as c(key, value).
+#' @param params A list of parameters to apply to the query as list(key=value).
 #' @return Dataframe.
 #' @throws Error if dataset is unrecognised.
 #' @throws Error if error in response when fetching data.
