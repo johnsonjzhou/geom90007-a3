@@ -1,0 +1,51 @@
+/**
+  Styles for the shiny UI
+ */
+
+$border-radius: 6px;
+$font-primary: "brandon-grotesque", "Helvetica", "Arial", sans-serif;
+$font-serif: "PT Serif", serif;
+$font-size: 16px;
+$box-shadow: 6px 6px 20px rgba(100,100,100,0.3);
+
+$colors: (
+  "background": #FFFFFF,
+  "lightgray": #E9E9EA,
+  "gray": #A8A8B5,
+  "darkgray": #949598,
+  "foreground": #52525F,
+  "accent": #3465E5,
+  "highlight": #61D095
+);
+
+html {
+  font-size: $font-size;
+  
+  body {
+    color: map.get($colors, "foreground");
+    background-color: map.get($colors, "background");
+    font-family: $font-primary;
+    font-weight: 400;
+  }
+}
+
+// Hide the display bar
+.navbar {
+  display: none;
+}
+
+// Shiny containers
+.container {
+  .tab-pane {
+    // Map pane
+    &[data-value="Map"] {
+      display: block;
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%)
+    }
+  }
+}

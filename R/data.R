@@ -75,7 +75,7 @@ load_master_data <- function() {
     # rename foreign key st_marker_id to marker_id for consistency
     rename(marker_id = st_marker_id) %>%
     # select the required info
-    select(c(bay_id, marker_id, status))
+    select(c(bay_id, status))
 
   # On-street parking bays
   bays <- load_remote("bays", params = list(
@@ -91,7 +91,9 @@ load_master_data <- function() {
   # On-street car parking meters with location
   meters <- load_remote("meters") %>%
     # rename key meterid to meter_id for consistency
-    rename(meter_id = meterid)
+    rename(meter_id = meterid) %>%
+    # make longitude, latitude numeric
+    mutate_at(c("longitude", "latitude"), as.numeric)
 
   #' @section Paystay datasets -----------------------------------------------
 

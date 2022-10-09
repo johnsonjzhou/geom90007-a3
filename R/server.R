@@ -50,34 +50,50 @@ server <- function(input, output, session) {
   #' @param filter_cost {c(min, max)} Filter for price range.
   state$filter_cost <- c(0, 10)
 
-  #' @param duration {integer} Filter for parking duration.
-  state$duration: 4
+  #' @param filter_duration {integer} Filter for parking duration.
+  state$filter_duration <- 4
 
   #' @param filter_tap {bool} Filter for tap and go payment method.
-  state$filter_tap: FALSE
+  state$filter_tap <- FALSE
 
   #' @param filter_cc {bool} Filter for credit cards payment method.
-  state$filter_cc: FALSE
+  state$filter_cc <- FALSE
 
   #' @param loc_default {c(lat, lon)} The default location, NGV.
-  state$loc_default: c(-37.822477, 144.969162)
+  state$loc_default <- c(-37.822477, 144.969162)
 
   #' @param loc_gps {c(lat, lon)} The user's gps coordinates.
-  state$loc_gps: state$loc_default
+  state$loc_gps <- NULL
 
   #' @param loc_search {c(lat, lon)} The coordinates of the search location.
-  state$loc_search: state$loc_default
+  state$loc_search <- NULL
 
   #' @param loc_search_name {character} The name of the search location.
-  state$loc_search_name: ""
+  state$loc_search_name <- ""
 
   #' @param loc_search_term {character} The search term as input by the user.
-  state$loc_search_term: ""
+  state$loc_search_term <- ""
 
   #' Observe states
   observe({
     # states to observe
   })
+
+  #' Master data --------------------------------------------------------------
+  master_data <- load_master_data()
+
+  #' Mapping -----------------------------------------------------------------
+
+  #' Filter map data based on context
+  map_data_filter <- reactive({
+    spatial_df <- map_data(state$map_context)
+    return(spatial_df)
+  })
+
+  #' Render the world map in a leaflet widget
+  output$leaflet_map <- renderLeaflet(
+    map_renderer(master_data, state)
+  )
 
   # Other app stuff-----------------------------------------------------------
 
