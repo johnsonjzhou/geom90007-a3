@@ -153,5 +153,3 @@ load_historical_sensors <- function() {
   View(df)
   return(df)
 }
-
-load_historical_sensors()
