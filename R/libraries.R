@@ -20,7 +20,8 @@ dependencies <- c(
   "glue",
   "colorspace",
   "htmltools",
-  "pracma"
+  "pracma",
+  "RSocrata"
 )
 
 #' Attempts to load packages and install them if required

@@ -3,25 +3,133 @@
 ################################################################################
 library(jsonlite)
 library(dplyr)
+library(RSocrata)
+library(glue)
 
-sensors <- jsonlite::fromJSON(
-  txt = "./data/2022-10-08-11-58 realtime.json",
-  flatten = TRUE
-)
+#' Load data from either excel file or csv
+#' @param filename the filename for the file to be loaded
+#' @param ... additional parameters to pass to jsonlite::fromJSON
+#' @return dataframe
+load_json <- function(filename, ...) {
+  df <- jsonlite::fromJSON(txt = filename, flatten = TRUE)
+  return(df)
+}
 
-sensors_2 <- jsonlite::fromJSON(
-  txt = "./data/2022-10-08-12-13 realtime.json",
-  flatten = TRUE
-)
+#' Queries the Socrata API to get data
+#' @param dataset The name of the dataset required.
+#' @param params A list of parameters to apply to the query as c(key, value).
+#' @return Dataframe.
+#' @throws Error if dataset is unrecognised.
+#' @throws Error if error in response when fetching data.
+load_remote <- function(dataset, params = list()) {
+  # Print verbose
+  print(glue("Loading remote dataset: {dataset}"))
 
-sensors_unocc <- before %>%
-  group_by(status) %>%
-  summarise(n = n())
+  # The app token to access the api
+  app_token <- "M9ZZYTOg8ADyERRdemysg1SOU"
 
-View(sensors_unocc)
+  # Convert the params list into a GET query string
+  query <- ""
+  if (length(params) > 0) {
+    query_string <- paste(names(params), params, sep = "=", collapse = "&")
+    query <- glue("?{query_string}")
+  }
 
-sensors_2_unocc <- before %>%
-  group_by(status) %>%
-  summarise(n = n())
+  # Match the dataset resource
+  resource <- switch(
+    dataset,
+    #' @see https://dev.socrata.com/foundry/data.melbourne.vic.gov.au/wuf8-susg
+    "bays" = "wuf8-susg.json",
+    #' @see https://dev.socrata.com/foundry/data.melbourne.vic.gov.au/vdsi-4gtj
+    "meters" = "vdsi-4gtj.json",
+    #' @see https://dev.socrata.com/foundry/data.melbourne.vic.gov.au/ntht-5rk7
+    "restrictions" = "ntht-5rk7.json",
+    #' @see https://dev.socrata.com/foundry/data.melbourne.vic.gov.au/vh2v-4nfs
+    "sensors" = "vh2v-4nfs.json",
+    #' @see https://dev.socrata.com/foundry/data.melbourne.vic.gov.au/7q9g-yyvg
+    "paystay_restrictions" = "7q9g-yyvg.json",
+    #' @see https://data.melbourne.vic.gov.au/Transport/Pay-Stay-parking-restrictions/ambt-72qg
+    "paystay_segments" = "7q9g-yyvg.json",
+    TRUE: stop(glue("Unrecognised dataset {dataset}"))
+  )
 
-View(sensors_2_unocc)
+  df <- read.socrata(
+    glue("https://data.melbourne.vic.gov.au/resource/{resource}{query}"),
+    app_token = app_token
+  )
+  
+  # Print verbose
+  print(glue("Dataset {dataset} loaded with {nrow(df)} rows"))
+
+  return(df)
+}
+
+#' Loads all the required data and performs the necessary joins
+#' @returns Dataframe containing an entire set of required data
+load_master_data <- function() {
+  #' @section City of Melbourne parking datasets -----------------------------
+
+  # On-street parking bay sensors
+  # sensors should be 2-min live, but is currently disrupted, thus static
+  sensors <- load_remote("sensors") %>%
+    # rename foreign key st_marker_id to marker_id for consistency
+    rename(marker_id = st_marker_id) %>%
+    # select the required info
+    select(c(bay_id, marker_id, status))
+
+  # On-street parking bays
+  bays <- load_remote("bays", params = list(
+    # return only the following columns
+    "$select" = "marker_id,meter_id,bay_id,rd_seg_id,rd_seg_dsc"
+  ))
+
+  # On-street car park bay restrictions
+  # restrictions <- load_remote("restrictions") %>%
+  #   # rename key bayid to bay_id for consistency
+  #   rename(bay_id = bayid)
+
+  # On-street car parking meters with location
+  meters <- load_remote("meters") %>%
+    # rename key meterid to meter_id for consistency
+    rename(meter_id = meterid)
+
+  #' @section Paystay datasets -----------------------------------------------
+
+  # Pay Stay parking restrictions
+  # paystay_restrictions <- load_remote("paystay_restrictions")
+
+  # Pay Stay zones linked to street segments
+  paystay_segments <- load_remote("paystay_segments") %>%
+    # rename the foreign key street_segment_id to rd_segment_id
+    # for consistency
+    rename(rd_seg_id = street_segment_id)
+
+  df <- bays %>%
+    # inner_join(restrictions, by = "bay_id") %>%
+    inner_join(meters, by = "meter_id") %>%
+    inner_join(paystay_segments, by = "rd_seg_id") %>%
+    # inner_join(paystay_restrictions, by = "pay_stay_zone") %>%
+    left_join(sensors, by = c("bay_id"))
+
+  #' @debug
+  View(df)
+
+  return(df)
+}
+
+#' Filters the master_data to pass on to the map renderer based on state
+#' @param master_data The master data dataframe
+#' @param state The state reactive object
+#' @return a dataframe filtered with state parameters
+map_data <- function(master_data, state) {
+  # Unpack state parameters
+  filter_free <- state$filter_free
+  filter_accessible <- state$filter_accessible
+  filter_radius <- state$filter_radius
+  filter_cost <- state$filter_cost
+  filter_duration <- state$filter_duration
+  filter_tap <- state$filter_tap
+  filter_cc <- state$filter_cc
+
+
+}
