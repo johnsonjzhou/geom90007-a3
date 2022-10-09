@@ -46,6 +46,8 @@ load_remote <- function(dataset, params = list()) {
     "restrictions" = "ntht-5rk7.json",
     #' @see https://dev.socrata.com/foundry/data.melbourne.vic.gov.au/vh2v-4nfs
     "sensors" = "vh2v-4nfs.json",
+    #' @see https://dev.socrata.com/foundry/data.melbourne.vic.gov.au/7pgd-bdf2
+    "sensors_2019" = "7pgd-bdf2.json",
     #' @see https://dev.socrata.com/foundry/data.melbourne.vic.gov.au/7q9g-yyvg
     "paystay_restrictions" = "7q9g-yyvg.json",
     #' @see https://data.melbourne.vic.gov.au/Transport/Pay-Stay-parking-restrictions/ambt-72qg
@@ -84,9 +86,9 @@ load_master_data <- function() {
   ))
 
   # On-street car park bay restrictions
-  # restrictions <- load_remote("restrictions") %>%
-  #   # rename key bayid to bay_id for consistency
-  #   rename(bay_id = bayid)
+  restrictions <- load_remote("restrictions") %>%
+    # rename key bayid to bay_id for consistency
+    rename(bay_id = bayid)
 
   # On-street car parking meters with location
   meters <- load_remote("meters") %>%
@@ -98,18 +100,18 @@ load_master_data <- function() {
   #' @section Paystay datasets -----------------------------------------------
 
   # Pay Stay parking restrictions
-  # paystay_restrictions <- load_remote("paystay_restrictions")
+  paystay_restrictions <- load_remote("paystay_restrictions")
 
   # Pay Stay zones linked to street segments
-  paystay_segments <- load_remote("paystay_segments") %>%
-    # rename the foreign key street_segment_id to rd_segment_id
-    # for consistency
-    rename(rd_seg_id = street_segment_id)
+  # paystay_segments <- load_remote("paystay_segments") %>%
+  #   # rename the foreign key street_segment_id to rd_segment_id
+  #   # for consistency
+  #   rename(rd_seg_id = street_segment_id)
 
   df <- bays %>%
-    # inner_join(restrictions, by = "bay_id") %>%
-    inner_join(meters, by = "meter_id") %>%
-    inner_join(paystay_segments, by = "rd_seg_id") %>%
+    left_join(restrictions, by = "bay_id") %>%
+    # inner_join(meters, by = "meter_id") %>%
+    # inner_join(paystay_segments, by = "rd_seg_id") %>%
     # inner_join(paystay_restrictions, by = "pay_stay_zone") %>%
     left_join(sensors, by = c("bay_id"))
 
@@ -135,3 +137,21 @@ map_data <- function(master_data, state) {
 
 
 }
+
+#' Loads historical data for a given time
+#' @return DataFrame of sensor data
+load_historical_sensors <- function() {
+  df <- load_remote("sensors_2019", params = list(
+    "$where" = paste(
+      "arrivaltime", "<=", "'2019-09-27T08:00:00.000'",
+      "and",
+      "departuretime", ">", "'2019-09-27T08:00:00.000'",
+      sep = " "
+    )
+  )) %>%
+  distinct(deviceid, .keep_all = TRUE)
+  View(df)
+  return(df)
+}
+
+load_historical_sensors()
