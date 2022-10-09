@@ -1,0 +1,935 @@
+[{"pay_stay_zone":"30001001","street":"ARGYLE PLACE SOUTH","between_street_1":"LYGON STREET","between_street_2":"CARDIGAN STREET","street_segment_id":"20751"}
+,{"pay_stay_zone":"30001002","street":"BARRY STREET","between_street_1":"LEICESTER STREET","between_street_2":"PELHAM STREET","street_segment_id":"20476"}
+,{"pay_stay_zone":"30001003","street":"BARRY STREET","between_street_1":"PELHAM STREET","between_street_2":"LEICESTER STREET","street_segment_id":"20476"}
+,{"pay_stay_zone":"30001005","street":"BARRY STREET","between_street_1":"GRATTAN STREET","between_street_2":"PELHAM STREET","street_segment_id":"20480"}
+,{"pay_stay_zone":"30001006","street":"BARRY STREET","between_street_1":"PELHAM STREET","between_street_2":"GRATTAN STREET","street_segment_id":"20480"}
+,{"pay_stay_zone":"30001007","street":"BARRY STREET","between_street_1":"PELHAM STREET","between_street_2":"LEICESTER STREET","street_segment_id":"20476"}
+,{"pay_stay_zone":"30001008","street":"BARRY STREET","between_street_1":"LEICESTER STREET","between_street_2":"PELHAM STREET","street_segment_id":"20476"}
+,{"pay_stay_zone":"30001009","street":"BERKELEY STREET","between_street_1":"GRATTAN STREET","between_street_2":"PELHAM STREET","street_segment_id":"20474"}
+,{"pay_stay_zone":"30001010","street":"BERKELEY STREET","between_street_1":"LEICESTER STREET","between_street_2":"QUEENSBERRY STREET","street_segment_id":"20456"}
+,{"pay_stay_zone":"30001012","street":"BERKELEY STREET","between_street_1":"PELHAM STREET","between_street_2":"QUEENSBERRY STREET","street_segment_id":"20472"}
+,{"pay_stay_zone":"30001014","street":"BOUVERIE STREET","between_street_1":"GRATTAN STREET","between_street_2":"LINCOLN SQUARE NORTH","street_segment_id":"20468"}
+,{"pay_stay_zone":"30001015","street":"BOUVERIE STREET","between_street_1":"LINCOLN SQUARE SOUTH","between_street_2":"PELHAM STREET","street_segment_id":"22503"}
+,{"pay_stay_zone":"30001016","street":"BOUVERIE STREET","between_street_1":"LINCOLN SQUARE NORTH","between_street_2":"GRATTAN STREET","street_segment_id":"20468"}
+,{"pay_stay_zone":"30001015","street":"BOUVERIE STREET","between_street_1":"LINCOLN SQUARE NORTH","between_street_2":"PELHAM STREET","street_segment_id":"22504"}
+,{"pay_stay_zone":"30001015","street":"BOUVERIE STREET","between_street_1":"QUEENSBERRY STREET","between_street_2":"LINCOLN SQUARE SOUTH","street_segment_id":"20464"}
+,{"pay_stay_zone":"30001019","street":"BOUVERIE STREET","between_street_1":"QUEENSBERRY STREET","between_street_2":"VICTORIA STREET","street_segment_id":"20462"}
+,{"pay_stay_zone":"30001020","street":"BOUVERIE STREET","between_street_1":"LINCOLN SQUARE SOUTH","between_street_2":"QUEENSBERRY STREET","street_segment_id":"20464"}
+,{"pay_stay_zone":"30001021","street":"BOUVERIE STREET","between_street_1":"QUEENSBERRY STREET","between_street_2":"LINCOLN SQUARE SOUTH","street_segment_id":"20464"}
+,{"pay_stay_zone":"30001022","street":"BOUVERIE STREET","between_street_1":"QUEENSBERRY STREET","between_street_2":"VICTORIA STREET","street_segment_id":"20462"}
+,{"pay_stay_zone":"30001023","street":"LEICESTER STREET","between_street_1":"VICTORIA STREET","between_street_2":"BERKELEY STREET","street_segment_id":"20453"}
+,{"pay_stay_zone":"30001023","street":"LEICESTER STREET","between_street_1":"BERKELEY STREET","between_street_2":"QUEENSBERRY STREET","street_segment_id":"20455"}
+,{"pay_stay_zone":"30001024","street":"BOUVERIE STREET","between_street_1":"VICTORIA STREET","between_street_2":"QUEENSBERRY STREET","street_segment_id":"20462"}
+,{"pay_stay_zone":"30001025","street":"BOUVERIE STREET","between_street_1":"VICTORIA STREET","between_street_2":"QUEENSBERRY STREET","street_segment_id":"20462"}
+,{"pay_stay_zone":"30001026","street":"BOUVERIE STREET","between_street_1":"VICTORIA STREET","between_street_2":"QUEENSBERRY STREET","street_segment_id":"20462"}
+,{"pay_stay_zone":"30001027","street":"BOUVERIE STREET","between_street_1":"QUEENSBERRY STREET","between_street_2":"VICTORIA STREET","street_segment_id":"20462"}
+,{"pay_stay_zone":"30001028","street":"CARDIGAN STREET","between_street_1":"ARGYLE PLACE NORTH","between_street_2":"GRATTAN STREET","street_segment_id":"20512"}
+,{"pay_stay_zone":"30001029","street":"CARDIGAN STREET","between_street_1":"GRATTAN STREET","between_street_2":"ARGYLE PLACE NORTH","street_segment_id":"20512"}
+,{"pay_stay_zone":"30001030","street":"CARDIGAN STREET","between_street_1":"ARGYLE PLACE SOUTH","between_street_2":"PELHAM STREET","street_segment_id":"20508"}
+,{"pay_stay_zone":"30001031","street":"CARDIGAN STREET","between_street_1":"PELHAM STREET","between_street_2":"ARGYLE PLACE SOUTH","street_segment_id":"20508"}
+,{"pay_stay_zone":"30001031","street":"CARDIGAN STREET","between_street_1":"ARGYLE PLACE NORTH","between_street_2":"PELHAM STREET","street_segment_id":"20509"}
+,{"pay_stay_zone":"30001033","street":"CARDIGAN STREET","between_street_1":"ARGYLE PLACE NORTH","between_street_2":"PELHAM STREET","street_segment_id":"20509"}
+,{"pay_stay_zone":"30001034","street":"CARDIGAN STREET","between_street_1":"FARADAY STREET","between_street_2":"GRATTAN STREET","street_segment_id":"20514"}
+,{"pay_stay_zone":"30001035","street":"CARDIGAN STREET","between_street_1":"QUEENSBERRY STREET","between_street_2":"VICTORIA STREET","street_segment_id":"20504"}
+,{"pay_stay_zone":"30001036","street":"CARDIGAN STREET","between_street_1":"GRATTAN STREET","between_street_2":"FARADAY STREET","street_segment_id":"20514"}
+,{"pay_stay_zone":"30001040","street":"CARDIGAN STREET","between_street_1":"ARGYLE PLACE SOUTH","between_street_2":"QUEENSBERRY STREET","street_segment_id":"20506"}
+,{"pay_stay_zone":"30001041","street":"CARDIGAN STREET","between_street_1":"QUEENSBERRY STREET","between_street_2":"ARGYLE PLACE SOUTH","street_segment_id":"20506"}
+,{"pay_stay_zone":"30001042","street":"CARDIGAN STREET","between_street_1":"VICTORIA STREET","between_street_2":"QUEENSBERRY STREET","street_segment_id":"20504"}
+,{"pay_stay_zone":"30001043","street":"CARDIGAN STREET","between_street_1":"VICTORIA STREET","between_street_2":"QUEENSBERRY STREET","street_segment_id":"20504"}
+,{"pay_stay_zone":"30001044","street":"CEMETERY ROAD EAST","between_street_1":"CARDIGAN STREET ","between_street_2":"LYGON STREET","street_segment_id":"15514"}
+,{"pay_stay_zone":"30001044","street":"CEMETERY ROAD EAST ","between_street_1":"CARDIGAN STREET ","between_street_2":"SWANSTON STREET","street_segment_id":"15500"}
+,{"pay_stay_zone":"30001045","street":"FARADAY STREET","between_street_1":"SWANSTON STREET","between_street_2":"CARDIGAN STREET","street_segment_id":"20812"}
+,{"pay_stay_zone":"30001046","street":"GRATTAN STREET","between_street_1":"BOUVERIE STREET","between_street_2":"LEICESTER STREET","street_segment_id":"20848"}
+,{"pay_stay_zone":"30001047","street":"GRATTAN STREET","between_street_1":"SWANSTON STREET","between_street_2":"CARDIGAN STREET","street_segment_id":"22506"}
+,{"pay_stay_zone":"30001048","street":"GRATTAN STREET","between_street_1":"CARDIGAN STREET","between_street_2":"LYGON STREET","street_segment_id":"20757"}
+,{"pay_stay_zone":"30001049","street":"KAY STREET","between_street_1":"CANNING STREET","between_street_2":"RATHDOWNE STREET","street_segment_id":"20573"}
+,{"pay_stay_zone":"30001050","street":"LEICESTER STREET","between_street_1":"BERKELEY STREET","between_street_2":"QUEENSBERRY STREET","street_segment_id":"20455"}
+,{"pay_stay_zone":"30001051","street":"LEICESTER STREET","between_street_1":"GRATTAN STREET","between_street_2":"PELHAM STREET","street_segment_id":"20460"}
+,{"pay_stay_zone":"30001052","street":"LEICESTER STREET","between_street_1":"GRATTAN STREET","between_street_2":"PELHAM STREET","street_segment_id":"20460"}
+,{"pay_stay_zone":"30001053","street":"KAY STREET","between_street_1":"CANNING STREET","between_street_2":"RATHDOWNE STREET","street_segment_id":"20573"}
+,{"pay_stay_zone":"30001054","street":"LEICESTER STREET","between_street_1":"GRATTAN STREET","between_street_2":"PELHAM STREET","street_segment_id":"20460"}
+,{"pay_stay_zone":"30001055","street":"LEICESTER STREET","between_street_1":"PELHAM STREET","between_street_2":"QUEENSBERRY STREET","street_segment_id":"20458"}
+,{"pay_stay_zone":"30001056","street":"LEICESTER STREET","between_street_1":"PELHAM STREET","between_street_2":"QUEENSBERRY STREET","street_segment_id":"20458"}
+,{"pay_stay_zone":"30001057","street":"LEICESTER STREET","between_street_1":"PELHAM STREET","between_street_2":"QUEENSBERRY STREET","street_segment_id":"20458"}
+,{"pay_stay_zone":"30001058","street":"LEICESTER STREET","between_street_1":"PELHAM STREET","between_street_2":"QUEENSBERRY STREET","street_segment_id":"20458"}
+,{"pay_stay_zone":"30001059","street":"LINCOLN SQUARE SOUTH","between_street_1":"SWANSTON STREET","between_street_2":"BOUVERIE STREET","street_segment_id":"20838"}
+,{"pay_stay_zone":"30001060","street":"LINCOLN SQUARE NORTH","between_street_1":"SWANSTON STREET","between_street_2":"BOUVERIE STREET","street_segment_id":"20839"}
+,{"pay_stay_zone":"30001061","street":"LINCOLN SQUARE NORTH","between_street_1":"SWANSTON STREET","between_street_2":"BOUVERIE STREET","street_segment_id":"20839"}
+,{"pay_stay_zone":"30001062","street":"LINCOLN SQUARE SOUTH","between_street_1":"BOUVERIE STREET","between_street_2":"SWANSTON STREET","street_segment_id":"20838"}
+,{"pay_stay_zone":"30001064","street":"LINCOLN SQUARE SOUTH","between_street_1":"BOUVERIE STREET","between_street_2":"SWANSTON STREET","street_segment_id":"20838"}
+,{"pay_stay_zone":"30001065","street":"LYGON STREET","between_street_1":"ARGYLE PLACE NORTH","between_street_2":"PELHAM STREET","street_segment_id":"20528"}
+,{"pay_stay_zone":"30001066","street":"LYGON STREET","between_street_1":"QUEENSBERRY STREET","between_street_2":"ARGYLE PLACE SOUTH","street_segment_id":"20524"}
+,{"pay_stay_zone":"30001067","street":"LYGON STREET ","between_street_1":"ARGYLE SQUARE NORTH","between_street_2":"ARGYLE SQUARE SOUTH","street_segment_id":"15511"}
+,{"pay_stay_zone":"30001068","street":"LYGON STREET","between_street_1":"FARADAY STREET","between_street_2":"ELGIN STREET","street_segment_id":"20534"}
+,{"pay_stay_zone":"30001069","street":"LYGON STREET","between_street_1":"GRATTAN STREET","between_street_2":"FARADAY STREET","street_segment_id":"20532"}
+,{"pay_stay_zone":"30001070","street":"SPRING STREET","between_street_1":"COLLINS STREET","between_street_2":"FLINDERS LANE","street_segment_id":"20198"}
+,{"pay_stay_zone":"30001071","street":"LYGON STREET","between_street_1":"PELHAM STREET","between_street_2":"ARGYLE PLACE SOUTH","street_segment_id":"20526"}
+,{"pay_stay_zone":"30001072","street":"LYGON STREET","between_street_1":"GRATTAN STREET","between_street_2":"ARGYLE PLACE NORTH","street_segment_id":"20530"}
+,{"pay_stay_zone":"30001072","street":"LYGON STREET ","between_street_1":"PELHAM STREET","between_street_2":"GRATTAN STREET","street_segment_id":"15512"}
+,{"pay_stay_zone":"30001073","street":"LYGON STREET","between_street_1":"PALMERSTON STREET","between_street_2":"ELGIN STREET","street_segment_id":"20536"}
+,{"pay_stay_zone":"30001074","street":"LYGON STREET","between_street_1":"PRINCES STREET","between_street_2":"LYTTON STREET","street_segment_id":"20540"}
+,{"pay_stay_zone":"30001075","street":"LYGON STREET ","between_street_1":"QUEENSBERRY STREET ","between_street_2":"PELHAM STREET","street_segment_id":"15510"}
+,{"pay_stay_zone":"30001076","street":"LYGON STREET","between_street_1":"QUEENSBERRY STREET","between_street_2":"VICTORIA STREET","street_segment_id":"20522"}
+,{"pay_stay_zone":"30001077","street":"LYTTON STREET","between_street_1":"LYGON STREET","between_street_2":"CARDIGAN STREET","street_segment_id":"20771"}
+,{"pay_stay_zone":"30001078","street":"MACARTHUR PLACE NORTH","between_street_1":"RATHDOWNE STREET","between_street_2":"CANNING STREET","street_segment_id":"20670"}
+,{"pay_stay_zone":"30001079","street":"MACARTHUR PLACE SOUTH","between_street_1":"CANNING STREET","between_street_2":"RATHDOWNE STREET","street_segment_id":"20671"}
+,{"pay_stay_zone":"30001081","street":"NICHOLSON STREET","between_street_1":"VICTORIA STREET","between_street_2":"CARLTON STREET","street_segment_id":"22501"}
+,{"pay_stay_zone":"30001082","street":"NICHOLSON STREET","between_street_1":"CARLTON STREET","between_street_2":"VICTORIA STREET","street_segment_id":"22501"}
+,{"pay_stay_zone":"30001083","street":"PELHAM STREET","between_street_1":"BARRY STREET","between_street_2":"BERKELEY STREET","street_segment_id":"20477"}
+,{"pay_stay_zone":"30001084","street":"PELHAM STREET","between_street_1":"BOUVERIE STREET","between_street_2":"LEICESTER STREET","street_segment_id":"20873"}
+,{"pay_stay_zone":"30001085","street":"PELHAM STREET","between_street_1":"CARDIGAN STREET","between_street_2":"SWANSTON STREET","street_segment_id":"20806"}
+,{"pay_stay_zone":"30001086","street":"PELHAM STREET","between_street_1":"SWANSTON STREET","between_street_2":"CARDIGAN STREET","street_segment_id":"20806"}
+,{"pay_stay_zone":"30001087","street":"PELHAM STREET","between_street_1":"CARDIGAN STREET","between_street_2":"SWANSTON STREET","street_segment_id":"20806"}
+,{"pay_stay_zone":"30001088","street":"PELHAM STREET","between_street_1":"CARDIGAN STREET","between_street_2":"SWANSTON STREET","street_segment_id":"20806"}
+,{"pay_stay_zone":"30001089","street":"PELHAM STREET","between_street_1":"DRUMMOND STREET","between_street_2":"LYGON STREET","street_segment_id":"21557"}
+,{"pay_stay_zone":"30001090","street":"PELHAM STREET","between_street_1":"DRUMMOND STREET","between_street_2":"RATHDOWNE STREET","street_segment_id":"21556"}
+,{"pay_stay_zone":"30001091","street":"PELHAM STREET","between_street_1":"LEICESTER STREET","between_street_2":"BARRY STREET","street_segment_id":"20479"}
+,{"pay_stay_zone":"30001092","street":"PELHAM STREET","between_street_1":"RATHDOWNE STREET","between_street_2":"DRUMMOND STREET","street_segment_id":"21556"}
+,{"pay_stay_zone":"30001093","street":"QUEENSBERRY STREET","between_street_1":"BOUVERIE STREET","between_street_2":"LEICESTER STREET","street_segment_id":"20868"}
+,{"pay_stay_zone":"30001094","street":"QUEENSBERRY STREET","between_street_1":"LYGON STREET","between_street_2":"CARDIGAN STREET","street_segment_id":"22499"}
+,{"pay_stay_zone":"30001095","street":"QUEENSBERRY STREET","between_street_1":"SWANSTON STREET","between_street_2":"CARDIGAN STREET","street_segment_id":"22500"}
+,{"pay_stay_zone":"30001096","street":"QUEENSBERRY STREET","between_street_1":"CARDIGAN STREET","between_street_2":"SWANSTON STREET","street_segment_id":"22500"}
+,{"pay_stay_zone":"30001097","street":"QUEENSBERRY STREET","between_street_1":"LYGON STREET","between_street_2":"DRUMMOND STREET","street_segment_id":"22498"}
+,{"pay_stay_zone":"30001098","street":"QUEENSBERRY STREET","between_street_1":"DRUMMOND STREET","between_street_2":"LYGON STREET","street_segment_id":"22498"}
+,{"pay_stay_zone":"30001099","street":"QUEENSBERRY STREET","between_street_1":"BERKELEY STREET","between_street_2":"ELIZABETH STREET","street_segment_id":"20864"}
+,{"pay_stay_zone":"30001100","street":"QUEENSBERRY STREET","between_street_1":"RATHDOWNE STREET","between_street_2":"DRUMMOND STREET","street_segment_id":"22497"}
+,{"pay_stay_zone":"30001101","street":"QUEENSBERRY STREET","between_street_1":"LEICESTER STREET","between_street_2":"BERKELEY STREET","street_segment_id":"20471"}
+,{"pay_stay_zone":"30001102","street":"QUEENSBERRY STREET","between_street_1":"BOUVERIE STREET","between_street_2":"LEICESTER STREET","street_segment_id":"20868"}
+,{"pay_stay_zone":"30001103","street":"QUEENSBERRY STREET","between_street_1":"LEICESTER STREET","between_street_2":"BOUVERIE STREET","street_segment_id":"20868"}
+,{"pay_stay_zone":"30001104","street":"QUEENSBERRY STREET","between_street_1":"CARDIGAN STREET","between_street_2":"LYGON STREET","street_segment_id":"22499"}
+,{"pay_stay_zone":"30001105","street":"QUEENSBERRY STREET","between_street_1":"CARDIGAN STREET","between_street_2":"LYGON STREET","street_segment_id":"22499"}
+,{"pay_stay_zone":"30001106","street":"QUEENSBERRY STREET","between_street_1":"LYGON STREET","between_street_2":"DRUMMOND STREET","street_segment_id":"22498"}
+,{"pay_stay_zone":"30001107","street":"QUEENSBERRY STREET","between_street_1":"RATHDOWNE STREET","between_street_2":"DRUMMOND STREET","street_segment_id":"22497"}
+,{"pay_stay_zone":"30001108","street":"QUEENSBERRY STREET","between_street_1":"DRUMMOND STREET","between_street_2":"RATHDOWNE STREET","street_segment_id":"22497"}
+,{"pay_stay_zone":"30001109","street":"QUEENSBERRY STREET","between_street_1":"SWANSTON STREET","between_street_2":"BOUVERIE STREET","street_segment_id":"20829"}
+,{"pay_stay_zone":"30001110","street":"QUEENSBERRY STREET","between_street_1":"BOUVERIE STREET","between_street_2":"SWANSTON STREET","street_segment_id":"20829"}
+,{"pay_stay_zone":"30001111","street":"QUEENSBERRY STREET","between_street_1":"SWANSTON STREET","between_street_2":"CARDIGAN STREET","street_segment_id":"22500"}
+,{"pay_stay_zone":"30001112","street":"RATHDOWNE STREET","between_street_1":"PELHAM STREET","between_street_2":"GRATTAN STREET","street_segment_id":"20558"}
+,{"pay_stay_zone":"30001113","street":"RATHDOWNE STREET","between_street_1":"PELHAM STREET","between_street_2":"QUEENSBERRY STREET","street_segment_id":"20556"}
+,{"pay_stay_zone":"30001114","street":"RATHDOWNE STREET","between_street_1":"GRATTAN STREET","between_street_2":"PELHAM STREET","street_segment_id":"20558"}
+,{"pay_stay_zone":"30001115","street":"RATHDOWNE STREET","between_street_1":"VICTORIA STREET","between_street_2":"QUEENSBERRY STREET","street_segment_id":"20554"}
+,{"pay_stay_zone":"30001116","street":"RATHDOWNE STREET","between_street_1":"QUEENSBERRY STREET","between_street_2":"VICTORIA STREET","street_segment_id":"20554"}
+,{"pay_stay_zone":"30001117","street":"SWANSTON STREET","between_street_1":"ELGIN STREET","between_street_2":"COLLEGE CRESCENT","street_segment_id":"20494"}
+,{"pay_stay_zone":"30001118","street":"SWANSTON STREET","between_street_1":"GRATTAN STREET","between_street_2":"LINCOLN SQUARE NORTH","street_segment_id":"20488"}
+,{"pay_stay_zone":"30001119","street":"SWANSTON STREET","between_street_1":"LINCOLN SQUARE NORTH","between_street_2":"GRATTAN STREET","street_segment_id":"20488"}
+,{"pay_stay_zone":"30001120","street":"SWANSTON STREET","between_street_1":"LINCOLN SQUARE SOUTH","between_street_2":"PELHAM STREET","street_segment_id":"20485"}
+,{"pay_stay_zone":"30001121","street":"SWANSTON STREET","between_street_1":"LINCOLN SQUARE SOUTH","between_street_2":"QUEENSBERRY STREET","street_segment_id":"20484"}
+,{"pay_stay_zone":"30001122","street":"SWANSTON STREET","between_street_1":"QUEENSBERRY STREET","between_street_2":"VICTORIA STREET","street_segment_id":"20482"}
+,{"pay_stay_zone":"30001124","street":"VICTORIA STREET","between_street_1":"ELIZABETH STREET","between_street_2":"BOUVERIE STREET","street_segment_id":"21625"}
+,{"pay_stay_zone":"30001125","street":"VICTORIA STREET","between_street_1":"LYGON STREET","between_street_2":"CARDIGAN STREET","street_segment_id":"21605"}
+,{"pay_stay_zone":"30001126","street":"VICTORIA STREET","between_street_1":"CARDIGAN STREET","between_street_2":"LYGON STREET","street_segment_id":"21605"}
+,{"pay_stay_zone":"30001127","street":"VICTORIA STREET","between_street_1":"LYGON STREET","between_street_2":"DRUMMOND STREET","street_segment_id":"21603"}
+,{"pay_stay_zone":"30001128","street":"VICTORIA STREET","between_street_1":"DRUMMOND STREET","between_street_2":"RATHDOWNE STREET","street_segment_id":"21601"}
+,{"pay_stay_zone":"30001132","street":"VICTORIA PARADE","between_street_1":"NICHOLSON STREET","between_street_2":"SPRING STREET","street_segment_id":"21596"}
+,{"pay_stay_zone":"30001133","street":"VICTORIA STREET","between_street_1":"RATHDOWNE STREET","between_street_2":"DRUMMOND STREET","street_segment_id":"21601"}
+,{"pay_stay_zone":"30001134","street":"VICTORIA STREET","between_street_1":"SWANSTON STREET","between_street_2":"CARDIGAN STREET","street_segment_id":"21607"}
+,{"pay_stay_zone":"30001135","street":"VICTORIA STREET","between_street_1":"SWANSTON STREET","between_street_2":"BOUVERIE STREET","street_segment_id":"21623"}
+,{"pay_stay_zone":"30001136","street":"ARGYLE PLACE SOUTH","between_street_1":"LYGON STREET","between_street_2":"CARDIGAN STREET","street_segment_id":"20751"}
+,{"pay_stay_zone":"30001137","street":"BOWEN CRESCENT","between_street_1":"GARTON STREET","between_street_2":"PARK STREET","street_segment_id":"22396"}
+,{"pay_stay_zone":"30001138","street":"BOWEN CRESCENT","between_street_1":"PARK STREET","between_street_2":"GARTON STREET","street_segment_id":"22396"}
+,{"pay_stay_zone":"30001140","street":"CEMETERY ROAD WEST","between_street_1":"COLLEGE CRESCENT","between_street_2":"ROYAL PARADE","street_segment_id":"22375"}
+,{"pay_stay_zone":"30001141","street":"CEMETERY ROAD","between_street_1":"SWANSTON STREET","between_street_2":"ROYAL PARADE","street_segment_id":"22373"}
+,{"pay_stay_zone":"30001142","street":"CEMETERY ROAD EAST","between_street_1":"COLLEGE CRESCENT","between_street_2":"LYGON STREET","street_segment_id":"20773"}
+,{"pay_stay_zone":"30001143","street":"GARTON STREET","between_street_1":"MACPHERSON STREET","between_street_2":"BOWEN CRESCENT","street_segment_id":"22511"}
+,{"pay_stay_zone":"30001146","street":"LYGON STREET","between_street_1":"PRINCES STREET","between_street_2":"MACPHERSON STREET","street_segment_id":"22508"}
+,{"pay_stay_zone":"30001147","street":"LYGON STREET ","between_street_1":"MACPHERSON STREET","between_street_2":"PRINCES STREET","street_segment_id":"22508"}
+,{"pay_stay_zone":"30001148","street":"PARK STREET","between_street_1":"ROYAL PARADE","between_street_2":"BOWEN CRESCENT","street_segment_id":"22395"}
+,{"pay_stay_zone":"30001149","street":"PRINCES PARK DRIVE","between_street_1":"CEMETERY ROAD WEST","between_street_2":"MACPHERSON STREET","street_segment_id":"22512"}
+,{"pay_stay_zone":"30001150","street":"ROYAL PARADE","between_street_1":"IEVERS STREET","between_street_2":"WALKER STREET","street_segment_id":"22387"}
+,{"pay_stay_zone":"30001151","street":"ROYAL PARADE","between_street_1":"MACARTHUR ROAD","between_street_2":"LEONARD STREET","street_segment_id":"22434"}
+,{"pay_stay_zone":"30001152","street":"ROYAL PARADE","between_street_1":"IEVERS STREET","between_street_2":"PARK STREET","street_segment_id":"22393"}
+,{"pay_stay_zone":"30001153","street":"ROYAL PARADE","between_street_1":"LEONARD STREET","between_street_2":"WALKER STREET","street_segment_id":"22435"}
+,{"pay_stay_zone":"30001154","street":"ADDERLEY STREET","between_street_1":"LA TROBE STREET","between_street_2":"JEFFCOTT STREET","street_segment_id":"21504"}
+,{"pay_stay_zone":"30001156","street":"AQUITANIA WAY","between_street_1":"CARAVEL LANE","between_street_2":"NEWQUAY PROMENADE","street_segment_id":"22787"}
+,{"pay_stay_zone":"30001157","street":"AQUITANIA WAY","between_street_1":"CARAVEL LANE","between_street_2":"DOCKLANDS DRIVE","street_segment_id":"22786"}
+,{"pay_stay_zone":"30001158","street":"AUGUSTA AVENUE","between_street_1":"PEARL RIVER ROAD","between_street_2":"WATTLE ROAD","street_segment_id":"23275"}
+,{"pay_stay_zone":"30001159","street":"AURORA LANE","between_street_1":"BOURKE STREET","between_street_2":"COLLINS STREET","street_segment_id":"22822"}
+,{"pay_stay_zone":"30001160","street":"AURORA LANE","between_street_1":"COLLINS STREET","between_street_2":"BOURKE STREET","street_segment_id":"22822"}
+,{"pay_stay_zone":"30001161","street":"AURORA LANE","between_street_1":"COLLINS STREET","between_street_2":"WURUNDJERI WAY","street_segment_id":"22899"}
+,{"pay_stay_zone":"30001162","street":"AURORA LANE","between_street_1":"WURUNDJERI WAY","between_street_2":"COLLINS STREET","street_segment_id":"22899"}
+,{"pay_stay_zone":"30001163","street":"BATMANS HILL DRIVE","between_street_1":"BOURKE STREET","between_street_2":"COLLINS STREET","street_segment_id":"22802"}
+,{"pay_stay_zone":"30001164","street":"BOURKE STREET","between_street_1":"HARBOUR ESPLANADE","between_street_2":"ENTERPRIZE WAY","street_segment_id":"22801"}
+,{"pay_stay_zone":"30001165","street":"BOURKE STREET","between_street_1":"WURUNDJERI WAY","between_street_2":"HARBOUR ESPLANADE","street_segment_id":"22553"}
+,{"pay_stay_zone":"30001166","street":"BOURKE STREET","between_street_1":"HARBOUR ESPLANADE","between_street_2":"ENTERPRIZE WAY","street_segment_id":"22801"}
+,{"pay_stay_zone":"30001167","street":"BOURKE STREET","between_street_1":"CUMBERLAND STREET","between_street_2":"COLLINS STREET","street_segment_id":"23293"}
+,{"pay_stay_zone":"30001168","street":"BOURKE STREET","between_street_1":"ENTERPRIZE WAY","between_street_2":"HARBOUR ESPLANADE","street_segment_id":"22801"}
+,{"pay_stay_zone":"30001170","street":"BOURKE STREET","between_street_1":"CUMBERLAND STREET","between_street_2":"ENTERPRIZE WAY","street_segment_id":"22913"}
+,{"pay_stay_zone":"30001171","street":"BOURKE STREET","between_street_1":"HARBOUR ESPLANADE","between_street_2":"ENTERPRIZE WAY","street_segment_id":"22801"}
+,{"pay_stay_zone":"30001172","street":"BOURKE STREET","between_street_1":"ENTERPRIZE WAY","between_street_2":"CUMBERLAND STREET","street_segment_id":"22913"}
+,{"pay_stay_zone":"30001173","street":"BOURKE STREET","between_street_1":"HARBOUR ESPLANADE","between_street_2":"ENTERPRIZE WAY","street_segment_id":"22801"}
+,{"pay_stay_zone":"30001174","street":"BOURKE STREET","between_street_1":"ENTERPRIZE WAY","between_street_2":"HARBOUR ESPLANADE","street_segment_id":"22801"}
+,{"pay_stay_zone":"30001176","street":"BOURKE STREET","between_street_1":"CUMBERLAND STREET","between_street_2":"ENTERPRIZE WAY","street_segment_id":"22913"}
+,{"pay_stay_zone":"30001177","street":"BOURKE STREET","between_street_1":"ENTERPRIZE WAY","between_street_2":"CUMBERLAND STREET","street_segment_id":"22913"}
+,{"pay_stay_zone":"30001178","street":"BOURKE STREET","between_street_1":"CUMBERLAND STREET","between_street_2":"ENTERPRIZE WAY","street_segment_id":"22913"}
+,{"pay_stay_zone":"30001179","street":"BOURKE STREET","between_street_1":"ENTERPRIZE WAY","between_street_2":"CUMBERLAND STREET","street_segment_id":"22913"}
+,{"pay_stay_zone":"30001181","street":"BOURKE STREET","between_street_1":"HARBOUR ESPLANADE","between_street_2":"WURUNDJERI WAY","street_segment_id":"22553"}
+,{"pay_stay_zone":"30001183","street":"COLLINS STREET","between_street_1":"SPENCER STREET","between_street_2":"BATMANS HILL DRIVE","street_segment_id":"22819"}
+,{"pay_stay_zone":"30001184","street":"COLLINS STREET","between_street_1":"HARBOUR ESPLANADE","between_street_2":"NAVIGATION DRIVE","street_segment_id":"23308"}
+,{"pay_stay_zone":"30001185","street":"COLLINS STREET","between_street_1":"NAVIGATION DRIVE","between_street_2":"MERCHANT STREET","street_segment_id":"22956"}
+,{"pay_stay_zone":"30001186","street":"COLLINS STREET","between_street_1":"MERCHANT STREET","between_street_2":"SEAFARER LANE","street_segment_id":"23311"}
+,{"pay_stay_zone":"30001187","street":"COLLINS STREET","between_street_1":"SEAFARER LANE","between_street_2":"MERCHANT STREET","street_segment_id":"23311"}
+,{"pay_stay_zone":"30001188","street":"COLLINS STREET","between_street_1":"BATMANS HILL DRIVE","between_street_2":"HARBOUR ESPLANADE","street_segment_id":"22906"}
+,{"pay_stay_zone":"30001189","street":"COLLINS STREET","between_street_1":"SPENCER STREET","between_street_2":"BATMANS HILL DRIVE","street_segment_id":"22819"}
+,{"pay_stay_zone":"30001190","street":"CUMBERLAND STREET","between_street_1":"BOURKE STREET","between_street_2":"VICTORIA HARBOUR PROMENADE","street_segment_id":"22914"}
+,{"pay_stay_zone":"30001191","street":"DOCKLANDS DRIVE","between_street_1":"SAINT MANGOS LANE","between_street_2":"WATERFRONT WAY","street_segment_id":"23252"}
+,{"pay_stay_zone":"30001192","street":"DOCKLANDS DRIVE","between_street_1":"PEARL RIVER ROAD","between_street_2":"WESTERN LINK ROAD","street_segment_id":"23256"}
+,{"pay_stay_zone":"30001193","street":"DOEPEL WAY","between_street_1":"DOCKLANDS DRIVE","between_street_2":"NEWQUAY PROMENADE","street_segment_id":"22855"}
+,{"pay_stay_zone":"30001194","street":"ENTERPRIZE WAY","between_street_1":"BOURKE STREET","between_street_2":"WATERFRONT WAY","street_segment_id":"22898"}
+,{"pay_stay_zone":"30001196","street":"FISHPLATE LANE","between_street_1":"BATMANS HILL DRIVE","between_street_2":"VILLAGE STREET","street_segment_id":"22942"}
+,{"pay_stay_zone":"30001197","street":"GEOGRAPHE STREET","between_street_1":"BOURKE STREET","between_street_2":"KEERA WAY","street_segment_id":"23032"}
+,{"pay_stay_zone":"30001198","street":"GEOGRAPHE STREET","between_street_1":"KEERA WAY","between_street_2":"BOURKE STREET","street_segment_id":"23032"}
+,{"pay_stay_zone":"30001199","street":"GEOGRAPHE STREET","between_street_1":"BOURKE STREET","between_street_2":"KEERA WAY","street_segment_id":"23032"}
+,{"pay_stay_zone":"30001200","street":"GEORGIANA STREET","between_street_1":"MCCRAE STREET","between_street_2":"COLLINS STREET","street_segment_id":"22896"}
+,{"pay_stay_zone":"30001201","street":"GRATTAN STREET","between_street_1":"CARDIGAN STREET","between_street_2":"SWANSTON STREET","street_segment_id":"22506"}
+,{"pay_stay_zone":"30001202","street":"HARBOUR ESPLANADE","between_street_1":"COLLINS STREET","between_street_2":"BOURKE STREET","street_segment_id":"22448"}
+,{"pay_stay_zone":"30001203","street":"HARBOUR ESPLANADE","between_street_1":"COLLINS STREET","between_street_2":"NORTH WHARF ROAD","street_segment_id":"22954"}
+,{"pay_stay_zone":"30001204","street":"HARBOUR ESPLANADE","between_street_1":"NORTH WHARF ROAD","between_street_2":"COLLINS STREET","street_segment_id":"22954"}
+,{"pay_stay_zone":"30001205","street":"HARBOUR ESPLANADE","between_street_1":"LA TROBE STREET","between_street_2":"BOURKE STREET","street_segment_id":"22452"}
+,{"pay_stay_zone":"30001206","street":"FRANKLIN STREET","between_street_1":"ELIZABETH STREET","between_street_2":"QUEEN STREET","street_segment_id":"21634"}
+,{"pay_stay_zone":"30001207","street":"IMPORT LANE","between_street_1":"BOURKE STREET","between_street_2":"COLLINS STREET","street_segment_id":"23062"}
+,{"pay_stay_zone":"30001208","street":"KARLSRUHE LANE","between_street_1":"COLLINS STREET","between_street_2":"KEERA WAY","street_segment_id":"23246"}
+,{"pay_stay_zone":"30001209","street":"LEVEN AVENUE","between_street_1":"PEARL RIVER ROAD","between_street_2":"WATTLE ROAD","street_segment_id":"23277"}
+,{"pay_stay_zone":"30001211","street":"MCCRAE STREET","between_street_1":"WURUNDJERI WAY","between_street_2":"BATMANS HILL DRIVE","street_segment_id":"22862"}
+,{"pay_stay_zone":"30001212","street":"MERCHANT STREET","between_street_1":"BOURKE STREET","between_street_2":"VICTORIA HARBOUR PROMENADE","street_segment_id":"22915"}
+,{"pay_stay_zone":"30001213","street":"MERCHANT STREET","between_street_1":"BOURKE STREET","between_street_2":"COLLINS STREET","street_segment_id":"23151"}
+,{"pay_stay_zone":"30001214","street":"NAVIGATION DRIVE","between_street_1":"BOURKE STREET","between_street_2":"COLLINS STREET","street_segment_id":"23033"}
+,{"pay_stay_zone":"30001215","street":"NAVIGATION DRIVE","between_street_1":"COLLINS STREET","between_street_2":"HARBOUR ESPLANADE","street_segment_id":"23236"}
+,{"pay_stay_zone":"30001216","street":"NAVIGATION DRIVE","between_street_1":"COLLINS STREET","between_street_2":"BOURKE STREET","street_segment_id":"23033"}
+,{"pay_stay_zone":"30001217","street":"PEARL RIVER ROAD","between_street_1":"DOCKLANDS DRIVE","between_street_2":"VICTORIA HARBOUR","street_segment_id":"22908"}
+,{"pay_stay_zone":"30001218","street":"PEARL RIVER ROAD","between_street_1":"VICTORIA HARBOUR","between_street_2":"DOCKLANDS DRIVE","street_segment_id":"22908"}
+,{"pay_stay_zone":"30001219","street":"SIDDELEY STREET","between_street_1":"SPENCER STREET","between_street_2":"WURUNDJERI WAY","street_segment_id":"22445"}
+,{"pay_stay_zone":"30001220","street":"PEARL RIVER ROAD","between_street_1":"FOOTSCRAY ROAD","between_street_2":"DOCKLANDS DRIVE","street_segment_id":"23224"}
+,{"pay_stay_zone":"30001221","street":"POINT PARK CRESCENT","between_street_1":"LORIMER STREET","between_street_2":"SOUTH WHARF DRIVE","street_segment_id":"22951"}
+,{"pay_stay_zone":"30001222","street":"SEAFARER LANE","between_street_1":"BOURKE STREET","street_segment_id":"23063"}
+,{"pay_stay_zone":"30001223","street":"SIDDELEY STREET","between_street_1":"SPENCER STREET","between_street_2":"WURUNDJERI WAY","street_segment_id":"22445"}
+,{"pay_stay_zone":"30001224","street":"SPENCER STREET","between_street_1":"FLINDERS STREET","between_street_2":"FLINDERS LANE","street_segment_id":"20067"}
+,{"pay_stay_zone":"30001226","street":"SAINT MANGOS LANE NORTH","between_street_1":"DOCKLANDS DRIVE","street_segment_id":"23267"}
+,{"pay_stay_zone":"30001227","street":"VILLAGE STREET","between_street_1":"COLLINS STREET","between_street_2":"BOURKE STREET","street_segment_id":"22941"}
+,{"pay_stay_zone":"30001228","street":"VILLAGE STREET","between_street_1":"BOURKE STREET","between_street_2":"COLLINS STREET","street_segment_id":"22941"}
+,{"pay_stay_zone":"30001229","street":"VILLAGE STREET","between_street_1":"MCCRAE STREET","between_street_2":"COLLINS STREET","street_segment_id":"22894"}
+,{"pay_stay_zone":"30001230","street":"VILLAGE STREET","between_street_1":"COLLINS STREET","between_street_2":"MCCRAE STREET","street_segment_id":"22894"}
+,{"pay_stay_zone":"30001231","street":"WATERFRONT WAY","between_street_1":"FOOTSCRAY ROAD","between_street_2":"DOCKLANDS DRIVE","street_segment_id":"23225"}
+,{"pay_stay_zone":"30001232","street":"WATERFRONT WAY","between_street_1":"DOCKLANDS DRIVE","between_street_2":"FOOTSCRAY ROAD","street_segment_id":"23225"}
+,{"pay_stay_zone":"30001233","street":"WATTLE ROAD","between_street_1":"DOCKLANDS DRIVE","between_street_2":"NEWQUAY PROMENADE","street_segment_id":"23274"}
+,{"pay_stay_zone":"30001234","street":"ALBERT STREET","between_street_1":"CLARENDON STREET","between_street_2":"EADES STREET","street_segment_id":"20898"}
+,{"pay_stay_zone":"30001235","street":"ALBERT STREET","between_street_1":"EADES STREET","between_street_2":"CLARENDON STREET","street_segment_id":"20898"}
+,{"pay_stay_zone":"30001236","street":"ALBERT STREET","between_street_1":"GISBORNE STREET","between_street_2":"MORRISON PLACE","street_segment_id":"22619"}
+,{"pay_stay_zone":"30001236","street":"ALBERT STREET","between_street_1":"MORRISON PLACE","between_street_2":"LANSDOWNE STREET","street_segment_id":"20891"}
+,{"pay_stay_zone":"30001236","street":"ALBERT STREET","between_street_1":"EADES STREET","between_street_2":"LANSDOWNE STREET","street_segment_id":"20893"}
+,{"pay_stay_zone":"30001237","street":"ALBERT STREET","between_street_1":"CLARENDON STREET","between_street_2":"EADES STREET","street_segment_id":"20898"}
+,{"pay_stay_zone":"30001238","street":"ALBERT STREET","between_street_1":"POWLETT STREET","between_street_2":"CLARENDON STREET","street_segment_id":"21587"}
+,{"pay_stay_zone":"30001239","street":"ALBERT STREET","between_street_1":"LANSDOWNE STREET","between_street_2":"EADES STREET","street_segment_id":"20893"}
+,{"pay_stay_zone":"30001240","street":"LA TROBE STREET","between_street_1":"Wurundjeri Way","between_street_2":"Harbour Esplanade","street_segment_id":"22549"}
+,{"pay_stay_zone":"30001241","street":"ALBERT STREET","between_street_1":"HODDLE STREET","between_street_2":"SIMPSON STREET","street_segment_id":"21573"}
+,{"pay_stay_zone":"30001242","street":"ALBERT STREET","between_street_1":"SIMPSON STREET","between_street_2":"HODDLE STREET","street_segment_id":"21573"}
+,{"pay_stay_zone":"30001244","street":"ALBERT STREET","between_street_1":"NICHOLSON STREET","between_street_2":"GISBORNE STREET","street_segment_id":"20889"}
+,{"pay_stay_zone":"30001245","street":"ALBERT STREET","between_street_1":"SPRING STREET","between_street_2":"NICHOLSON STREET","street_segment_id":"20886"}
+,{"pay_stay_zone":"30001245","street":"ALBERT STREET","between_street_1":"GISBORNE STREET","between_street_2":"NICHOLSON STREET","street_segment_id":"20889"}
+,{"pay_stay_zone":"30001246","street":"ALBERT STREET","between_street_1":"POWLETT STREET","between_street_2":"SIMPSON STREET","street_segment_id":"21580"}
+,{"pay_stay_zone":"30001247","street":"CATHEDRAL PLACE","between_street_1":"LANSDOWNE STREET","between_street_2":"GISBORNE STREET","street_segment_id":"21851"}
+,{"pay_stay_zone":"30001248","street":"CATHEDRAL PLACE","between_street_1":"GISBORNE STREET","between_street_2":"LANSDOWNE STREET","street_segment_id":"21851"}
+,{"pay_stay_zone":"30001249","street":"SPENCER STREET","between_street_1":"FLINDERS STREET","between_street_2":"SPENCER STREET BRIDGE","street_segment_id":"22174"}
+,{"pay_stay_zone":"30001250","street":"CLARENDON STREET","between_street_1":"GIPPS STREET","between_street_2":"GREY STREET","street_segment_id":"22622"}
+,{"pay_stay_zone":"30001250","street":"CLARENDON STREET","between_street_1":"WELLINGTON PARADE","between_street_2":"GEORGE STREET","street_segment_id":"21937"}
+,{"pay_stay_zone":"30001250","street":"CLARENDON STREET","between_street_1":"HOTHAM STREET","between_street_2":"GEORGE STREET","street_segment_id":"21932"}
+,{"pay_stay_zone":"30001250","street":"CLARENDON STREET","between_street_1":"HOTHAM STREET","between_street_2":"GIPPS STREET","street_segment_id":"21902"}
+,{"pay_stay_zone":"30001250","street":"CLARENDON STREET","between_street_1":"GREY STREET","between_street_2":"ALBERT STREET","street_segment_id":"21860"}
+,{"pay_stay_zone":"30001251","street":"EADES STREET","between_street_1":"VICTORIA PARADE","between_street_2":"ALBERT STREET","street_segment_id":"20897"}
+,{"pay_stay_zone":"30001252","street":"EVELYN PLACE","between_street_1":"NICHOLSON STREET","between_street_2":"ALBERT STREET","street_segment_id":"21561"}
+,{"pay_stay_zone":"30001253","street":"GISBORNE STREET","between_street_1":"CATHEDRAL PLACE","between_street_2":"ALBERT STREET","street_segment_id":"21849"}
+,{"pay_stay_zone":"30001254","street":"GISBORNE STREET","between_street_1":"VICTORIA PARADE","between_street_2":"ALBERT STREET","street_segment_id":"20895"}
+,{"pay_stay_zone":"30001255","street":"GREY STREET","between_street_1":"SIMPSON STREET","between_street_2":"POWLETT STREET","street_segment_id":"21866"}
+,{"pay_stay_zone":"30001256","street":"LANSDOWNE STREET","between_street_1":"ST ANDREWS PLACE","between_street_2":"CATHEDRAL PLACE","street_segment_id":"21857"}
+,{"pay_stay_zone":"30001257","street":"LANSDOWNE STREET","between_street_1":"CATHEDRAL PLACE","between_street_2":"ALBERT STREET","street_segment_id":"21850"}
+,{"pay_stay_zone":"30001258","street":"LANSDOWNE STREET","between_street_1":"VICTORIA PARADE","between_street_2":"ALBERT STREET","street_segment_id":"20896"}
+,{"pay_stay_zone":"30001259","street":"LANSDOWNE STREET","between_street_1":"CATHEDRAL PLACE","between_street_2":"ST ANDREWS PLACE","street_segment_id":"21857"}
+,{"pay_stay_zone":"30001260","street":"LANSDOWNE STREET","between_street_1":"ALBERT STREET","between_street_2":"VICTORIA PARADE","street_segment_id":"20896"}
+,{"pay_stay_zone":"30001256","street":"LANSDOWNE STREET","between_street_1":"WELLINGTON PARADE","between_street_2":"ST ANDREWS PLACE","street_segment_id":"21859"}
+,{"pay_stay_zone":"30001262","street":"LANSDOWNE STREET","between_street_1":"ST ANDREWS PLACE","between_street_2":"WELLINGTON PARADE","street_segment_id":"21859"}
+,{"pay_stay_zone":"30001263","street":"LANSDOWNE STREET","between_street_1":"CATHEDRAL PLACE","between_street_2":"ST ANDREWS PLACE","street_segment_id":"21850"}
+,{"pay_stay_zone":"30001264","street":"LANSDOWNE STREET","between_street_1":"ST ANDREWS PLACE","between_street_2":"WELLINGTON PARADE","street_segment_id":"21859"}
+,{"pay_stay_zone":"30001265","street":"NICHOLSON STREET","between_street_1":"SPRING STREET","between_street_2":"ALBERT STREET","street_segment_id":"21553"}
+,{"pay_stay_zone":"30001266","street":"NICHOLSON STREET","between_street_1":"ALBERT STREET","between_street_2":"VICTORIA STREET","street_segment_id":"21554"}
+,{"pay_stay_zone":"30001268","street":"NICHOLSON STREET","between_street_1":"VICTORIA STREET","between_street_2":"ALBERT STREET","street_segment_id":"21554"}
+,{"pay_stay_zone":"30001269","street":"PARLIAMENT PLACE","between_street_1":"ST ANDREWS PLACE","between_street_2":"GISBORNE STREET","street_segment_id":"21852"}
+,{"pay_stay_zone":"30001270","street":"POWLETT STREET","between_street_1":"GREY STREET","between_street_2":"ALBERT STREET","street_segment_id":"21863"}
+,{"pay_stay_zone":"30001271","street":"SIMPSON STREET","between_street_1":"GREY STREET","between_street_2":"ALBERT STREET","street_segment_id":"21867"}
+,{"pay_stay_zone":"30001272","street":"SPRING STREET","between_street_1":"FLINDERS STREET","between_street_2":"FLINDERS LANE","street_segment_id":"20196"}
+,{"pay_stay_zone":"30001278","street":"ST ANDREWS PLACE","between_street_1":"LANSDOWNE STREET","between_street_2":"MACARTHUR STREET","street_segment_id":"21855"}
+,{"pay_stay_zone":"30001279","street":"ST ANDREWS PLACE","between_street_1":"MACARTHUR STREET","between_street_2":"LANSDOWNE STREET","street_segment_id":"21855"}
+,{"pay_stay_zone":"30001280","street":"ST ANDREWS PLACE","between_street_1":"MACARTHUR STREET","between_street_2":"LANSDOWNE STREET","street_segment_id":"21855"}
+,{"pay_stay_zone":"30001282","street":"BRENTANI WAY","between_street_1":"VILLAGE STREET","between_street_2":"GEORGIANA STREET","street_segment_id":"22895"}
+,{"pay_stay_zone":"30001284","street":"VICTORIA PARADE","between_street_1":"NICHOLSON STREET","between_street_2":"GISBORNE STREET","street_segment_id":"21560"}
+,{"pay_stay_zone":"30001285","street":"VICTORIA PARADE","between_street_1":"GISBORNE STREET","between_street_2":"NICHOLSON STREET","street_segment_id":"21560"}
+,{"pay_stay_zone":"30001286","street":"VICTORIA PARADE","between_street_1":"CLARENDON STREET","between_street_2":"EADES STREET","street_segment_id":"21594"}
+,{"pay_stay_zone":"30001287","street":"VICTORIA PARADE","between_street_1":"HODDLE STREET","between_street_2":"SIMPSON STREET","street_segment_id":"22000"}
+,{"pay_stay_zone":"30001288","street":"VICTORIA PARADE","between_street_1":"MORRISON PLACE","between_street_2":"LANSDOWNE STREET","street_segment_id":"21566"}
+,{"pay_stay_zone":"30001289","street":"VICTORIA PARADE","between_street_1":"EADES STREET","between_street_2":"LANSDOWNE STREET","street_segment_id":"21595"}
+,{"pay_stay_zone":"30001290","street":"VICTORIA PARADE","between_street_1":"NICHOLSON STREET","between_street_2":"SPRING STREET","street_segment_id":"21596"}
+,{"pay_stay_zone":"30001296","street":"VICTORIA PARADE","between_street_1":"LANSDOWNE STREET","between_street_2":"EADES STREET","street_segment_id":"21595"}
+,{"pay_stay_zone":"30001297","street":"VICTORIA PARADE","between_street_1":"SPRING STREET","between_street_2":"NICHOLSON STREET","street_segment_id":"21596"}
+,{"pay_stay_zone":"30001298","street":"WELLINGTON PARADE","between_street_1":"CLARENDON STREET","between_street_2":"JOLIMONT ROAD","street_segment_id":"21963"}
+,{"pay_stay_zone":"30001299","street":"WELLINGTON PARADE","between_street_1":"LANSDOWNE STREET","between_street_2":"SPRING STREET","street_segment_id":"21967"}
+,{"pay_stay_zone":"30001300","street":"WELLINGTON PARADE SOUTH","between_street_1":"WELLINGTON CRESCENT","between_street_2":"FLINDERS STREET","street_segment_id":"22630"}
+,{"pay_stay_zone":"30001301","street":"WELLINGTON PARADE SOUTH","between_street_1":"JOLIMONT ROAD","between_street_2":"WELLINGTON CRESCENT","street_segment_id":"21968"}
+,{"pay_stay_zone":"30001302","street":"JOLIMONT TERRACE","between_street_1":"WELLINGTON PARADE SOUTH","between_street_2":"JOLIMONT STREET","street_segment_id":"21982"}
+,{"pay_stay_zone":"30001303","street":"DALLAS BROOKS DRIVE","between_street_1":"BIRDWOOD AVENUE","between_street_2":"DOMAIN ROAD","street_segment_id":"22469"}
+,{"pay_stay_zone":"30001304","street":"WELLINGTON PARADE","between_street_1":"JOLIMONT ROAD","between_street_2":"CLARENDON STREET","street_segment_id":"21963"}
+,{"pay_stay_zone":"30001305","street":"WELLINGTON PARADE SOUTH","between_street_1":"AGNES STREET","between_street_2":"JOLIMONT ROAD","street_segment_id":"22631"}
+,{"pay_stay_zone":"30001306","street":"A'BECKETT STREET","between_street_1":"ELIZABETH STREET","between_street_2":"QUEEN STREET","street_segment_id":"21649"}
+,{"pay_stay_zone":"30001307","street":"A'BECKETT STREET","between_street_1":"QUEEN STREET","between_street_2":"ELIZABETH STREET","street_segment_id":"21649"}
+,{"pay_stay_zone":"30001308","street":"A'BECKETT STREET","between_street_1":"WILLS STREET","between_street_2":"QUEEN STREET","street_segment_id":"21524"}
+,{"pay_stay_zone":"30001309","street":"A'BECKETT STREET","between_street_1":"QUEEN STREET","between_street_2":"ELIZABETH STREET","street_segment_id":"21649"}
+,{"pay_stay_zone":"30001310","street":"A'BECKETT STREET","between_street_1":"WILLS STREET","between_street_2":"WILLIAM STREET","street_segment_id":"22653"}
+,{"pay_stay_zone":"30001311","street":"A'BECKETT STREET","between_street_1":"QUEEN STREET","between_street_2":"WILLIAM STREET","street_segment_id":"16000"}
+,{"pay_stay_zone":"30001312","street":"A'BECKETT STREET","between_street_1":"ELIZABETH STREET","between_street_2":"SWANSTON STREET","street_segment_id":"21643"}
+,{"pay_stay_zone":"30001313","street":"A'BECKETT STREET","between_street_1":"SWANSTON STREET","between_street_2":"ELIZABETH STREET","street_segment_id":"21643"}
+,{"pay_stay_zone":"30001314","street":"ELIZABETH STREET","between_street_1":"FRANKLIN STREET","between_street_2":"THERRY STREET","street_segment_id":"21631"}
+,{"pay_stay_zone":"30001315","street":"A'BECKETT STREET","between_street_1":"SWANSTON STREET","between_street_2":"ELIZABETH STREET","street_segment_id":"21643"}
+,{"pay_stay_zone":"30001316","street":"ALEXANDRA AVENUE","between_street_1":"SWAN STREET BRIDGE","between_street_2":"ANDERSON STREET","street_segment_id":"22492"}
+,{"pay_stay_zone":"30001317","street":"ALEXANDRA AVENUE","between_street_1":"ANDERSON STREET","between_street_2":"SWAN STREET BRIDGE","street_segment_id":"22492"}
+,{"pay_stay_zone":"30001318","street":"BERKELEY STREET","between_street_1":"PELHAM STREET","between_street_2":"GRATTAN STREET","street_segment_id":"20474"}
+,{"pay_stay_zone":"30001319","street":"BERKELEY STREET","between_street_1":"LEICESTER STREET","between_street_2":"QUEENSBERRY STREET","street_segment_id":"20456"}
+,{"pay_stay_zone":"30001320","street":"BERKELEY STREET","between_street_1":"GRATTAN STREET","between_street_2":"PELHAM STREET","street_segment_id":"20474"}
+,{"pay_stay_zone":"30001322","street":"BIRDWOOD AVENUE","between_street_1":"DOMAIN ROAD","between_street_2":"DALLAS BROOKS DRIVE","street_segment_id":"22706"}
+,{"pay_stay_zone":"30001323","street":"BIRDWOOD AVENUE","between_street_1":"DALLAS BROOKS DRIVE","between_street_2":"DOMAIN ROAD","street_segment_id":"22706"}
+,{"pay_stay_zone":"30001324","street":"BIRDWOOD AVENUE","between_street_1":"DALLAS BROOKS DRIVE","between_street_2":"ANZAC AVENUE","street_segment_id":"22198"}
+,{"pay_stay_zone":"30001325","street":"BIRDWOOD AVENUE","between_street_1":"ANZAC AVENUE","between_street_2":"DALLAS BROOKS DRIVE","street_segment_id":"22198"}
+,{"pay_stay_zone":"30001326","street":"BIRDWOOD AVENUE","between_street_1":"DOMAIN ROAD","between_street_2":"DALLAS BROOKS DRIVE","street_segment_id":"22706"}
+,{"pay_stay_zone":"30001327","street":"BIRDWOOD AVENUE","between_street_1":"DALLAS BROOKS DRIVE","between_street_2":"DOMAIN ROAD","street_segment_id":"22706"}
+,{"pay_stay_zone":"30001328","street":"BIRDWOOD AVENUE","between_street_1":"DALLAS BROOKS DRIVE","between_street_2":"ANZAC AVENUE","street_segment_id":"22198"}
+,{"pay_stay_zone":"30001329","street":"BIRDWOOD AVENUE","between_street_1":"ANZAC AVENUE","between_street_2":"DALLAS BROOKS DRIVE","street_segment_id":"22198"}
+,{"pay_stay_zone":"30001330","street":"BOATHOUSE DRIVE","between_street_1":"ALEXANDRA AVENUE","between_street_2":"ST KILDA ROAD","street_segment_id":"22188"}
+,{"pay_stay_zone":"30001331","street":"BOND STREET","between_street_1":"FLINDERS STREET","between_street_2":"FLINDERS LANE","street_segment_id":"20394"}
+,{"pay_stay_zone":"30001332","street":"BOURKE STREET","between_street_1":"QUEEN STREET","between_street_2":"WILLIAM STREET","street_segment_id":"20086"}
+,{"pay_stay_zone":"30001333","street":"BOURKE STREET","between_street_1":"EXHIBITION STREET","between_street_2":"RUSSELL STREET","street_segment_id":"20078"}
+,{"pay_stay_zone":"30001334","street":"BOURKE STREET","between_street_1":"RUSSELL STREET","between_street_2":"EXHIBITION STREET","street_segment_id":"20078"}
+,{"pay_stay_zone":"30001335","street":"BOURKE STREET","between_street_1":"KING STREET","between_street_2":"SPENCER STREET","street_segment_id":"20090"}
+,{"pay_stay_zone":"30001336","street":"BOURKE STREET","between_street_1":"KING STREET","between_street_2":"WILLIAM STREET","street_segment_id":"20088"}
+,{"pay_stay_zone":"30001337","street":"BOURKE STREET","between_street_1":"SPENCER STREET","between_street_2":"KING STREET","street_segment_id":"20090"}
+,{"pay_stay_zone":"30001338","street":"BOURKE STREET","between_street_1":"WILLIAM STREET","between_street_2":"QUEEN STREET","street_segment_id":"20086"}
+,{"pay_stay_zone":"30001339","street":"BOURKE STREET","between_street_1":"WILLIAM STREET","between_street_2":"QUEEN STREET","street_segment_id":"20086"}
+,{"pay_stay_zone":"30001341","street":"FLINDERS LANE","between_street_1":"ELIZABETH STREET","between_street_2":"QUEEN STREET","street_segment_id":"20129"}
+,{"pay_stay_zone":"30001342","street":"BOURKE STREET","between_street_1":"SPENCER STREET","between_street_2":"KING STREET","street_segment_id":"20090"}
+,{"pay_stay_zone":"30001343","street":"BOURKE STREET","between_street_1":"SPRING STREET","between_street_2":"EXHIBITION STREET","street_segment_id":"20065"}
+,{"pay_stay_zone":"30001344","street":"BOURKE STREET","between_street_1":"EXHIBITION STREET","between_street_2":"SPRING STREET","street_segment_id":"20065"}
+,{"pay_stay_zone":"30001345","street":"BOURKE STREET","between_street_1":"WILLIAM STREET","between_street_2":"KING STREET","street_segment_id":"20088"}
+,{"pay_stay_zone":"30001346","street":"BOURKE STREET","between_street_1":"KING STREET","between_street_2":"WILLIAM STREET","street_segment_id":"20088"}
+,{"pay_stay_zone":"30001347","street":"BOURKE STREET","between_street_1":"ELIZABETH STREET","between_street_2":"SWANSTON STREET","street_segment_id":"20082"}
+,{"pay_stay_zone":"30001348","street":"BROMBY STREET","between_street_1":"DOMAIN STREET","between_street_2":"ST KILDA ROAD","street_segment_id":"15515"}
+,{"pay_stay_zone":"30001351","street":"COLLINS STREET","between_street_1":"ELIZABETH STREET","between_street_2":"QUEEN STREET","street_segment_id":"20114"}
+,{"pay_stay_zone":"30001352","street":"COLLINS STREET","between_street_1":"KING STREET","between_street_2":"SPENCER STREET","street_segment_id":"20120"}
+,{"pay_stay_zone":"30001353","street":"COLLINS STREET","between_street_1":"WILLIAM STREET","between_street_2":"KING STREET","street_segment_id":"20118"}
+,{"pay_stay_zone":"30001355","street":"COLLINS STREET","between_street_1":"QUEEN STREET","between_street_2":"MARKET STREET","street_segment_id":"20116"}
+,{"pay_stay_zone":"30001356","street":"COLLINS STREET","between_street_1":"RUSSELL STREET","between_street_2":"SWANSTON STREET","street_segment_id":"20110"}
+,{"pay_stay_zone":"30001357","street":"COLLINS STREET","between_street_1":"SWANSTON STREET","between_street_2":"RUSSELL STREET","street_segment_id":"20110"}
+,{"pay_stay_zone":"30001358","street":"COLLINS STREET","between_street_1":"RUSSELL STREET","between_street_2":"EXHIBITION STREET","street_segment_id":"20108"}
+,{"pay_stay_zone":"30001359","street":"COLLINS STREET","between_street_1":"SWANSTON STREET","between_street_2":"ELIZABETH STREET","street_segment_id":"20112"}
+,{"pay_stay_zone":"30001360","street":"COLLINS STREET","between_street_1":"SPRING STREET","between_street_2":"EXHIBITION STREET","street_segment_id":"20106"}
+,{"pay_stay_zone":"30001361","street":"COLLINS STREET","between_street_1":"SWANSTON STREET","between_street_2":"RUSSELL STREET","street_segment_id":"20110"}
+,{"pay_stay_zone":"30001364","street":"COMMERCIAL ROAD","between_street_1":"PUNT ROAD","between_street_2":"ST KILDA ROAD","street_segment_id":"22308"}
+,{"pay_stay_zone":"30001365","street":"COMMERCIAL ROAD","between_street_1":"PUNT ROAD","between_street_2":"ST KILDA ROAD","street_segment_id":"22308"}
+,{"pay_stay_zone":"30001366","street":"COMMERCIAL ROAD","between_street_1":"PUNT ROAD","between_street_2":"ST KILDA ROAD","street_segment_id":"22308"}
+,{"pay_stay_zone":"30001367","street":"COMMERCIAL ROAD","between_street_1":"ST KILDA ROAD","between_street_2":"PUNT ROAD","street_segment_id":"22308"}
+,{"pay_stay_zone":"30001368","street":"COMMERCIAL ROAD","between_street_1":"ST KILDA ROAD","between_street_2":"PUNT ROAD","street_segment_id":"22308"}
+,{"pay_stay_zone":"30001369","street":"DALLAS BROOKS DRIVE","between_street_1":"DOMAIN ROAD","between_street_2":"BIRDWOOD AVENUE","street_segment_id":"22469"}
+,{"pay_stay_zone":"30001370","street":"DOMAIN ROAD","between_street_1":"DALLAS BROOKS DRIVE","between_street_2":"DOMAIN STREET","street_segment_id":"22223"}
+,{"pay_stay_zone":"30001371","street":"DOMAIN ROAD","between_street_1":"DOMAIN STREET","between_street_2":"HOPE STREET","street_segment_id":"22225"}
+,{"pay_stay_zone":"30001372","street":"DOMAIN ROAD","between_street_1":"DALLAS BROOKS DRIVE","between_street_2":"ST KILDA ROAD","street_segment_id":"22708"}
+,{"pay_stay_zone":"30001373","street":"DOMAIN ROAD","between_street_1":"DOMAIN STREET","between_street_2":"DALLAS BROOKS DRIVE","street_segment_id":"22223"}
+,{"pay_stay_zone":"30001374","street":"DOMAIN ROAD","between_street_1":"ST KILDA ROAD","between_street_2":"DALLAS BROOKS DRIVE","street_segment_id":"22708"}
+,{"pay_stay_zone":"30001375","street":"DOMAIN ROAD","between_street_1":"DOMAIN STREET","between_street_2":"DALLAS BROOKS DRIVE","street_segment_id":"22223"}
+,{"pay_stay_zone":"30001376","street":"DOMAIN ROAD","between_street_1":"ST KILDA ROAD","between_street_2":"DALLAS BROOKS DRIVE","street_segment_id":"22708"}
+,{"pay_stay_zone":"30001377","street":"DOWNIE STREET","between_street_1":"FLINDERS STREET","between_street_2":"FLINDERS LANE","street_segment_id":"20431"}
+,{"pay_stay_zone":"30001378","street":"DOWNIE STREET","between_street_1":"FLINDERS LANE","between_street_2":"FLINDERS STREET","street_segment_id":"20431"}
+,{"pay_stay_zone":"30001381","street":"ELIZABETH STREET","between_street_1":"FLINDERS LANE","between_street_2":"COLLINS STREET","street_segment_id":"20163"}
+,{"pay_stay_zone":"30001382","street":"ELIZABETH STREET","between_street_1":"FLINDERS LANE","between_street_2":"FLINDERS STREET","street_segment_id":"20162"}
+,{"pay_stay_zone":"30001383","street":"ELIZABETH STREET","between_street_1":"FRANKLIN STREET","between_street_2":"THERRY STREET","street_segment_id":"21631"}
+,{"pay_stay_zone":"30001384","street":"ELIZABETH STREET","between_street_1":"FRANKLIN STREET","between_street_2":"A'BECKETT STREET","street_segment_id":"21639"}
+,{"pay_stay_zone":"30001385","street":"ELIZABETH STREET","between_street_1":"THERRY STREET","between_street_2":"VICTORIA STREET","street_segment_id":"21628"}
+,{"pay_stay_zone":"30001386","street":"ELIZABETH STREET","between_street_1":"GRATTAN STREET","between_street_2":"FLEMINGTON ROAD","street_segment_id":"21551"}
+,{"pay_stay_zone":"30001393","street":"ELIZABETH STREET","between_street_1":"PELHAM STREET","between_street_2":"QUEENSBERRY STREET","street_segment_id":"21115"}
+,{"pay_stay_zone":"30001394","street":"ELIZABETH STREET","between_street_1":"VICTORIA STREET","between_street_2":"QUEENSBERRY STREET","street_segment_id":"21113"}
+,{"pay_stay_zone":"30001401","street":"EXHIBITION STREET","between_street_1":"FLINDERS LANE","between_street_2":"COLLINS STREET","street_segment_id":"20139"}
+,{"pay_stay_zone":"30001402","street":"EXHIBITION STREET","between_street_1":"COLLINS STREET","between_street_2":"FLINDERS LANE","street_segment_id":"20139"}
+,{"pay_stay_zone":"30001403","street":"EXHIBITION STREET","between_street_1":"FLINDERS LANE","between_street_2":"COLLINS STREET","street_segment_id":"20139"}
+,{"pay_stay_zone":"30001404","street":"EXHIBITION STREET","between_street_1":"FLINDERS LANE","between_street_2":"FLINDERS STREET","street_segment_id":"20138"}
+,{"pay_stay_zone":"30001408","street":"EXHIBITION STREET","between_street_1":"LA TROBE STREET","between_street_2":"VICTORIA STREET","street_segment_id":"21600"}
+,{"pay_stay_zone":"30001417","street":"BOURKE STREET","between_street_1":"QUEEN STREET","between_street_2":"WILLIAM STREET","street_segment_id":"20086"}
+,{"pay_stay_zone":"30001418","street":"FLINDERS LANE","between_street_1":"ELIZABETH STREET","between_street_2":"QUEEN STREET","street_segment_id":"20129"}
+,{"pay_stay_zone":"30001419","street":"FLINDERS LANE","between_street_1":"QUEEN STREET","between_street_2":"ELIZABETH STREET","street_segment_id":"20129"}
+,{"pay_stay_zone":"30001420","street":"FLINDERS LANE","between_street_1":"ELIZABETH STREET","between_street_2":"QUEEN STREET","street_segment_id":"20129"}
+,{"pay_stay_zone":"30001421","street":"FLINDERS LANE","between_street_1":"KING STREET","between_street_2":"SPENCER STREET","street_segment_id":"20137"}
+,{"pay_stay_zone":"30001422","street":"FLINDERS LANE","between_street_1":"KING STREET","between_street_2":"SPENCER STREET","street_segment_id":"20137"}
+,{"pay_stay_zone":"30001424","street":"FLINDERS LANE","between_street_1":"KING STREET","between_street_2":"WILLIAM STREET","street_segment_id":"20135"}
+,{"pay_stay_zone":"30001425","street":"FLINDERS LANE","between_street_1":"WILLIAM STREET","between_street_2":"KING STREET","street_segment_id":"20135"}
+,{"pay_stay_zone":"30001426","street":"FLINDERS LANE","between_street_1":"MARKET STREET","between_street_2":"WILLIAM STREET","street_segment_id":"20133"}
+,{"pay_stay_zone":"30001427","street":"FLINDERS LANE","between_street_1":"WILLIAM STREET","between_street_2":"MARKET STREET","street_segment_id":"20133"}
+,{"pay_stay_zone":"30001429","street":"FLINDERS LANE","between_street_1":"QUEEN STREET","between_street_2":"MARKET STREET","street_segment_id":"20131"}
+,{"pay_stay_zone":"30001430","street":"FLINDERS LANE","between_street_1":"QUEEN STREET","between_street_2":"WILLIAM STREET","street_segment_id":"15001"}
+,{"pay_stay_zone":"30001431","street":"FLINDERS LANE","between_street_1":"SPRING STREET","between_street_2":"EXHIBITION STREET","street_segment_id":"20121"}
+,{"pay_stay_zone":"30001432","street":"FLINDERS LANE","between_street_1":"WILLIAM STREET","between_street_2":"KING STREET","street_segment_id":"20135"}
+,{"pay_stay_zone":"30001433","street":"FLINDERS STREET","between_street_1":"SPENCER STREET","between_street_2":"KING STREET","street_segment_id":"20224"}
+,{"pay_stay_zone":"30001434","street":"FLINDERS STREET","between_street_1":"ELIZABETH STREET","between_street_2":"QUEEN STREET","street_segment_id":"20216"}
+,{"pay_stay_zone":"30001435","street":"FLINDERS STREET","between_street_1":"QUEEN STREET","between_street_2":"ELIZABETH STREET","street_segment_id":"20216"}
+,{"pay_stay_zone":"30001436","street":"FLINDERS STREET","between_street_1":"EXHIBITION STREET","between_street_2":"RUSSELL STREET","street_segment_id":"20210"}
+,{"pay_stay_zone":"30001437","street":"FLINDERS STREET","between_street_1":"EXHIBITION STREET","between_street_2":"SPRING STREET","street_segment_id":"20208"}
+,{"pay_stay_zone":"30001438","street":"FLINDERS STREET","between_street_1":"KING STREET","between_street_2":"SPENCER STREET","street_segment_id":"20224"}
+,{"pay_stay_zone":"30001439","street":"FLINDERS STREET","between_street_1":"SPENCER STREET","between_street_2":"KING STREET","street_segment_id":"20224"}
+,{"pay_stay_zone":"30001440","street":"FLINDERS STREET","between_street_1":"SPENCER STREET","between_street_2":"KING STREET","street_segment_id":"20224"}
+,{"pay_stay_zone":"30001441","street":"FLINDERS STREET","between_street_1":"SPRING STREET","between_street_2":"EXHIBITION STREET","street_segment_id":"20208"}
+,{"pay_stay_zone":"30001442","street":"FRANCIS STREET","between_street_1":"KING STREET","between_street_2":"SPENCER STREET","street_segment_id":"20433"}
+,{"pay_stay_zone":"30001443","street":"FRANCIS STREET","between_street_1":"SPENCER STREET","between_street_2":"KING STREET","street_segment_id":"20433"}
+,{"pay_stay_zone":"30001444","street":"FRANCIS STREET","between_street_1":"KING STREET","between_street_2":"SPENCER STREET","street_segment_id":"20433"}
+,{"pay_stay_zone":"30001445","street":"FRANCIS STREET","between_street_1":"SPENCER STREET","between_street_2":"KING STREET","street_segment_id":"20433"}
+,{"pay_stay_zone":"30001446","street":"FRANCIS STREET","between_street_1":"KING STREET","between_street_2":"SPENCER STREET","street_segment_id":"20433"}
+,{"pay_stay_zone":"30001447","street":"GRATTAN STREET","between_street_1":"FLEMINGTON ROAD","between_street_2":"ELIZABETH STREET","street_segment_id":"21552"}
+,{"pay_stay_zone":"30001448","street":"FRANKLIN STREET","between_street_1":"ELIZABETH STREET","between_street_2":"QUEEN STREET","street_segment_id":"21634"}
+,{"pay_stay_zone":"30001449","street":"FRANKLIN STREET","between_street_1":"QUEEN STREET","between_street_2":"ELIZABETH STREET","street_segment_id":"21634"}
+,{"pay_stay_zone":"30001453","street":"FRANKLIN STREET","between_street_1":"SWANSTON STREET","between_street_2":"ELIZABETH STREET","street_segment_id":"21633"}
+,{"pay_stay_zone":"30001454","street":"FRANKLIN STREET","between_street_1":"SWANSTON STREET","between_street_2":"VICTORIA STREET","street_segment_id":"21622"}
+,{"pay_stay_zone":"30001455","street":"FRANKLIN STREET","between_street_1":"SWANSTON STREET","between_street_2":"ELIZABETH STREET","street_segment_id":"21633"}
+,{"pay_stay_zone":"30001456","street":"FRANKLIN STREET","between_street_1":"ELIZABETH STREET","between_street_2":"SWANSTON STREET","street_segment_id":"21633"}
+,{"pay_stay_zone":"30001457","street":"FRANKLIN STREET","between_street_1":"SWANSTON STREET","between_street_2":"ELIZABETH STREET","street_segment_id":"21633"}
+,{"pay_stay_zone":"30001458","street":"FRANKLIN STREET","between_street_1":"SWANSTON STREET","between_street_2":"ELIZABETH STREET","street_segment_id":"21633"}
+,{"pay_stay_zone":"30001460","street":"FRANKLIN STREET","between_street_1":"SWANSTON STREET","between_street_2":"ELIZABETH STREET","street_segment_id":"21633"}
+,{"pay_stay_zone":"30001461","street":"ELIZABETH STREET","between_street_1":"FRANKLIN STREET","between_street_2":"A'BECKETT STREET","street_segment_id":"21639"}
+,{"pay_stay_zone":"30001462","street":"FRANKLIN STREET","between_street_1":"VICTORIA STREET","between_street_2":"SWANSTON STREET","street_segment_id":"21622"}
+,{"pay_stay_zone":"30001463","street":"FRANKLIN STREET","between_street_1":"VICTORIA STREET","between_street_2":"SWANSTON STREET","street_segment_id":"21622"}
+,{"pay_stay_zone":"30001464","street":"FRANKLIN STREET","between_street_1":"VICTORIA STREET","between_street_2":"SWANSTON STREET","street_segment_id":"21622"}
+,{"pay_stay_zone":"30001465","street":"FRANKLIN STREET","between_street_1":"WILLIAM STREET","between_street_2":"QUEEN STREET","street_segment_id":"21527"}
+,{"pay_stay_zone":"30001466","street":"GOVERNMENT HOUSE DRIVE","between_street_1":"ST KILDA ROAD","between_street_2":"BIRDWOOD AVENUE","street_segment_id":"22196"}
+,{"pay_stay_zone":"30001467","street":"GRATTAN STREET","between_street_1":"BERKELEY STREET","between_street_2":"ROYAL PARADE","street_segment_id":"20851"}
+,{"pay_stay_zone":"30001468","street":"HIGH STREET","between_street_1":"ST KILDA ROAD","between_street_2":"PUNT ROAD","street_segment_id":"22479"}
+,{"pay_stay_zone":"30001469","street":"HIGH STREET","between_street_1":"PUNT ROAD","between_street_2":"ST KILDA ROAD","street_segment_id":"22479"}
+,{"pay_stay_zone":"30001474","street":"KING STREET","between_street_1":"COLLINS STREET","between_street_2":"FLINDERS LANE","street_segment_id":"20189"}
+,{"pay_stay_zone":"30001476","street":"KING STREET","between_street_1":"COLLINS STREET","between_street_2":"FLINDERS LANE","street_segment_id":"20189"}
+,{"pay_stay_zone":"30001478","street":"KING STREET","between_street_1":"FLINDERS LANE","between_street_2":"COLLINS STREET","street_segment_id":"20189"}
+,{"pay_stay_zone":"30001479","street":"KING STREET","between_street_1":"FLINDERS STREET","between_street_2":"FLINDERS LANE","street_segment_id":"20188"}
+,{"pay_stay_zone":"30001492","street":"LA TROBE STREET","between_street_1":"ELIZABETH STREET","between_street_2":"QUEEN STREET","street_segment_id":"20024"}
+,{"pay_stay_zone":"30001493","street":"LA TROBE STREET","between_street_1":"QUEEN STREET","between_street_2":"ELIZABETH STREET","street_segment_id":"20024"}
+,{"pay_stay_zone":"30001495","street":"LA TROBE STREET","between_street_1":"ELIZABETH STREET","between_street_2":"SWANSTON STREET","street_segment_id":"20022"}
+,{"pay_stay_zone":"30001496","street":"LA TROBE STREET","between_street_1":"EXHIBITION STREET","between_street_2":"RUSSELL STREET","street_segment_id":"20018"}
+,{"pay_stay_zone":"30001497","street":"LA TROBE STREET","between_street_1":"RUSSELL STREET","between_street_2":"EXHIBITION STREET","street_segment_id":"20018"}
+,{"pay_stay_zone":"30001498","street":"LA TROBE STREET","between_street_1":"KING STREET","between_street_2":"SPENCER STREET","street_segment_id":"20030"}
+,{"pay_stay_zone":"30001499","street":"LA TROBE STREET","between_street_1":"QUEEN STREET","between_street_2":"WILLIAM STREET","street_segment_id":"15003"}
+,{"pay_stay_zone":"30001500","street":"LA TROBE STREET","between_street_1":"QUEEN STREET","between_street_2":"WILLS STREET","street_segment_id":"20026"}
+,{"pay_stay_zone":"30001501","street":"LA TROBE STREET","between_street_1":"RUSSELL STREET","between_street_2":"SWANSTON STREET","street_segment_id":"20020"}
+,{"pay_stay_zone":"30001502","street":"LA TROBE STREET","between_street_1":"RUSSELL STREET","between_street_2":"EXHIBITION STREET","street_segment_id":"20018"}
+,{"pay_stay_zone":"30001504","street":"LA TROBE STREET","between_street_1":"WILLIAM STREET","between_street_2":"QUEEN STREET","street_segment_id":"15003"}
+,{"pay_stay_zone":"30001505","street":"LA TROBE STREET","between_street_1":"EXHIBITION STREET ","between_street_2":"SPRING STREET ","street_segment_id":"15002"}
+,{"pay_stay_zone":"30001506","street":"LA TROBE STREET","between_street_1":"SPENCER STREET","between_street_2":"KING STREET","street_segment_id":"20030"}
+,{"pay_stay_zone":"30001507","street":"LA TROBE STREET","between_street_1":"QUEEN STREET","between_street_2":"WILLS STREET","street_segment_id":"20026"}
+,{"pay_stay_zone":"30001508","street":"LA TROBE STREET","between_street_1":"SWANSTON STREET","between_street_2":"RUSSELL STREET","street_segment_id":"20020"}
+,{"pay_stay_zone":"30001509","street":"LA TROBE STREET","between_street_1":"VICTORIA STREET","between_street_2":"EXHIBITION STREET","street_segment_id":"20016"}
+,{"pay_stay_zone":"30001511","street":"LA TROBE STREET","between_street_1":"WILLIAM STREET","between_street_2":"WILLS STREET","street_segment_id":"22615"}
+,{"pay_stay_zone":"30001511","street":"LA TROBE STREET","between_street_1":"WILLS STREET","between_street_2":"WILLIAM STREET","street_segment_id":"22615"}
+,{"pay_stay_zone":"30001512","street":"LEICESTER STREET","between_street_1":"VICTORIA STREET","between_street_2":"BERKELEY STREET","street_segment_id":"20453"}
+,{"pay_stay_zone":"30001513","street":"LINLITHGOW AVENUE","between_street_1":"ST KILDA ROAD","between_street_2":"GOVERNMENT HOUSE DRIVE","street_segment_id":"22089"}
+,{"pay_stay_zone":"30001514","street":"LINLITHGOW AVENUE","between_street_1":"ST KILDA ROAD","between_street_2":"ALEXANDRA AVENUE","street_segment_id":"22696"}
+,{"pay_stay_zone":"30001520","street":"ELIZABETH STREET","between_street_1":"QUEENSBERRY STREET","between_street_2":"VICTORIA STREET","street_segment_id":"21113"}
+,{"pay_stay_zone":"30001554","street":"LONSDALE STREET","between_street_1":"ELIZABETH STREET","between_street_2":"QUEEN STREET","street_segment_id":"20009"}
+,{"pay_stay_zone":"30001555","street":"LONSDALE STREET","between_street_1":"EXHIBITION STREET","between_street_2":"RUSSELL STREET","street_segment_id":"20003"}
+,{"pay_stay_zone":"30001556","street":"LONSDALE STREET","between_street_1":"EXHIBITION STREET","between_street_2":"RUSSELL STREET","street_segment_id":"20003"}
+,{"pay_stay_zone":"30001558","street":"LONSDALE STREET","between_street_1":"EXHIBITION STREET","between_street_2":"RUSSELL STREET","street_segment_id":"20003"}
+,{"pay_stay_zone":"30001562","street":"LONSDALE STREET","between_street_1":"QUEEN STREET","between_street_2":"WILLIAM STREET","street_segment_id":"20011"}
+,{"pay_stay_zone":"30001566","street":"LONSDALE STREET","between_street_1":"QUEEN STREET","between_street_2":"WILLIAM STREET","street_segment_id":"20011"}
+,{"pay_stay_zone":"30001567","street":"LONSDALE STREET","between_street_1":"QUEEN STREET","between_street_2":"WILLIAM STREET","street_segment_id":"20011"}
+,{"pay_stay_zone":"30001568","street":"LONSDALE STREET","between_street_1":"RUSSELL STREET","between_street_2":"EXHIBITION STREET","street_segment_id":"20003"}
+,{"pay_stay_zone":"30001569","street":"LONSDALE STREET","between_street_1":"RUSSELL STREET","between_street_2":"SWANSTON STREET","street_segment_id":"20005"}
+,{"pay_stay_zone":"30001570","street":"LONSDALE STREET","between_street_1":"SPRING STREET","between_street_2":"EXHIBITION STREET","street_segment_id":"20001"}
+,{"pay_stay_zone":"30001571","street":"LONSDALE STREET","between_street_1":"SPRING STREET","between_street_2":"EXHIBITION STREET","street_segment_id":"20001"}
+,{"pay_stay_zone":"30001572","street":"LONSDALE STREET","between_street_1":"SPRING STREET","between_street_2":"EXHIBITION STREET","street_segment_id":"20001"}
+,{"pay_stay_zone":"30001573","street":"LONSDALE STREET","between_street_1":"SPRING STREET","between_street_2":"EXHIBITION STREET","street_segment_id":"20001"}
+,{"pay_stay_zone":"30001574","street":"LONSDALE STREET","between_street_1":"WILLIAM STREET","between_street_2":"KING STREET","street_segment_id":"20013"}
+,{"pay_stay_zone":"30001575","street":"LONSDALE STREET","between_street_1":"WILLIAM STREET","between_street_2":"KING STREET","street_segment_id":"20013"}
+,{"pay_stay_zone":"30001576","street":"LONSDALE STREET","between_street_1":"WILLIAM STREET","between_street_2":"KING STREET","street_segment_id":"20013"}
+,{"pay_stay_zone":"30001577","street":"LONSDALE STREET","between_street_1":"KING STREET","between_street_2":"WILLIAM STREET","street_segment_id":"20013"}
+,{"pay_stay_zone":"30001578","street":"LONSDALE STREET","between_street_1":"SPENCER STREET","between_street_2":"KING STREET","street_segment_id":"20014"}
+,{"pay_stay_zone":"30001580","street":"MACKENZIE STREET","between_street_1":"RUSSELL STREET","between_street_2":"VICTORIA STREET","street_segment_id":"21609"}
+,{"pay_stay_zone":"30001581","street":"MACKENZIE STREET","between_street_1":"VICTORIA STREET","between_street_2":"RUSSELL STREET","street_segment_id":"21609"}
+,{"pay_stay_zone":"30001582","street":"MARKET STREET","between_street_1":"FLINDERS LANE","between_street_2":"COLLINS STREET","street_segment_id":"20180"}
+,{"pay_stay_zone":"30001583","street":"MARKET STREET","between_street_1":"FLINDERS STREET","between_street_2":"FLINDERS LANE","street_segment_id":"20179"}
+,{"pay_stay_zone":"30001584","street":"WILLIAM STREET","between_street_1":"A'BECKETT STREET","between_street_2":"FRANKLIN STREET","street_segment_id":"21529"}
+,{"pay_stay_zone":"30001585","street":"MOUBRAY STREET","between_street_1":"PUNT ROAD","between_street_2":"ST KILDA ROAD","street_segment_id":"22311"}
+,{"pay_stay_zone":"30001586","street":"MOUBRAY STREET","between_street_1":"PUNT ROAD","between_street_2":"ST KILDA ROAD","street_segment_id":"22311"}
+,{"pay_stay_zone":"30001587","street":"MOUBRAY STREET","between_street_1":"PUNT ROAD","between_street_2":"ST KILDA ROAD","street_segment_id":"22311"}
+,{"pay_stay_zone":"30001588","street":"O'CONNELL STREET","between_street_1":"QUEENSBERRY STREET","between_street_2":"PEEL STREET","street_segment_id":"21116"}
+,{"pay_stay_zone":"30001589","street":"PELHAM STREET","between_street_1":"BERKELEY STREET","between_street_2":"ELIZABETH STREET","street_segment_id":"22502"}
+,{"pay_stay_zone":"30001590","street":"PUNT ROAD","between_street_1":"COMMERCIAL ROAD","between_street_2":"MOUBRAY STREET","street_segment_id":"22481"}
+,{"pay_stay_zone":"30001591","street":"PUNT ROAD","between_street_1":"HIGH STREET","between_street_2":"MOUBRAY STREET","street_segment_id":"22480"}
+,{"pay_stay_zone":"30001592","street":"PUNT ROAD","between_street_1":"MOUBRAY STREET","between_street_2":"COMMERCIAL ROAD","street_segment_id":"22481"}
+,{"pay_stay_zone":"30001593","street":"QUEEN STREET","between_street_1":"A'BECKETT STREET","between_street_2":"FRANKLIN STREET","street_segment_id":"21636"}
+,{"pay_stay_zone":"30001596","street":"QUEEN STREET","between_street_1":"FLINDERS LANE","between_street_2":"COLLINS STREET","street_segment_id":"20171"}
+,{"pay_stay_zone":"30001597","street":"QUEEN STREET","between_street_1":"FLINDERS STREET","between_street_2":"FLINDERS LANE","street_segment_id":"20170"}
+,{"pay_stay_zone":"30001598","street":"QUEEN STREET","between_street_1":"FLINDERS STREET","between_street_2":"FLINDERS LANE","street_segment_id":"20170"}
+,{"pay_stay_zone":"30001599","street":"QUEEN STREET","between_street_1":"FLINDERS STREET","between_street_2":"FLINDERS LANE","street_segment_id":"20170"}
+,{"pay_stay_zone":"30001600","street":"QUEEN STREET","between_street_1":"FRANKLIN STREET","between_street_2":"A'BECKETT STREET","street_segment_id":"21636"}
+,{"pay_stay_zone":"30001601","street":"QUEEN STREET","between_street_1":"FRANKLIN STREET","between_street_2":"THERRY STREET","street_segment_id":"21630"}
+,{"pay_stay_zone":"30001601","street":"QUEEN STREET","between_street_1":"VICTORIA STREET","between_street_2":"THERRY STREET","street_segment_id":"23247"}
+,{"pay_stay_zone":"30001603","street":"LONSDALE STREET","between_street_1":"SWANSTON STREET","between_street_2":"ELIZABETH STREET","street_segment_id":"20007"}
+,{"pay_stay_zone":"30001604","street":"QUEEN STREET","between_street_1":"LA TROBE STREET","between_street_2":"A'BECKETT STREET","street_segment_id":"21523"}
+,{"pay_stay_zone":"30001616","street":"QUEEN STREET","between_street_1":"THERRY STREET","between_street_2":"VICTORIA STREET","street_segment_id":"23247"}
+,{"pay_stay_zone":"30001617","street":"QUEEN STREET","between_street_1":"THERRY STREET","between_street_2":"VICTORIA STREET","street_segment_id":"23247"}
+,{"pay_stay_zone":"30001618","street":"QUEEN STREET","between_street_1":"THERRY STREET","between_street_2":"VICTORIA STREET","street_segment_id":"23247"}
+,{"pay_stay_zone":"30001621","street":"QUEENSBERRY STREET","between_street_1":"BERKELEY STREET","between_street_2":"ELIZABETH STREET","street_segment_id":"20864"}
+,{"pay_stay_zone":"30001623","street":"QUEENSBERRY STREET","between_street_1":"ELIZABETH STREET","between_street_2":"O'CONNELL STREET","street_segment_id":"20923"}
+,{"pay_stay_zone":"30001631","street":"RUSSELL STREET","between_street_1":"FLINDERS STREET","between_street_2":"FLINDERS LANE","street_segment_id":"20146"}
+,{"pay_stay_zone":"30001632","street":"RUSSELL STREET","between_street_1":"MACKENZIE STREET","between_street_2":"VICTORIA STREET","street_segment_id":"21615"}
+,{"pay_stay_zone":"30001636","street":"RUSSELL STREET","between_street_1":"VICTORIA STREET","between_street_2":"LA TROBE STREET","street_segment_id":"16014"}
+,{"pay_stay_zone":"30001641","street":"RUSSELL STREET","between_street_1":"MACKENZIE STREET","between_street_2":"LA TROBE STREET","street_segment_id":"21616"}
+,{"pay_stay_zone":"30001643","street":"SPENCER STREET","between_street_1":"COLLINS STREET","between_street_2":"FLINDERS LANE","street_segment_id":"20069"}
+,{"pay_stay_zone":"30001650","street":"ST KILDA ROAD","between_street_1":"ALEXANDRA AVENUE","between_street_2":"SOUTHBANK BOULEVARD","street_segment_id":"16510"}
+,{"pay_stay_zone":"30001651","street":"ST KILDA ROAD","between_street_1":"ANZAC AVENUE","between_street_2":"COVENTRY STREET","street_segment_id":"22704"}
+,{"pay_stay_zone":"30001652","street":"ST KILDA ROAD","between_street_1":"DORCAS STREET","between_street_2":"DOMAIN ROAD","street_segment_id":"22467"}
+,{"pay_stay_zone":"30001653","street":"ST KILDA ROAD","between_street_1":"SLATER STREET","between_street_2":"ARMADALE STREET","street_segment_id":"22474"}
+,{"pay_stay_zone":"30001654","street":"ST KILDA ROAD","between_street_1":"ARMADALE STREET","between_street_2":"SLATER STREET","street_segment_id":"22474"}
+,{"pay_stay_zone":"30001655","street":"ST KILDA ROAD","between_street_1":"COMMERCIAL ROAD","between_street_2":"MOUBRAY STREET","street_segment_id":"22477"}
+,{"pay_stay_zone":"30001656","street":"ST KILDA ROAD","between_street_1":"COMMERCIAL ROAD","between_street_2":"ARMADALE STREET","street_segment_id":"22476"}
+,{"pay_stay_zone":"30001657","street":"ST KILDA ROAD","between_street_1":"COVENTRY STREET","between_street_2":"DORCAS STREET","street_segment_id":"22092"}
+,{"pay_stay_zone":"30001658","street":"ST KILDA ROAD","between_street_1":"DOMAIN ROAD","between_street_2":"BROMBY STREET","street_segment_id":"22724"}
+,{"pay_stay_zone":"30001659","street":"ST KILDA ROAD","between_street_1":"DOMAIN ROAD","between_street_2":"DORCAS STREET","street_segment_id":"22467"}
+,{"pay_stay_zone":"30001660","street":"ST KILDA ROAD","between_street_1":"WADEY STREET","between_street_2":"ANZAC AVENUE","street_segment_id":"22702"}
+,{"pay_stay_zone":"30001661","street":"ST KILDA ROAD","between_street_1":"GRANT STREET","between_street_2":"WADEY STREET","street_segment_id":"22700"}
+,{"pay_stay_zone":"30001662","street":"ST KILDA ROAD","between_street_1":"HIGH STREET","between_street_2":"MOUBRAY STREET","street_segment_id":"22478"}
+,{"pay_stay_zone":"30001663","street":"ST KILDA ROAD","between_street_1":"GRANT STREET","between_street_2":"WADEY STREET","street_segment_id":"22700"}
+,{"pay_stay_zone":"30001664","street":"ST KILDA ROAD","between_street_1":"MOUBRAY STREET","between_street_2":"HIGH STREET","street_segment_id":"22478"}
+,{"pay_stay_zone":"30001665","street":"ST KILDA ROAD","between_street_1":"MOUBRAY STREET","between_street_2":"COMMERCIAL ROAD","street_segment_id":"22477"}
+,{"pay_stay_zone":"30001666","street":"ST KILDA ROAD","between_street_1":"SLATER STREET","between_street_2":"ARMADALE STREET","street_segment_id":"22474"}
+,{"pay_stay_zone":"30001667","street":"ST KILDA ROAD","between_street_1":"SLATER STREET","between_street_2":"TOORAK ROAD","street_segment_id":"22472"}
+,{"pay_stay_zone":"30001668","street":"ST KILDA ROAD","between_street_1":"SOUTHBANK BOULEVARD","between_street_2":"GRANT STREET","street_segment_id":"22466"}
+,{"pay_stay_zone":"30001669","street":"ST KILDA ROAD","between_street_1":"TOORAK ROAD","between_street_2":"SLATER STREET","street_segment_id":"22472"}
+,{"pay_stay_zone":"30001670","street":"ST KILDA ROAD","between_street_1":"COMMERCIAL ROAD","between_street_2":"ARMADALE STREET","street_segment_id":"22476"}
+,{"pay_stay_zone":"30001671","street":"STEWART STREET","between_street_1":"A'BECKETT STREET","between_street_2":"FRANKLIN STREET","street_segment_id":"21640"}
+,{"pay_stay_zone":"30001675","street":"THERRY STREET","between_street_1":"ELIZABETH STREET","between_street_2":"QUEEN STREET","street_segment_id":"21629"}
+,{"pay_stay_zone":"30001676","street":"THERRY STREET","between_street_1":"ELIZABETH STREET","between_street_2":"QUEEN STREET","street_segment_id":"21629"}
+,{"pay_stay_zone":"30001677","street":"THERRY STREET","between_street_1":"VICTORIA STREET","between_street_2":"ELIZABETH STREET","street_segment_id":"21626"}
+,{"pay_stay_zone":"30001678","street":"VICTORIA STREET","between_street_1":"BOUVERIE STREET","between_street_2":"ELIZABETH STREET","street_segment_id":"21625"}
+,{"pay_stay_zone":"30001679","street":"VICTORIA STREET","between_street_1":"ELIZABETH STREET","between_street_2":"O'CONNELL STREET","street_segment_id":"22670"}
+,{"pay_stay_zone":"30001680","street":"VICTORIA STREET","between_street_1":"CARDIGAN STREET","between_street_2":"SWANSTON STREET","street_segment_id":"21607"}
+,{"pay_stay_zone":"30001681","street":"VICTORIA STREET","between_street_1":"DRUMMOND STREET","between_street_2":"LYGON STREET","street_segment_id":"21603"}
+,{"pay_stay_zone":"30001682","street":"VICTORIA STREET","between_street_1":"RATHDOWNE STREET","between_street_2":"LA TROBE STREET","street_segment_id":"21599"}
+,{"pay_stay_zone":"30001683","street":"VICTORIA STREET","between_street_1":"LYGON STREET","between_street_2":"CARDIGAN STREET","street_segment_id":"21605"}
+,{"pay_stay_zone":"30001684","street":"VICTORIA STREET","between_street_1":"LYGON STREET","between_street_2":"DRUMMOND STREET","street_segment_id":"21603"}
+,{"pay_stay_zone":"30001685","street":"VICTORIA STREET","between_street_1":"RATHDOWNE STREET","between_street_2":"DRUMMOND STREET","street_segment_id":"21601"}
+,{"pay_stay_zone":"30001686","street":"VICTORIA STREET","between_street_1":"SWANSTON STREET","between_street_2":"BOUVERIE STREET","street_segment_id":"21623"}
+,{"pay_stay_zone":"30001687","street":"VICTORIA STREET","between_street_1":"RATHDOWNE STREET","between_street_2":"LA TROBE STREET","street_segment_id":"21599"}
+,{"pay_stay_zone":"30001688","street":"WELLINGTON PARADE SOUTH","between_street_1":"WELLINGTON PARADE","between_street_2":"JOLIMONT TERRACE","street_segment_id":"22636"}
+,{"pay_stay_zone":"30001690","street":"WILLIAM STREET","between_street_1":"A'BECKETT STREET","between_street_2":"FRANKLIN STREET","street_segment_id":"21529"}
+,{"pay_stay_zone":"30001694","street":"WILLIAM STREET","between_street_1":"FLINDERS LANE","between_street_2":"FLINDERS STREET","street_segment_id":"20178"}
+,{"pay_stay_zone":"30001695","street":"WILLIAM STREET","between_street_1":"FLINDERS LANE","between_street_2":"COLLINS STREET","street_segment_id":"20181"}
+,{"pay_stay_zone":"30001697","street":"WILLIAM STREET","between_street_1":"FLINDERS STREET","between_street_2":"FLINDERS LANE","street_segment_id":"20178"}
+,{"pay_stay_zone":"30001698","street":"WILLIAM STREET","between_street_1":"LA TROBE STREET","between_street_2":"A'BECKETT STREET","street_segment_id":"21519"}
+,{"pay_stay_zone":"30001706","street":"WILLS STREET","between_street_1":"LA TROBE STREET","between_street_2":"A'BECKETT STREET","street_segment_id":"21521"}
+,{"pay_stay_zone":"30001707","street":"BEDFORD STREET","between_street_1":"PEEL STREET","between_street_2":"COURTNEY STREET","street_segment_id":"21120"}
+,{"pay_stay_zone":"30001708","street":"BLACKWOOD STREET","between_street_1":"COURTNEY STREET","between_street_2":"FLEMINGTON ROAD","street_segment_id":"21122"}
+,{"pay_stay_zone":"30001709","street":"BLACKWOOD STREET","between_street_1":"COURTNEY STREET","between_street_2":"FLEMINGTON ROAD","street_segment_id":"21122"}
+,{"pay_stay_zone":"30001710","street":"BLACKWOOD STREET","between_street_1":"FLEMINGTON ROAD","between_street_2":"COURTNEY STREET","street_segment_id":"21122"}
+,{"pay_stay_zone":"30001711","street":"BLACKWOOD STREET","between_street_1":"FLEMINGTON ROAD","between_street_2":"COURTNEY STREET","street_segment_id":"21122"}
+,{"pay_stay_zone":"30001712","street":"BLACKWOOD STREET","between_street_1":"FLEMINGTON ROAD","between_street_2":"COURTNEY STREET","street_segment_id":"21122"}
+,{"pay_stay_zone":"30001713","street":"CAPEL STREET","between_street_1":"BEDFORD STREET","between_street_2":"COURTNEY STREET","street_segment_id":"21118"}
+,{"pay_stay_zone":"30001714","street":"CAPEL STREET","between_street_1":"VICTORIA STREET","between_street_2":"QUEENSBERRY STREET","street_segment_id":"20945"}
+,{"pay_stay_zone":"30001715","street":"EXHIBITION STREET","between_street_1":"FLINDERS STREET","between_street_2":"FLINDERS LANE","street_segment_id":"20138"}
+,{"pay_stay_zone":"30001717","street":"CHETWYND STREET","between_street_1":"VICTORIA STREET","between_street_2":"QUEENSBERRY STREET","street_segment_id":"20964"}
+,{"pay_stay_zone":"30001720","street":"HARCOURT STREET","between_street_1":"FLEMINGTON ROAD","between_street_2":"COURTNEY STREET","street_segment_id":"21180"}
+,{"pay_stay_zone":"30001721","street":"COBDEN STREET","between_street_1":"PRINCESS STREET","between_street_2":"QUEENSBERRY STREET","street_segment_id":"20939"}
+,{"pay_stay_zone":"30001722","street":"CURZON STREET","between_street_1":"ELM STREET","between_street_2":"QUEENSBERRY STREET","street_segment_id":"20998"}
+,{"pay_stay_zone":"30001723","street":"CURZON STREET OSCP","between_street_1":"QUEENSBERRY STREET","between_street_2":"VICTORIA STREET","street_segment_id":"40024"}
+,{"pay_stay_zone":"30001724","street":"CURZON STREET OSCP","between_street_1":"VICTORIA STREET","between_street_2":"QUEENSBERRY STREET","street_segment_id":"40024"}
+,{"pay_stay_zone":"30001725","street":"ERROL STREET","between_street_1":"QUEENSBERRY STREET","between_street_2":"VICTORIA STREET","street_segment_id":"20992"}
+,{"pay_stay_zone":"30001726","street":"FLEMINGTON ROAD","between_street_1":"BLACKWOOD STREET","between_street_2":"WRECKYN STREET","street_segment_id":"21123"}
+,{"pay_stay_zone":"30001727","street":"FLEMINGTON ROAD","between_street_1":"ELIZABETH STREET","between_street_2":"BLACKWOOD STREET","street_segment_id":"22686"}
+,{"pay_stay_zone":"30001728","street":"FLEMINGTON ROAD","between_street_1":"VILLIERS STREET","between_street_2":"HARCOURT STREET","street_segment_id":"21182"}
+,{"pay_stay_zone":"30001729","street":"HARCOURT STREET","between_street_1":"COURTNEY STREET","between_street_2":"FLEMINGTON ROAD","street_segment_id":"21180"}
+,{"pay_stay_zone":"30001730","street":"HARCOURT STREET","between_street_1":"COURTNEY STREET","between_street_2":"FLEMINGTON ROAD","street_segment_id":"21180"}
+,{"pay_stay_zone":"30001731","street":"HOWARD STREET","between_street_1":"VICTORIA STREET","between_street_2":"QUEENSBERRY STREET","street_segment_id":"20956"}
+,{"pay_stay_zone":"30001734","street":"LEVESON STREET","between_street_1":"ARDEN STREET","between_street_2":"QUEENSBERRY STREET","street_segment_id":"21096"}
+,{"pay_stay_zone":"30001736","street":"LEVESON STREET","between_street_1":"COURTNEY STREET","between_street_2":"ARDEN STREET","street_segment_id":"21146"}
+,{"pay_stay_zone":"30001737","street":"LEVESON STREET","between_street_1":"QUEENSBERRY STREET","between_street_2":"ARDEN STREET","street_segment_id":"21096"}
+,{"pay_stay_zone":"30001738","street":"LEVESON STREET","between_street_1":"QUEENSBERRY STREET","between_street_2":"VICTORIA STREET","street_segment_id":"20980"}
+,{"pay_stay_zone":"30001739","street":"LEVESON STREET","between_street_1":"QUEENSBERRY STREET","between_street_2":"VICTORIA STREET","street_segment_id":"20980"}
+,{"pay_stay_zone":"30001740","street":"LEVESON STREET","between_street_1":"VICTORIA STREET","between_street_2":"QUEENSBERRY STREET","street_segment_id":"20980"}
+,{"pay_stay_zone":"30001741","street":"LEVESON STREET","between_street_1":"VICTORIA STREET","between_street_2":"QUEENSBERRY STREET","street_segment_id":"20980"}
+,{"pay_stay_zone":"30001742","street":"LEVESON STREET","between_street_1":"QUEENSBERRY STREET","between_street_2":"VICTORIA STREET","street_segment_id":"20980"}
+,{"pay_stay_zone":"30001743","street":"LEVESON STREET","between_street_1":"VICTORIA STREET","between_street_2":"QUEENSBERRY STREET","street_segment_id":"20980"}
+,{"pay_stay_zone":"30001744","street":"LEVESON STREET","between_street_1":"VICTORIA STREET","between_street_2":"QUEENSBERRY STREET","street_segment_id":"20980"}
+,{"pay_stay_zone":"30001745","street":"O'CONNELL STREET","between_street_1":"QUEENSBERRY STREET","between_street_2":"PEEL STREET","street_segment_id":"21116"}
+,{"pay_stay_zone":"30001746","street":"QUEENSBERRY STREET","between_street_1":"CAPEL STREET","between_street_2":"HOWARD STREET","street_segment_id":"20950"}
+,{"pay_stay_zone":"30001747","street":"QUEENSBERRY STREET","between_street_1":"COBDEN STREET","between_street_2":"PEEL STREET","street_segment_id":"20925"}
+,{"pay_stay_zone":"30001748","street":"QUEENSBERRY STREET","between_street_1":"ERROL STREET","between_street_2":"LEVESON STREET","street_segment_id":"20990"}
+,{"pay_stay_zone":"30001749","street":"THERRY STREET","between_street_1":"ELIZABETH STREET","between_street_2":"QUEEN STREET","street_segment_id":"21629"}
+,{"pay_stay_zone":"30001750","street":"QUEENSBERRY STREET","between_street_1":"COBDEN STREET","between_street_2":"PEEL STREET","street_segment_id":"20925"}
+,{"pay_stay_zone":"30001752","street":"VICTORIA STREET","between_street_1":"CAPEL STREET","between_street_2":"HOWARD STREET","street_segment_id":"20951"}
+,{"pay_stay_zone":"30001753","street":"VICTORIA STREET","between_street_1":"CURZON STREET","between_street_2":"ERROL STREET","street_segment_id":"20994"}
+,{"pay_stay_zone":"30001754","street":"VILLIERS STREET","between_street_1":"COURTNEY STREET","between_street_2":"FLEMINGTON ROAD","street_segment_id":"21141"}
+,{"pay_stay_zone":"30001756","street":"VILLIERS STREET","between_street_1":"FLEMINGTON ROAD","between_street_2":"COURTNEY STREET","street_segment_id":"21141"}
+,{"pay_stay_zone":"30001757","street":"VILLIERS STREET","between_street_1":"FLEMINGTON ROAD","between_street_2":"COURTNEY STREET","street_segment_id":"21141"}
+,{"pay_stay_zone":"30001759","street":"VILLIERS STREET","between_street_1":"COURTNEY STREET","between_street_2":"FLEMINGTON ROAD","street_segment_id":"21141"}
+,{"pay_stay_zone":"30001760","street":"VILLIERS STREET","between_street_1":"COURTNEY STREET","between_street_2":"FLEMINGTON ROAD","street_segment_id":"21141"}
+,{"pay_stay_zone":"30001761","street":"WRECKYN STREET","between_street_1":"COURTNEY STREET","between_street_2":"FLEMINGTON ROAD","street_segment_id":"21124"}
+,{"pay_stay_zone":"30001762","street":"WRECKYN STREET","between_street_1":"COURTNEY STREET","between_street_2":"FLEMINGTON ROAD","street_segment_id":"21124"}
+,{"pay_stay_zone":"30001763","street":"WRECKYN STREET","between_street_1":"COURTNEY STREET","between_street_2":"FLEMINGTON ROAD","street_segment_id":"21124"}
+,{"pay_stay_zone":"30001764","street":"WRECKYN STREET","between_street_1":"COURTNEY STREET","between_street_2":"FLEMINGTON ROAD","street_segment_id":"21124"}
+,{"pay_stay_zone":"30001765","street":"WRECKYN STREET","between_street_1":"COURTNEY STREET","between_street_2":"FLEMINGTON ROAD","street_segment_id":"21124"}
+,{"pay_stay_zone":"30001766","street":"WRECKYN STREET","between_street_1":"COURTNEY STREET","between_street_2":"FLEMINGTON ROAD","street_segment_id":"21124"}
+,{"pay_stay_zone":"30001768","street":"WRECKYN STREET","between_street_1":"FLEMINGTON ROAD","between_street_2":"COURTNEY STREET","street_segment_id":"21124"}
+,{"pay_stay_zone":"30001770","street":"WRECKYN STREET","between_street_1":"FLEMINGTON ROAD","between_street_2":"COURTNEY STREET","street_segment_id":"21124"}
+,{"pay_stay_zone":"30001771","street":"WRECKYN STREET","between_street_1":"FLEMINGTON ROAD","between_street_2":"COURTNEY STREET","street_segment_id":"21124"}
+,{"pay_stay_zone":"30001772","street":"WRECKYN STREET","between_street_1":"COURTNEY STREET","between_street_2":"FLEMINGTON ROAD","street_segment_id":"21124"}
+,{"pay_stay_zone":"30001775","street":"CEMETERY ROAD WEST","between_street_1":"COLLEGE CRESCENT","between_street_2":"ROYAL PARADE","street_segment_id":"22375"}
+,{"pay_stay_zone":"30001776","street":"COLLEGE CRESCENT","between_street_1":"CEMETERY ROAD WEST","between_street_2":"ROYAL PARADE","street_segment_id":"22599"}
+,{"pay_stay_zone":"30001778","street":"COLLEGE CRESCENT","between_street_1":"SWANSTON STREET","between_street_2":"PRINCES PARK DRIVE","street_segment_id":"22373"}
+,{"pay_stay_zone":"30001781","street":"FLEMINGTON ROAD","between_street_1":"MELROSE STREET","between_street_2":"DRYBURGH STREET","street_segment_id":"22425"}
+,{"pay_stay_zone":"30001781","street":"FLEMINGTON ROAD","between_street_1":"CURRAN STREET","between_street_2":"BROUGHAM STREET","street_segment_id":"21251"}
+,{"pay_stay_zone":"30001782","street":"FLEMINGTON ROAD","between_street_1":"RACECOURSE ROAD","between_street_2":"MELROSE STREET","street_segment_id":"22590"}
+,{"pay_stay_zone":"30001783","street":"FLEMINGTON ROAD","between_street_1":"GATEHOUSE STREET","between_street_2":"ABBOTSFORD STREET","street_segment_id":"21257"}
+,{"pay_stay_zone":"30001785","street":"FLEMINGTON ROAD","between_street_1":"HARKER STREET","between_street_2":"MURPHY STREET","street_segment_id":"22312"}
+,{"pay_stay_zone":"30001786","street":"GATEHOUSE STREET","between_street_1":"FLEMINGTON ROAD","between_street_2":"STORY STREET","street_segment_id":"22337"}
+,{"pay_stay_zone":"30001787","street":"GRATTAN STREET","between_street_1":"BOUVERIE STREET","between_street_2":"SWANSTON STREET","street_segment_id":"20847"}
+,{"pay_stay_zone":"30001788","street":"GRATTAN STREET","between_street_1":"BERKELEY STREET","between_street_2":"BARRY STREET","street_segment_id":"20850"}
+,{"pay_stay_zone":"30001788","street":"GRATTAN STREET","between_street_1":"LEICESTER STREET","between_street_2":"BOUVERIE STREET","street_segment_id":"20848"}
+,{"pay_stay_zone":"30001788","street":"GRATTAN STREET","between_street_1":"BERKELEY STREET","between_street_2":"ROYAL PARADE","street_segment_id":"20851"}
+,{"pay_stay_zone":"30001789","street":"IEVERS STREET","between_street_1":"ROYAL PARADE","between_street_2":"THE AVENUE","street_segment_id":"22384"}
+,{"pay_stay_zone":"30001790","street":"LEONARD STREET","between_street_1":"ROYAL PARADE","between_street_2":"THE AVENUE","street_segment_id":"22378"}
+,{"pay_stay_zone":"30001792","street":"PARK STREET","between_street_1":"WEST COBURG TRAMWAY","between_street_2":"ROYAL PARADE","street_segment_id":"22397"}
+,{"pay_stay_zone":"30001793","street":"PARK STREET","between_street_1":"WEST COBURG TRAMWAY","between_street_2":"ROYAL PARADE","street_segment_id":"22397"}
+,{"pay_stay_zone":"30001794","street":"PARK STREET","between_street_1":"WEST COBURG TRAMWAY","between_street_2":"OAK STREET","street_segment_id":"22398"}
+,{"pay_stay_zone":"30001795","street":"PARK STREET","between_street_1":"ROYAL PARADE","between_street_2":"WEST COBURG TRAMWAY","street_segment_id":"22397"}
+,{"pay_stay_zone":"30001798","street":"ROYAL PARADE","between_street_1":"MACARTHUR ROAD","between_street_2":"LEONARD STREET","street_segment_id":"22434"}
+,{"pay_stay_zone":"30001798","street":"ROYAL PARADE","between_street_1":"LEONARD STREET","between_street_2":"WALKER STREET","street_segment_id":"22435"}
+,{"pay_stay_zone":"30001798","street":"ROYAL PARADE","between_street_1":"GATEHOUSE STREET","between_street_2":"MACARTHUR ROAD","street_segment_id":"22438"}
+,{"pay_stay_zone":"30001799","street":"ROYAL PARADE","between_street_1":"BAYLES STREET","between_street_2":"MORRAH STREET","street_segment_id":"22363"}
+,{"pay_stay_zone":"30001799","street":"ROYAL PARADE","between_street_1":"BAYLES STREET","between_street_2":"DEGRAVES STREET","street_segment_id":"22605"}
+,{"pay_stay_zone":"30001799","street":"ROYAL PARADE","between_street_1":"COLLEGE CRESCENT","between_street_2":"CEMETERY ROAD","street_segment_id":"22603"}
+,{"pay_stay_zone":"30001799","street":"ROYAL PARADE","between_street_1":"GRATTAN STREET","between_street_2":"STORY STREET","street_segment_id":"22514"}
+,{"pay_stay_zone":"30001799","street":"ROYAL PARADE","between_street_1":"MORRAH STREET","between_street_2":"STORY STREET","street_segment_id":"22608"}
+,{"pay_stay_zone":"30001800","street":"ROYAL PARADE","between_street_1":"GRATTAN STREET","between_street_2":"STORY STREET","street_segment_id":"22514"}
+,{"pay_stay_zone":"30001801","street":"CITY ROAD","between_street_1":"CLARENDON STREET","between_street_2":"CLARKE STREET","street_segment_id":"22020"}
+,{"pay_stay_zone":"30001802","street":"SWANSTON STREET","between_street_1":"COLLEGE CRESCENT","between_street_2":"ELGIN STREET","street_segment_id":"20494"}
+,{"pay_stay_zone":"30001803","street":"SWANSTON STREET","between_street_1":"GRATTAN STREET","between_street_2":"FARADAY STREET","street_segment_id":"20490"}
+,{"pay_stay_zone":"30001804","street":"THE AVENUE","between_street_1":"IEVERS STREET","between_street_2":"PARK STREET","street_segment_id":"22392"}
+,{"pay_stay_zone":"30001805","street":"THE AVENUE","between_street_1":"LEONARD STREET","between_street_2":"WALKER STREET","street_segment_id":"22380"}
+,{"pay_stay_zone":"30001806","street":"THE AVENUE","between_street_1":"MACARTHUR ROAD","between_street_2":"LEONARD STREET","street_segment_id":"22436"}
+,{"pay_stay_zone":"30001807","street":"THE AVENUE","between_street_1":"GATEHOUSE STREET","between_street_2":"MACARTHUR ROAD","street_segment_id":"22377"}
+,{"pay_stay_zone":"30001808","street":"THE AVENUE","between_street_1":"WALKER STREET","between_street_2":"IEVERS STREET","street_segment_id":"22388"}
+,{"pay_stay_zone":"30001809","street":"WALKER STREET","between_street_1":"ROYAL PARADE","between_street_2":"THE AVENUE","street_segment_id":"22382"}
+,{"pay_stay_zone":"30001810","street":"WALKER STREET","between_street_1":"ROYAL PARADE","between_street_2":"THE AVENUE","street_segment_id":"22382"}
+,{"pay_stay_zone":"30001813","street":"BALSTON STREET","between_street_1":"CITY ROAD","between_street_2":"KAVANAGH STREET","street_segment_id":"22046"}
+,{"pay_stay_zone":"30001814","street":"BALSTON STREET","between_street_1":"CITY ROAD","between_street_2":"KAVANAGH STREET","street_segment_id":"22046"}
+,{"pay_stay_zone":"30001815","street":"BALSTON STREET","between_street_1":"KAVANAGH STREET","between_street_2":"SOUTHERN LINK ROAD","street_segment_id":"22053"}
+,{"pay_stay_zone":"30001816","street":"CITY ROAD","between_street_1":"BALSTON STREET","between_street_2":"POWER STREET","street_segment_id":"22050"}
+,{"pay_stay_zone":"30001817","street":"CITY ROAD","between_street_1":"CLARKE STREET","between_street_2":"CLARENDON STREET","street_segment_id":"22020"}
+,{"pay_stay_zone":"30001818","street":"CITY ROAD","between_street_1":"KINGS WAY","between_street_2":"BALSTON STREET","street_segment_id":"22048"}
+,{"pay_stay_zone":"30001818","street":"CITY ROAD","between_street_1":"POWER STREET","between_street_2":"BALSTON STREET","street_segment_id":"22050"}
+,{"pay_stay_zone":"30001819","street":"CITY ROAD","between_street_1":"POWER STREET","between_street_2":"BALSTON STREET","street_segment_id":"22050"}
+,{"pay_stay_zone":"30001820","street":"CITY ROAD","between_street_1":"KINGS WAY","between_street_2":"CLARKE STREET","street_segment_id":"22040"}
+,{"pay_stay_zone":"30001821","street":"CITY ROAD","between_street_1":"KINGS WAY","between_street_2":"CLARKE STREET","street_segment_id":"22040"}
+,{"pay_stay_zone":"30001822","street":"CITY ROAD","between_street_1":"SOUTHBANK BOULEVARD","between_street_2":"SOUTHGATE AVENUE","street_segment_id":"22063"}
+,{"pay_stay_zone":"30001823","street":"CITY ROAD","between_street_1":"STURT STREET","between_street_2":"SOUTHGATE AVENUE","street_segment_id":"22066"}
+,{"pay_stay_zone":"30001824","street":"CITY ROAD","between_street_1":"STURT STREET","between_street_2":"SOUTHGATE AVENUE","street_segment_id":"22066"}
+,{"pay_stay_zone":"30001825","street":"CLARKE STREET","between_street_1":"CITY ROAD","between_street_2":"HAIG STREET","street_segment_id":"22019"}
+,{"pay_stay_zone":"30001826","street":"COVENTRY STREET","between_street_1":"DODDS STREET","between_street_2":"WELLS STREET","street_segment_id":"22112"}
+,{"pay_stay_zone":"30001827","street":"COVENTRY STREET","between_street_1":"ST KILDA ROAD","between_street_2":"WELLS STREET","street_segment_id":"22103"}
+,{"pay_stay_zone":"30001828","street":"COVENTRY STREET","between_street_1":"ST KILDA ROAD","between_street_2":"WELLS STREET","street_segment_id":"22103"}
+,{"pay_stay_zone":"30001829","street":"COVENTRY STREET","between_street_1":"ST KILDA ROAD","between_street_2":"WELLS STREET","street_segment_id":"22103"}
+,{"pay_stay_zone":"30001830","street":"COVENTRY STREET","between_street_1":"ST KILDA ROAD","between_street_2":"WELLS STREET","street_segment_id":"22103"}
+,{"pay_stay_zone":"30001831","street":"COVENTRY STREET","between_street_1":"STURT STREET","between_street_2":"DODDS STREET","street_segment_id":"22117"}
+,{"pay_stay_zone":"30001832","street":"COVENTRY STREET","between_street_1":"WELLS STREET","between_street_2":"DODDS STREET","street_segment_id":"22112"}
+,{"pay_stay_zone":"30001833","street":"COVENTRY STREET","between_street_1":"WELLS STREET","between_street_2":"DODDS STREET","street_segment_id":"22112"}
+,{"pay_stay_zone":"30001834","street":"DODDS STREET","between_street_1":"COVENTRY STREET","between_street_2":"DORCAS STREET","street_segment_id":"22113"}
+,{"pay_stay_zone":"30001835","street":"DODDS STREET","between_street_1":"COVENTRY STREET","between_street_2":"MILES STREET","street_segment_id":"22110"}
+,{"pay_stay_zone":"30001836","street":"DODDS STREET","between_street_1":"MILES STREET","between_street_2":"GRANT STREET","street_segment_id":"22462"}
+,{"pay_stay_zone":"30001837","street":"DODDS STREET","between_street_1":"GRANT STREET","between_street_2":"MILES STREET","street_segment_id":"22462"}
+,{"pay_stay_zone":"30001838","street":"DODDS STREET","between_street_1":"MILES STREET","between_street_2":"GRANT STREET","street_segment_id":"22462"}
+,{"pay_stay_zone":"30001839","street":"DODDS STREET","between_street_1":"SOUTHBANK BOULEVARD","between_street_2":"GRANT STREET","street_segment_id":"22081"}
+,{"pay_stay_zone":"30001840","street":"DODDS STREET","between_street_1":"SOUTHBANK BOULEVARD","between_street_2":"GRANT STREET","street_segment_id":"22081"}
+,{"pay_stay_zone":"30001841","street":"DORCAS STREET","between_street_1":"DODDS STREET","between_street_2":"WELLS STREET","street_segment_id":"22096"}
+,{"pay_stay_zone":"30001842","street":"DORCAS STREET","between_street_1":"KINGS WAY","between_street_2":"DODDS STREET","street_segment_id":"22460"}
+,{"pay_stay_zone":"30001843","street":"DORCAS STREET","between_street_1":"ST KILDA ROAD","between_street_2":"WELLS STREET","street_segment_id":"22094"}
+,{"pay_stay_zone":"30001844","street":"DORCAS STREET","between_street_1":"ST KILDA ROAD","between_street_2":"WELLS STREET","street_segment_id":"22094"}
+,{"pay_stay_zone":"30001845","street":"DORCAS STREET","between_street_1":"ST KILDA ROAD","between_street_2":"WELLS STREET","street_segment_id":"22094"}
+,{"pay_stay_zone":"30001846","street":"GRANT STREET","between_street_1":"ST KILDA ROAD","between_street_2":"WELLS STREET","street_segment_id":"22082"}
+,{"pay_stay_zone":"30001847","street":"GRANT STREET","between_street_1":"DODDS STREET","between_street_2":"STURT STREET","street_segment_id":"22826"}
+,{"pay_stay_zone":"30001848","street":"HAIG STREET","between_street_1":"CLARENDON STREET","between_street_2":"WEST GATE FREEWAY","street_segment_id":"22010"}
+,{"pay_stay_zone":"30001849","street":"HAIG STREET","between_street_1":"CLARENDON STREET","between_street_2":"WEST GATE FREEWAY","street_segment_id":"22010"}
+,{"pay_stay_zone":"30001850","street":"HAIG STREET","between_street_1":"CLARENDON STREET","between_street_2":"CLARKE STREET","street_segment_id":"22018"}
+,{"pay_stay_zone":"30001851","street":"KAVANAGH STREET","between_street_1":"BALSTON STREET","between_street_2":"POWER STREET","street_segment_id":"22051"}
+,{"pay_stay_zone":"30001852","street":"KAVANAGH STREET","between_street_1":"BALSTON STREET","between_street_2":"KINGS WAY","street_segment_id":"22045"}
+,{"pay_stay_zone":"30001853","street":"KAVANAGH STREET","between_street_1":"KINGS WAY","between_street_2":"BALSTON STREET","street_segment_id":"22045"}
+,{"pay_stay_zone":"30001854","street":"KAVANAGH STREET","between_street_1":"POWER STREET","between_street_2":"SOUTHBANK BOULEVARD","street_segment_id":"22077"}
+,{"pay_stay_zone":"30001855","street":"KAVANAGH STREET","between_street_1":"STURT STREET","between_street_2":"SOUTHBANK BOULEVARD","street_segment_id":"22070"}
+,{"pay_stay_zone":"30001856","street":"KAVANAGH STREET","between_street_1":"STURT STREET","between_street_2":"SOUTHBANK BOULEVARD","street_segment_id":"22070"}
+,{"pay_stay_zone":"30001857","street":"MILES STREET","between_street_1":"DODDS STREET","between_street_2":"STURT STREET","street_segment_id":"22108"}
+,{"pay_stay_zone":"30001858","street":"MILES STREET","between_street_1":"STURT STREET","between_street_2":"MOORE STREET","street_segment_id":"22120"}
+,{"pay_stay_zone":"30001859","street":"MILES STREET","between_street_1":"STURT STREET","between_street_2":"MOORE STREET","street_segment_id":"22120"}
+,{"pay_stay_zone":"30001860","street":"MILES STREET","between_street_1":"STURT STREET","between_street_2":"DODDS STREET","street_segment_id":"22108"}
+,{"pay_stay_zone":"30001861","street":"MILES STREET","between_street_1":"WELLS STREET","between_street_2":"DODDS STREET","street_segment_id":"22107"}
+,{"pay_stay_zone":"30001862","street":"MILES STREET","between_street_1":"WELLS STREET","between_street_2":"DODDS STREET","street_segment_id":"22107"}
+,{"pay_stay_zone":"30001863","street":"MOORE STREET","between_street_1":"MILES STREET","between_street_2":"KINGS WAY","street_segment_id":"22461"}
+,{"pay_stay_zone":"30001864","street":"MOORE STREET","between_street_1":"SOUTHERN LINK ROAD","between_street_2":"SOUTHBANK BOULEVARD","street_segment_id":"22078"}
+,{"pay_stay_zone":"30001865","street":"MOORE STREET","between_street_1":"SOUTHERN LINK ROAD","between_street_2":"SOUTHBANK BOULEVARD","street_segment_id":"22078"}
+,{"pay_stay_zone":"30001866","street":"MOORE STREET","between_street_1":"KINGS WAY","between_street_2":"MILES STREET","street_segment_id":"22461"}
+,{"pay_stay_zone":"30001867","street":"MOORE STREET","between_street_1":"SOUTHBANK BOULEVARD","between_street_2":"SOUTHERN LINK ROAD","street_segment_id":"22078"}
+,{"pay_stay_zone":"30001868","street":"MOORE STREET","between_street_1":"SOUTHBANK BOULEVARD","between_street_2":"SOUTHERN LINK ROAD","street_segment_id":"22078"}
+,{"pay_stay_zone":"30001869","street":"MORAY STREET","between_street_1":"WEST GATE FREEWAY","between_street_2":"HANCOCK STREET","street_segment_id":"22036"}
+,{"pay_stay_zone":"30001870","street":"QUEENS BRIDGE STREET","between_street_1":"QUEENS BRIDGE","between_street_2":"POWER STREET","street_segment_id":"22184"}
+,{"pay_stay_zone":"30001871","street":"QUEENS BRIDGE STREET","between_street_1":"KINGS WAY","between_street_2":"POWER STREET","street_segment_id":"22182"}
+,{"pay_stay_zone":"30001872","street":"QUEENS BRIDGE STREET","between_street_1":"KINGS WAY","between_street_2":"POWER STREET","street_segment_id":"22182"}
+,{"pay_stay_zone":"30001873","street":"RIVERSIDE QUAY","between_street_1":"COOK STREET","between_street_2":"SOUTHBANK BOULEVARD","street_segment_id":"22059"}
+,{"pay_stay_zone":"30001874","street":"SOUTHBANK BOULEVARD","between_street_1":"KAVANAGH STREET","between_street_2":"CITY ROAD","street_segment_id":"22073"}
+,{"pay_stay_zone":"30001875","street":"SOUTHBANK BOULEVARD","between_street_1":"KAVANAGH STREET","between_street_2":"MOORE STREET","street_segment_id":"22075"}
+,{"pay_stay_zone":"30001876","street":"SOUTHBANK BOULEVARD","between_street_1":"MOORE STREET","between_street_2":"KAVANAGH STREET","street_segment_id":"22075"}
+,{"pay_stay_zone":"30001877","street":"SOUTHBANK BOULEVARD","between_street_1":"STURT STREET","between_street_2":"MOORE STREET","street_segment_id":"22079"}
+,{"pay_stay_zone":"30001878","street":"SOUTHBANK BOULEVARD","between_street_1":"DODDS STREET","between_street_2":"ST KILDA ROAD","street_segment_id":"16505"}
+,{"pay_stay_zone":"30001879","street":"LORIMER STREET","between_street_1":"HARTLEY STREET","between_street_2":"WEST GATE FREEWAY","street_segment_id":"22126"}
+,{"pay_stay_zone":"30001880","street":"SOUTHGATE AVENUE","between_street_1":"CITY ROAD","between_street_2":"RIVERSIDE AVENUE","street_segment_id":"22187"}
+,{"pay_stay_zone":"30001881","street":"ST KILDA ROAD","between_street_1":"COVENTRY STREET","between_street_2":"DORCAS STREET","street_segment_id":"22092"}
+,{"pay_stay_zone":"30001882","street":"ST KILDA ROAD","between_street_1":"GRANT STREET","between_street_2":"WADEY STREET","street_segment_id":"22700"}
+,{"pay_stay_zone":"30001883","street":"ST KILDA ROAD","between_street_1":"ANZAC AVENUE","between_street_2":"COVENTRY STREET","street_segment_id":"22704"}
+,{"pay_stay_zone":"30001884","street":"ST KILDA ROAD","between_street_1":"COVENTRY STREET","between_street_2":"DORCAS STREET","street_segment_id":"22092"}
+,{"pay_stay_zone":"30001885","street":"ST KILDA ROAD","between_street_1":"GRANT STREET","between_street_2":"WADEY STREET","street_segment_id":"22700"}
+,{"pay_stay_zone":"30001886","street":"ST KILDA ROAD","between_street_1":"SOUTHBANK BOULEVARD","between_street_2":"GRANT STREET","street_segment_id":"22466"}
+,{"pay_stay_zone":"30001887","street":"ST KILDA ROAD","between_street_1":"WADEY STREET","between_street_2":"COVENTRY STREET","street_segment_id":"16509"}
+,{"pay_stay_zone":"30001887","street":"ST KILDA ROAD","between_street_1":"ANZAC AVENUE","between_street_2":"COVENTRY STREET","street_segment_id":"22704"}
+,{"pay_stay_zone":"30001887","street":"ST KILDA ROAD","between_street_1":"WADEY STREET","between_street_2":"ANZAC AVENUE","street_segment_id":"22702"}
+,{"pay_stay_zone":"30001888","street":"STURT STREET","between_street_1":"GRANT STREET","between_street_2":"MILES STREET","street_segment_id":"22767"}
+,{"pay_stay_zone":"30001889","street":"STURT STREET","between_street_1":"GRANT STREET","between_street_2":"SOUTHBANK BOULEVARD","street_segment_id":"22121"}
+,{"pay_stay_zone":"30001890","street":"STURT STREET","between_street_1":"CITY ROAD","between_street_2":"KAVANAGH STREET","street_segment_id":"22085"}
+,{"pay_stay_zone":"30001891","street":"STURT STREET","between_street_1":"KAVANAGH STREET","between_street_2":"SOUTHBANK BOULEVARD","street_segment_id":"22086"}
+,{"pay_stay_zone":"30001892","street":"STURT STREET","between_street_1":"COVENTRY STREET","between_street_2":"MILES STREET","street_segment_id":"22118"}
+,{"pay_stay_zone":"30001893","street":"STURT STREET","between_street_1":"MILES STREET","between_street_2":"GRANT STREET","street_segment_id":"22767"}
+,{"pay_stay_zone":"30001894","street":"STURT STREET","between_street_1":"MILES STREET","between_street_2":"SOUTHBANK BOULEVARD","street_segment_id":"16511"}
+,{"pay_stay_zone":"30001895","street":"STURT STREET","between_street_1":"MILES STREET","between_street_2":"GRANT STREET","street_segment_id":"22767"}
+,{"pay_stay_zone":"30001896","street":"STURT STREET","between_street_1":"MILES STREET","between_street_2":"COVENTRY STREET","street_segment_id":"22118"}
+,{"pay_stay_zone":"30001897","street":"WADEY STREET","between_street_1":"ST KILDA ROAD","between_street_2":"WELLS STREET","street_segment_id":"22090"}
+,{"pay_stay_zone":"30001898","street":"WELLS STREET","between_street_1":"GRANT STREET","between_street_2":"MILES STREET","street_segment_id":"22106"}
+,{"pay_stay_zone":"30001898","street":"WELLS STREET","between_street_1":"COVENTRY STREET","between_street_2":"MILES STREET","street_segment_id":"22105"}
+,{"pay_stay_zone":"30001899","street":"WELLS STREET","between_street_1":"COVENTRY STREET","between_street_2":"DORCAS STREET","street_segment_id":"22098"}
+,{"pay_stay_zone":"30001900","street":"WELLS STREET","between_street_1":"DORCAS STREET","between_street_2":"COVENTRY STREET","street_segment_id":"22098"}
+,{"pay_stay_zone":"30001901","street":"WELLS STREET","between_street_1":"DORCAS STREET","between_street_2":"COVENTRY STREET","street_segment_id":"22098"}
+,{"pay_stay_zone":"30001902","street":"WELLS STREET","between_street_1":"GRANT STREET","between_street_2":"MILES STREET","street_segment_id":"22106"}
+,{"pay_stay_zone":"30001903","street":"WELLS STREET","between_street_1":"GRANT STREET","between_street_2":"MILES STREET","street_segment_id":"22106"}
+,{"pay_stay_zone":"30001904","street":"WELLS STREET","between_street_1":"GRANT STREET","between_street_2":"MILES STREET","street_segment_id":"22106"}
+,{"pay_stay_zone":"30001905","street":"WHITEMAN STREET","between_street_1":"WEST GATE FREEWAY","between_street_2":"CLARENDON STREET","street_segment_id":"22008"}
+,{"pay_stay_zone":"30001906","street":"WHITEMAN STREET","between_street_1":"KINGS WAY","between_street_2":"CLARENDON STREET","street_segment_id":"22177"}
+,{"pay_stay_zone":"30001907","street":"WHITEMAN STREET","between_street_1":"QUEENS BRIDGE STREET","between_street_2":"KINGS WAY","street_segment_id":"22562"}
+,{"pay_stay_zone":"30001908","street":"WHITEMAN STREET","between_street_1":"WEST GATE FREEWAY","between_street_2":"CLARENDON STREET","street_segment_id":"22008"}
+,{"pay_stay_zone":"30001909","street":"ALEXANDRA AVENUE","between_street_1":"WALSH STREET","between_street_2":"ANDERSON STREET","street_segment_id":"22278"}
+,{"pay_stay_zone":"30001909","street":"ALEXANDRA AVENUE","between_street_1":"PUNT ROAD","between_street_2":"WALSH STREET","street_segment_id":"22276"}
+,{"pay_stay_zone":"30001910","street":"COMMERCIAL ROAD","between_street_1":"PUNT ROAD","between_street_2":"ST KILDA ROAD","street_segment_id":"22308"}
+,{"pay_stay_zone":"30001911","street":"TOORAK ROAD","between_street_1":"ADAMS STREET","between_street_2":"ST KILDA ROAD","street_segment_id":"22209"}
+,{"pay_stay_zone":"30001912","street":"TOORAK ROAD","between_street_1":"PUNT ROAD","between_street_2":"WALSH STREET","street_segment_id":"22221"}
+,{"pay_stay_zone":"30001913","street":"ADDERLEY STREET","between_street_1":"JEFFCOTT STREET","between_street_2":"BATMAN STREET","street_segment_id":"21503"}
+,{"pay_stay_zone":"30001914","street":"ADDERLEY STREET","between_street_1":"LA TROBE STREET","between_street_2":"JEFFCOTT STREET","street_segment_id":"21504"}
+,{"pay_stay_zone":"30001915","street":"BATMAN STREET","between_street_1":"KING STREET","between_street_2":"SPENCER STREET","street_segment_id":"21516"}
+,{"pay_stay_zone":"30001916","street":"ADDERLEY STREET","between_street_1":"LA TROBE STREET","between_street_2":"JEFFCOTT STREET","street_segment_id":"21504"}
+,{"pay_stay_zone":"30001917","street":"BATMAN STREET","between_street_1":"KING STREET","between_street_2":"SPENCER STREET","street_segment_id":"21516"}
+,{"pay_stay_zone":"30001918","street":"BATMAN STREET","between_street_1":"KING STREET","between_street_2":"SPENCER STREET","street_segment_id":"21516"}
+,{"pay_stay_zone":"30001919","street":"BATMAN STREET","between_street_1":"SPENCER STREET","between_street_2":"ADDERLEY STREET","street_segment_id":"21494"}
+,{"pay_stay_zone":"30001920","street":"BATMAN STREET","between_street_1":"SPENCER STREET","between_street_2":"ADDERLEY STREET","street_segment_id":"21494"}
+,{"pay_stay_zone":"30001921","street":"BATMAN STREET","between_street_1":"SPENCER STREET","between_street_2":"ADDERLEY STREET","street_segment_id":"21494"}
+,{"pay_stay_zone":"30001922","street":"CAPEL STREET","between_street_1":"VICTORIA STREET","between_street_2":"WILLIAM STREET","street_segment_id":"21392"}
+,{"pay_stay_zone":"30001923","street":"CAPEL STREET","between_street_1":"WILLIAM STREET","between_street_2":"VICTORIA STREET","street_segment_id":"21392"}
+,{"pay_stay_zone":"30001924","street":"CHETWYND STREET","between_street_1":"STANLEY STREET","between_street_2":"VICTORIA STREET","street_segment_id":"22661"}
+,{"pay_stay_zone":"30001925","street":"DUDLEY STREET","between_street_1":"ADDERLEY STREET","between_street_2":"SPENCER STREET","street_segment_id":"21483"}
+,{"pay_stay_zone":"30001926","street":"BATMAN STREET","between_street_1":"KING STREET","between_street_2":"SPENCER STREET","street_segment_id":"21516"}
+,{"pay_stay_zone":"30001927","street":"DUDLEY STREET","between_street_1":"KING STREET","between_street_2":"SPENCER STREET","street_segment_id":"21413"}
+,{"pay_stay_zone":"30001928","street":"DUDLEY STREET","between_street_1":"KING STREET","between_street_2":"SPENCER STREET","street_segment_id":"21413"}
+,{"pay_stay_zone":"30001930","street":"DUDLEY STREET","between_street_1":"SPENCER STREET","between_street_2":"ADDERLEY STREET","street_segment_id":"21483"}
+,{"pay_stay_zone":"30001931","street":"DUDLEY STREET","between_street_1":"SPENCER STREET","between_street_2":"KING STREET","street_segment_id":"21413"}
+,{"pay_stay_zone":"30001932","street":"DUDLEY STREET","between_street_1":"MILTON STREET","between_street_2":"KING STREET","street_segment_id":"21411"}
+,{"pay_stay_zone":"30001934","street":"JEFFCOTT STREET","between_street_1":"KING STREET","between_street_2":"SPENCER STREET","street_segment_id":"21514"}
+,{"pay_stay_zone":"30001935","street":"JEFFCOTT STREET","between_street_1":"SPENCER STREET","between_street_2":"ADDERLEY STREET","street_segment_id":"21501"}
+,{"pay_stay_zone":"30001936","street":"JEFFCOTT STREET","between_street_1":"SPENCER STREET","between_street_2":"ADDERLEY STREET","street_segment_id":"21501"}
+,{"pay_stay_zone":"30001937","street":"JEFFCOTT STREET","between_street_1":"SPENCER STREET","between_street_2":"KING STREET","street_segment_id":"21514"}
+,{"pay_stay_zone":"30001938","street":"JEFFCOTT STREET","between_street_1":"SPENCER STREET","between_street_2":"KING STREET","street_segment_id":"21514"}
+,{"pay_stay_zone":"30001939","street":"KING STREET","between_street_1":"BATMAN STREET","between_street_2":"DUDLEY STREET","street_segment_id":"21518"}
+,{"pay_stay_zone":"30001940","street":"KING STREET","between_street_1":"JEFFCOTT STREET","between_street_2":"LA TROBE STREET","street_segment_id":"21507"}
+,{"pay_stay_zone":"30001941","street":"KING STREET","between_street_1":"DUDLEY STREET ","between_street_2":"ROSSLYN STREET","street_segment_id":"16006"}
+,{"pay_stay_zone":"30001942","street":"KING STREET","between_street_1":"JEFFCOTT STREET","between_street_2":"BATMAN STREET","street_segment_id":"21515"}
+,{"pay_stay_zone":"30001943","street":"KING STREET","between_street_1":"JEFFCOTT STREET","between_street_2":"LA TROBE STREET","street_segment_id":"21507"}
+,{"pay_stay_zone":"30001944","street":"KING STREET","between_street_1":"BATMAN STREET","between_street_2":"DUDLEY STREET","street_segment_id":"21518"}
+,{"pay_stay_zone":"30001945","street":"KING STREET","between_street_1":"ROSSLYN STREET","between_street_2":"STANLEY STREET","street_segment_id":"21427"}
+,{"pay_stay_zone":"30001946","street":"KING STREET","between_street_1":"STANLEY STREET","between_street_2":"RODEN STREET","street_segment_id":"21375"}
+,{"pay_stay_zone":"30001947","street":"LA TROBE STREET","between_street_1":"KING STREET","between_street_2":"SPENCER STREET","street_segment_id":"20030"}
+,{"pay_stay_zone":"30001948","street":"LA TROBE STREET","between_street_1":"KING STREET","between_street_2":"WILLIAM STREET","street_segment_id":"20028"}
+,{"pay_stay_zone":"30001949","street":"PEEL STREET","between_street_1":"VICTORIA STREET","between_street_2":"DUDLEY STREET","street_segment_id":"22659"}
+,{"pay_stay_zone":"30001950","street":"RAILWAY PLACE","between_street_1":"ABBOTSFORD STREET","between_street_2":"ADDERLEY STREET","street_segment_id":"21549"}
+,{"pay_stay_zone":"30001954","street":"ROSSLYN STREET","between_street_1":"ADDERLEY STREET","between_street_2":"RAILWAY PLACE","street_segment_id":"21490"}
+,{"pay_stay_zone":"30001956","street":"ROSSLYN STREET","between_street_1":"ADDERLEY STREET","between_street_2":"RAILWAY PLACE","street_segment_id":"21490"}
+,{"pay_stay_zone":"30001957","street":"ROSSLYN STREET","between_street_1":"ADDERLEY STREET","between_street_2":"RAILWAY PLACE","street_segment_id":"21490"}
+,{"pay_stay_zone":"30001958","street":"ROSSLYN STREET","between_street_1":"ADDERLEY STREET","between_street_2":"SPENCER STREET","street_segment_id":"21479"}
+,{"pay_stay_zone":"30001959","street":"ROSSLYN STREET","between_street_1":"HOWARD STREET","between_street_2":"KING STREET","street_segment_id":"21388"}
+,{"pay_stay_zone":"30001961","street":"ROSSLYN STREET","between_street_1":"WILLIAM STREET","between_street_2":"HOWARD STREET","street_segment_id":"21387"}
+,{"pay_stay_zone":"30001962","street":"ROSSLYN STREET","between_street_1":"KING STREET","between_street_2":"SPENCER STREET","street_segment_id":"21421"}
+,{"pay_stay_zone":"30001963","street":"ROSSLYN STREET","between_street_1":"HOWARD STREET","between_street_2":"KING STREET","street_segment_id":"21388"}
+,{"pay_stay_zone":"30001964","street":"ROSSLYN STREET","between_street_1":"SPENCER STREET","between_street_2":"ADDERLEY STREET","street_segment_id":"21479"}
+,{"pay_stay_zone":"30001965","street":"ROSSLYN STREET","between_street_1":"SPENCER STREET","between_street_2":"ADDERLEY STREET","street_segment_id":"21479"}
+,{"pay_stay_zone":"30001966","street":"HOWARD STREET","between_street_1":"ROSSLYN STREET","between_street_2":"WILLIAM STREET","street_segment_id":"21382"}
+,{"pay_stay_zone":"30001967","street":"ROSSLYN STREET","between_street_1":"WILLIAM STREET","between_street_2":"HOWARD STREET","street_segment_id":"21387"}
+,{"pay_stay_zone":"30001968","street":"SPENCER STREET","between_street_1":"JEFFCOTT STREET","between_street_2":"LA TROBE STREET","street_segment_id":"21506"}
+,{"pay_stay_zone":"30001969","street":"SPENCER STREET","between_street_1":"BATMAN STREET","between_street_2":"JEFFCOTT STREET","street_segment_id":"21499"}
+,{"pay_stay_zone":"30001970","street":"SPENCER STREET","between_street_1":"LA TROBE STREET","between_street_2":"JEFFCOTT STREET","street_segment_id":"21506"}
+,{"pay_stay_zone":"30001971","street":"SPENCER STREET","between_street_1":"JEFFCOTT STREET","between_street_2":"BATMAN STREET","street_segment_id":"21499"}
+,{"pay_stay_zone":"30001971","street":"SPENCER STREET","between_street_1":"DUDLEY STREET","between_street_2":"BATMAN STREET","street_segment_id":"21486"}
+,{"pay_stay_zone":"30001972","street":"STANLEY STREET","between_street_1":"KING STREET","between_street_2":"SPENCER STREET","street_segment_id":"21429"}
+,{"pay_stay_zone":"30001973","street":"STANLEY STREET","between_street_1":"KING STREET","between_street_2":"SPENCER STREET","street_segment_id":"21429"}
+,{"pay_stay_zone":"30001974","street":"STANLEY STREET","between_street_1":"KING STREET","between_street_2":"SPENCER STREET","street_segment_id":"21429"}
+,{"pay_stay_zone":"30001975","street":"STANLEY STREET","between_street_1":"KING STREET","between_street_2":"SPENCER STREET","street_segment_id":"21429"}
+,{"pay_stay_zone":"30001976","street":"STANLEY STREET","between_street_1":"SPENCER STREET","between_street_2":"ADDERLEY STREET","street_segment_id":"21475"}
+,{"pay_stay_zone":"30001977","street":"STANLEY STREET","between_street_1":"SPENCER STREET","between_street_2":"ADDERLEY STREET","street_segment_id":"21475"}
+,{"pay_stay_zone":"30001979","street":"VICTORIA STREET","between_street_1":"CAPEL STREET","between_street_2":"HOWARD STREET","street_segment_id":"20951"}
+,{"pay_stay_zone":"30001980","street":"VICTORIA STREET","between_street_1":"CURZON STREET","between_street_2":"ERROL STREET","street_segment_id":"20994"}
+,{"pay_stay_zone":"30001981","street":"VICTORIA STREET OSCP","between_street_1":"VICTORIA STREET","between_street_2":"RODEN STREET","street_segment_id":"40023"}
+,{"pay_stay_zone":"30001982","street":"VICTORIA STREET OSCP","between_street_1":"VICTORIA STREET","between_street_2":"RODEN STREET","street_segment_id":"40023"}
+,{"pay_stay_zone":"30001983","street":"VICTORIA STREET","between_street_1":"PEEL STREET","between_street_2":"CAPEL STREET","street_segment_id":"20953"}
+,{"pay_stay_zone":"30001984","street":"WALSH STREET","between_street_1":"KING STREET","between_street_2":"MILTON STREET","street_segment_id":"21405"}
+,{"pay_stay_zone":"30001985","street":"WALSH STREET","between_street_1":"MILTON STREET","between_street_2":"KING STREET","street_segment_id":"21405"}
+,{"pay_stay_zone":"30001986","street":"WILLIAM STREET","between_street_1":"DUDLEY STREET","between_street_2":"WALSH STREET","street_segment_id":"21404"}
+,{"pay_stay_zone":"30001987","street":"WILLIAM STREET ","between_street_1":"VICTORIA STREET","between_street_2":"WALSH STREET","street_segment_id":"16018"}
+,{"pay_stay_zone":"30001988","street":"WILLIAM STREET","between_street_1":"VICTORIA STREET","between_street_2":"ROSSLYN STREET","street_segment_id":"21384"}
+,{"pay_stay_zone":"30001990","street":"WILLIAM STREET","between_street_1":"A'BECKETT STREET","between_street_2":"FRANKLIN STREET","street_segment_id":"21529"}
+,{"pay_stay_zone":"30001990","street":"WILLIAM STREET","between_street_1":"LA TROBE STREET","between_street_2":"A'BECKETT STREET","street_segment_id":"21519"}
+,{"pay_stay_zone":"30001991","street":"WILLIAM STREET","between_street_1":"ROSSLYN STREET","between_street_2":"CAPEL STREET","street_segment_id":"21385"}
+,{"pay_stay_zone":"30001992","street":"WILLIAM STREET","between_street_1":"ROSSLYN STREET","between_street_2":"VICTORIA STREET","street_segment_id":"21384"}
+,{"pay_stay_zone":"30001993","street":"WILLIAM STREET","between_street_1":"FRANKLIN STREET","between_street_2":"DUDLEY STREET","street_segment_id":"21530"}
+,{"pay_stay_zone":"30001994","street":"LA TROBE STREET","between_street_1":"SPENCER STREET","between_street_2":"ADDERLEY STREET","street_segment_id":"21505"}
+,{"pay_stay_zone":"30001995","street":"WILLIAM STREET","between_street_1":"CAPEL STREET","between_street_2":"ROSSLYN STREET","street_segment_id":"21385"}
+,{"pay_stay_zone":"30001996","street":"WILLIAM STREET","between_street_1":"CAPEL STREET","between_street_2":"ROSSLYN STREET","street_segment_id":"21385"}
+,{"pay_stay_zone":"30002000","street":"POPLAR ROAD OSCP","between_street_1":"POPLAR ROAD","between_street_2":"ELLIOTT AVENUE","street_segment_id":"40021"}
+,{"pay_stay_zone":"30002000","street":"ELLIOTT AVENUE OSCP","between_street_1":"ELLIOTT AVENUE","between_street_2":"POPLAR ROAD","street_segment_id":"40022"}
+,{"pay_stay_zone":"30001674","street":"RUSSELL STREET","between_street_1":"LITTLE COLLINS STREET","between_street_2":"COLLINS STREET","street_segment_id":"20148"}
+,{"pay_stay_zone":"30001543","street":"LITTLE LONSDALE STREET","between_street_1":"KING STREET","between_street_2":"SPENCER STREET","street_segment_id":"20048"}
+,{"pay_stay_zone":"30001400","street":"EXHIBITION STREET","between_street_1":"LITTLE COLLINS STREET","between_street_2":"COLLINS STREET","street_segment_id":"20140"}
+,{"pay_stay_zone":"30001388","street":"ELIZABETH STREET","between_street_1":"LITTLE LA TROBE STREET","between_street_2":"A'BECKETT STREET","street_segment_id":"22651"}
+,{"pay_stay_zone":"30001594","street":"QUEEN STREET","between_street_1":"BOURKE STREET","between_street_2":"LITTLE BOURKE STREET","street_segment_id":"20174"}
+,{"pay_stay_zone":"30001534","street":"LITTLE COLLINS STREET","between_street_1":"WILLIAM STREET","between_street_2":"QUEEN STREET","street_segment_id":"20101"}
+,{"pay_stay_zone":"30001518","street":"LITTLE BOURKE STREET","between_street_1":"KING STREET","between_street_2":"WILLIAM STREET","street_segment_id":"20061"}
+,{"pay_stay_zone":"30001349","street":"LITTLE LONSDALE STREET","between_street_1":"QUEEN STREET","between_street_2":"WILLIAM STREET","street_segment_id":"20044"}
+,{"pay_stay_zone":"30001544","street":"LITTLE LONSDALE STREET","between_street_1":"QUEEN STREET","between_street_2":"ELIZABETH STREET","street_segment_id":"20042"}
+,{"pay_stay_zone":"30001414","street":"EXHIBITION STREET","between_street_1":"LITTLE LONSDALE STREET","between_street_2":"LA TROBE STREET","street_segment_id":"20145"}
+,{"pay_stay_zone":"30001001","street":"ARGYLE PLACE NORTH","between_street_1":"LYGON STREET","between_street_2":"CARDIGAN STREET","street_segment_id":"20752"}
+,{"pay_stay_zone":"30001416","street":"EXHIBITION STREET","between_street_1":"LITTLE LONSDALE STREET","between_street_2":"LONSDALE STREET","street_segment_id":"20144"}
+,{"pay_stay_zone":"30001531","street":"LITTLE COLLINS STREET","between_street_1":"SPENCER STREET","between_street_2":"KING STREET","street_segment_id":"20105"}
+,{"pay_stay_zone":"30001525","street":"LITTLE COLLINS STREET","between_street_1":"ELIZABETH STREET","between_street_2":"QUEEN STREET","street_segment_id":"20099"}
+,{"pay_stay_zone":"30001634","street":"RUSSELL STREET","between_street_1":"LITTLE BOURKE STREET","between_street_2":"LONSDALE STREET","street_segment_id":"20151"}
+,{"pay_stay_zone":"30001637","street":"RUSSELL STREET","between_street_1":"LITTLE COLLINS STREET","between_street_2":"BOURKE STREET","street_segment_id":"20149"}
+,{"pay_stay_zone":"30001532","street":"LITTLE COLLINS STREET","between_street_1":"WILLIAM STREET","between_street_2":"KING STREET","street_segment_id":"20103"}
+,{"pay_stay_zone":"30001410","street":"EXHIBITION STREET","between_street_1":"LONSDALE STREET","between_street_2":"LITTLE BOURKE STREET","street_segment_id":"20143"}
+,{"pay_stay_zone":"30001553","street":"LITTLE LONSDALE STREET","between_street_1":"WILLIAM STREET","between_street_2":"QUEEN STREET","street_segment_id":"20044"}
+,{"pay_stay_zone":"30001640","street":"RUSSELL STREET","between_street_1":"LONSDALE STREET","between_street_2":"LITTLE LONSDALE STREET","street_segment_id":"20152"}
+,{"pay_stay_zone":"30001274","street":"SPRING STREET","between_street_1":"LITTLE LONSDALE STREET","between_street_2":"VICTORIA PARADE","street_segment_id":"21847"}
+,{"pay_stay_zone":"30001395","street":"EXHIBITION STREET","between_street_1":"BOURKE STREET","between_street_2":"LITTLE BOURKE STREET","street_segment_id":"20142"}
+,{"pay_stay_zone":"30001415","street":"EXHIBITION STREET","between_street_1":"LONSDALE STREET","between_street_2":"LITTLE LONSDALE STREET","street_segment_id":"20144"}
+,{"pay_stay_zone":"30001609","street":"QUEEN STREET","between_street_1":"LITTLE LONSDALE STREET","between_street_2":"LA TROBE STREET","street_segment_id":"20177"}
+,{"pay_stay_zone":"30001540","street":"LITTLE LONSDALE STREET","between_street_1":"EXHIBITION STREET","between_street_2":"RUSSELL STREET","street_segment_id":"20036"}
+,{"pay_stay_zone":"30001610","street":"QUEEN STREET","between_street_1":"LITTLE LONSDALE STREET","between_street_2":"LA TROBE STREET","street_segment_id":"20177"}
+,{"pay_stay_zone":"30001673","street":"SWANSTON STREET","between_street_1":"LITTLE LA TROBE STREET","between_street_2":"A'BECKETT STREET","street_segment_id":"22649"}
+,{"pay_stay_zone":"30001537","street":"LITTLE LA TROBE STREET","between_street_1":"SWANSTON STREET","between_street_2":"ELIZABETH STREET","street_segment_id":"21644"}
+,{"pay_stay_zone":"30001276","street":"SPRING STREET","between_street_1":"COLLINS STREET","between_street_2":"LITTLE COLLINS STREET","street_segment_id":"20200"}
+,{"pay_stay_zone":"30001273","street":"SPRING STREET","between_street_1":"LITTLE BOURKE STREET","between_street_2":"LONSDALE STREET","street_segment_id":"20206"}
+,{"pay_stay_zone":"30001485","street":"KING STREET","between_street_1":"LITTLE COLLINS STREET","between_street_2":"BOURKE STREET","street_segment_id":"20191"}
+,{"pay_stay_zone":"30001380","street":"ELIZABETH STREET","between_street_1":"BOURKE STREET","between_street_2":"LITTLE COLLINS STREET","street_segment_id":"20165"}
+,{"pay_stay_zone":"30001536","street":"LITTLE BOURKE STREET","between_street_1":"KING STREET","between_street_2":"WILLIAM STREET","street_segment_id":"20061"}
+,{"pay_stay_zone":"30001225","street":"SPENCER STREET","between_street_1":"LONSDALE STREET","between_street_2":"LITTLE LONSDALE STREET","street_segment_id":"20077"}
+,{"pay_stay_zone":"30001481","street":"KING STREET","between_street_1":"LITTLE BOURKE STREET","between_street_2":"LONSDALE STREET","street_segment_id":"20193"}
+,{"pay_stay_zone":"30001363","street":"COLLINS STREET","between_street_1":"KING STREET","between_street_2":"SPENCER STREET","street_segment_id":"20120"}
+,{"pay_stay_zone":"30001516","street":"LITTLE BOURKE STREET","between_street_1":"EXHIBITION STREET","between_street_2":"RUSSELL STREET","street_segment_id":"20051"}
+,{"pay_stay_zone":"30001626","street":"RUSSELL STREET","between_street_1":"LITTLE COLLINS STREET","between_street_2":"BOURKE STREET","street_segment_id":"20149"}
+,{"pay_stay_zone":"30001692","street":"WILLIAM STREET","between_street_1":"COLLINS STREET","between_street_2":"LITTLE COLLINS STREET","street_segment_id":"20182"}
+,{"pay_stay_zone":"30001627","street":"RUSSELL STREET","between_street_1":"COLLINS STREET","between_street_2":"LITTLE COLLINS STREET","street_segment_id":"20148"}
+,{"pay_stay_zone":"30001350","street":"CHURCH STREET","between_street_1":"LITTLE COLLINS STREET","between_street_2":"BOURKE STREET","street_segment_id":"20416"}
+,{"pay_stay_zone":"30001182","street":"ADELA LANE","between_street_1":"COLLINS STREET","between_street_2":"COLLINS STREET","street_segment_id":"23342"}
+,{"pay_stay_zone":"30001413","street":"EXHIBITION STREET","between_street_1":"LITTLE COLLINS STREET","between_street_2":"BOURKE STREET","street_segment_id":"20141"}
+,{"pay_stay_zone":"30001180","street":"DOCKLANDS DRIVE","between_street_1":"DOCKLANDS DRIVE","between_street_2":"WATTLE ROAD","street_segment_id":"23256"}
+,{"pay_stay_zone":"30001515","street":"LITTLE BOURKE STREET","between_street_1":"ELIZABETH STREET","between_street_2":"QUEEN STREET","street_segment_id":"20057"}
+,{"pay_stay_zone":"30001391","street":"ELIZABETH STREET","between_street_1":"LONSDALE STREET","between_street_2":"LITTLE LONSDALE STREET","street_segment_id":"20168"}
+,{"pay_stay_zone":"30001484","street":"KING STREET","between_street_1":"LITTLE COLLINS STREET","between_street_2":"BOURKE STREET","street_segment_id":"20191"}
+,{"pay_stay_zone":"30001595","street":"QUEEN STREET","between_street_1":"COLLINS STREET","between_street_2":"LITTLE COLLINS STREET","street_segment_id":"20172"}
+,{"pay_stay_zone":"30001521","street":"LITTLE BOURKE STREET","between_street_1":"SPENCER STREET","between_street_2":"KING STREET","street_segment_id":"20063"}
+,{"pay_stay_zone":"30001488","street":"KING STREET","between_street_1":"LITTLE LONSDALE STREET","between_street_2":"LA TROBE STREET","street_segment_id":"20195"}
+,{"pay_stay_zone":"30001523","street":"LITTLE BOURKE STREET","between_street_1":"SPRING STREET","between_street_2":"EXHIBITION STREET","street_segment_id":"20049"}
+,{"pay_stay_zone":"30001645","street":"SPRING STREET","between_street_1":"COLLINS STREET","between_street_2":"LITTLE COLLINS STREET","street_segment_id":"20200"}
+,{"pay_stay_zone":"30001398","street":"EXHIBITION STREET","between_street_1":"BOURKE STREET","between_street_2":"LITTLE COLLINS STREET","street_segment_id":"20141"}
+,{"pay_stay_zone":"30001475","street":"KING STREET","between_street_1":"COLLINS STREET","between_street_2":"LITTLE COLLINS STREET","street_segment_id":"20190"}
+,{"pay_stay_zone":"30001482","street":"KING STREET","between_street_1":"LITTLE BOURKE STREET","between_street_2":"BOURKE STREET","street_segment_id":"20192"}
+,{"pay_stay_zone":"30001551","street":"LITTLE LONSDALE STREET","between_street_1":"SWANSTON STREET","between_street_2":"RUSSELL STREET","street_segment_id":"20038"}
+,{"pay_stay_zone":"30001638","street":"RUSSELL STREET","between_street_1":"BOURKE STREET","between_street_2":"LITTLE COLLINS STREET","street_segment_id":"20149"}
+,{"pay_stay_zone":"30001612","street":"QUEEN STREET","between_street_1":"LONSDALE STREET","between_street_2":"LITTLE BOURKE STREET","street_segment_id":"20175"}
+,{"pay_stay_zone":"30001542","street":"LITTLE LONSDALE STREET","between_street_1":"KING STREET","between_street_2":"WILLIAM STREET","street_segment_id":"20046"}
+,{"pay_stay_zone":"30001552","street":"LITTLE LONSDALE STREET","between_street_1":"WILLIAM STREET","between_street_2":"KING STREET","street_segment_id":"20046"}
+,{"pay_stay_zone":"30001528","street":"LITTLE COLLINS STREET","between_street_1":"QUEEN STREET","between_street_2":"WILLIAM STREET","street_segment_id":"20101"}
+,{"pay_stay_zone":"30001557","street":"LONSDALE STREET","between_street_1":"SWANSTON STREET","between_street_2":"RUSSELL STREET","street_segment_id":"20005"}
+,{"pay_stay_zone":"30001491","street":"KING STREET","between_street_1":"LITTLE LONSDALE STREET","between_street_2":"LONSDALE STREET","street_segment_id":"20194"}
+,{"pay_stay_zone":"30001699","street":"WILLIAM STREET","between_street_1":"LA TROBE STREET","between_street_2":"LITTLE LONSDALE STREET","street_segment_id":"20187"}
+,{"pay_stay_zone":"30001490","street":"KING STREET","between_street_1":"LONSDALE STREET","between_street_2":"LITTLE LONSDALE STREET","street_segment_id":"20194"}
+,{"pay_stay_zone":"30001633","street":"RUSSELL STREET","between_street_1":"LITTLE BOURKE STREET","between_street_2":"LONSDALE STREET","street_segment_id":"20151"}
+,{"pay_stay_zone":"30001510","street":"EXHIBITION STREET","between_street_1":"BOURKE STREET","between_street_2":"LITTLE COLLINS STREET","street_segment_id":"20141"}
+,{"pay_stay_zone":"30001546","street":"LITTLE LONSDALE STREET","between_street_1":"QUEEN STREET","between_street_2":"WILLIAM STREET","street_segment_id":"20044"}
+,{"pay_stay_zone":"30001780","street":"RUSSELL STREET","between_street_1":"LITTLE LONSDALE STREET","between_street_2":"LA TROBE STREET","street_segment_id":"20153"}
+,{"pay_stay_zone":"30001412","street":"EXHIBITION STREET","between_street_1":"LITTLE LONSDALE STREET","between_street_2":"LONSDALE STREET","street_segment_id":"20144"}
+,{"pay_stay_zone":"30001406","street":"EXHIBITION STREET","between_street_1":"LA TROBE STREET","between_street_2":"LITTLE LONSDALE STREET","street_segment_id":"20145"}
+,{"pay_stay_zone":"30001702","street":"WILLIAM STREET","between_street_1":"LITTLE BOURKE STREET","between_street_2":"BOURKE STREET","street_segment_id":"20184"}
+,{"pay_stay_zone":"30001622","street":"KING STREET","between_street_1":"LITTLE LONSDALE STREET","between_street_2":"LONSDALE STREET","street_segment_id":"20194"}
+,{"pay_stay_zone":"30001392","street":"ELIZABETH STREET","between_street_1":"PELHAM STREET","between_street_2":"QUEENSBERRY STREET","street_segment_id":"21115"}
+,{"pay_stay_zone":"30001548","street":"LITTLE LONSDALE STREET","between_street_1":"SPRING STREET","between_street_2":"EXHIBITION STREET","street_segment_id":"20034"}
+,{"pay_stay_zone":"30001541","street":"LITTLE LONSDALE STREET","between_street_1":"EXHIBITION STREET","between_street_2":"SPRING STREET","street_segment_id":"20034"}
+,{"pay_stay_zone":"30001606","street":"QUEEN STREET","between_street_1":"LITTLE BOURKE STREET","between_street_2":"LONSDALE STREET","street_segment_id":"20175"}
+,{"pay_stay_zone":"30001486","street":"KING STREET","between_street_1":"LITTLE COLLINS STREET","between_street_2":"BOURKE STREET","street_segment_id":"20191"}
+,{"pay_stay_zone":"30001549","street":"LITTLE LONSDALE STREET","between_street_1":"SPRING STREET","between_street_2":"EXHIBITION STREET","street_segment_id":"20034"}
+,{"pay_stay_zone":"30001700","street":"WILLIAM STREET","between_street_1":"LITTLE BOURKE STREET","between_street_2":"LONSDALE STREET","street_segment_id":"20185"}
+,{"pay_stay_zone":"30001701","street":"WILLIAM STREET","between_street_1":"LITTLE BOURKE STREET","between_street_2":"LONSDALE STREET","street_segment_id":"20185"}
+,{"pay_stay_zone":"30001379","street":"ELIZABETH STREET","between_street_1":"BOURKE STREET","between_street_2":"LITTLE BOURKE STREET","street_segment_id":"20166"}
+,{"pay_stay_zone":"30001397","street":"EXHIBITION STREET","between_street_1":"BOURKE STREET","between_street_2":"LITTLE BOURKE STREET","street_segment_id":"20142"}
+,{"pay_stay_zone":"30001411","street":"EXHIBITION STREET","between_street_1":"LONSDALE STREET","between_street_2":"LITTLE LONSDALE STREET","street_segment_id":"20144"}
+,{"pay_stay_zone":"30001649","street":"SPRING STREET","between_street_1":"LONSDALE STREET","between_street_2":"LITTLE LONSDALE STREET","street_segment_id":"21848"}
+,{"pay_stay_zone":"30001693","street":"WILLIAM STREET","between_street_1":"COLLINS STREET","between_street_2":"LITTLE COLLINS STREET","street_segment_id":"20182"}
+,{"pay_stay_zone":"30001605","street":"QUEEN STREET","between_street_1":"LITTLE BOURKE STREET","between_street_2":"LONSDALE STREET","street_segment_id":"20175"}
+,{"pay_stay_zone":"30001399","street":"EXHIBITION STREET","between_street_1":"COLLINS STREET","between_street_2":"LITTLE COLLINS STREET","street_segment_id":"20140"}
+,{"pay_stay_zone":"30001705","street":"WILLIAM STREET","between_street_1":"LONSDALE STREET","between_street_2":"LITTLE LONSDALE STREET","street_segment_id":"20186"}
+,{"pay_stay_zone":"30001530","street":"LITTLE COLLINS STREET","between_street_1":"QUEEN STREET","between_street_2":"WILLIAM STREET","street_segment_id":"20101"}
+,{"pay_stay_zone":"30001607","street":"QUEEN STREET","between_street_1":"LITTLE COLLINS STREET","between_street_2":"BOURKE STREET","street_segment_id":"20173"}
+,{"pay_stay_zone":"30001396","street":"EXHIBITION STREET","between_street_1":"LITTLE BOURKE STREET","between_street_2":"BOURKE STREET","street_segment_id":"20142"}
+,{"pay_stay_zone":"30001625","street":"RUSSELL STREET","between_street_1":"BOURKE STREET","between_street_2":"LITTLE BOURKE STREET","street_segment_id":"20150"}
+,{"pay_stay_zone":"30001533","street":"LITTLE COLLINS STREET","between_street_1":"SPRING STREET","between_street_2":"EXHIBITION STREET","street_segment_id":"20091"}
+,{"pay_stay_zone":"30001644","street":"SPENCER STREET","between_street_1":"LITTLE COLLINS STREET","between_street_2":"BOURKE STREET","street_segment_id":"20073"}
+,{"pay_stay_zone":"30001704","street":"WILLIAM STREET","between_street_1":"LITTLE LONSDALE STREET","between_street_2":"LA TROBE STREET","street_segment_id":"20187"}
+,{"pay_stay_zone":"30001647","street":"SPRING STREET","between_street_1":"LITTLE BOURKE STREET","between_street_2":"LONSDALE STREET","street_segment_id":"20206"}
+,{"pay_stay_zone":"30001550","street":"LITTLE LONSDALE STREET","between_street_1":"SWANSTON STREET","between_street_2":"RUSSELL STREET","street_segment_id":"20038"}
+,{"pay_stay_zone":"30001545","street":"LITTLE LONSDALE STREET","between_street_1":"QUEEN STREET","between_street_2":"WILLIAM STREET","street_segment_id":"20044"}
+,{"pay_stay_zone":"30001527","street":"LITTLE LONSDALE STREET","between_street_1":"WILLIAM STREET","between_street_2":"KING STREET","street_segment_id":"20046"}
+,{"pay_stay_zone":"30001649","street":"SPRING STREET","between_street_1":"LITTLE LONSDALE STREET","between_street_2":"VICTORIA PARADE","street_segment_id":"21847"}
+,{"pay_stay_zone":"30001613","street":"QUEEN STREET","between_street_1":"LONSDALE STREET","between_street_2":"LITTLE LONSDALE STREET","street_segment_id":"20176"}
+,{"pay_stay_zone":"30001611","street":"QUEEN STREET","between_street_1":"LONSDALE STREET","between_street_2":"LITTLE LONSDALE STREET","street_segment_id":"20176"}
+,{"pay_stay_zone":"30001696","street":"WILLIAM STREET","between_street_1":"COLLINS STREET","between_street_2":"LITTLE COLLINS STREET","street_segment_id":"20182"}
+,{"pay_stay_zone":"30001362","street":"COLLINS STREET","between_street_1":"KING STREET","between_street_2":"WILLIAM STREET","street_segment_id":"20118"}
+,{"pay_stay_zone":"30001635","street":"RUSSELL STREET","between_street_1":"LA TROBE STREET","between_street_2":"LITTLE LONSDALE STREET","street_segment_id":"20153"}
+,{"pay_stay_zone":"30001470","street":"KING STREET","between_street_1":"BOURKE STREET","between_street_2":"LITTLE BOURKE STREET","street_segment_id":"20192"}
+,{"pay_stay_zone":"30001489","street":"KING STREET","between_street_1":"LA TROBE STREET","between_street_2":"LITTLE LONSDALE STREET","street_segment_id":"20195"}
+,{"pay_stay_zone":"30001646","street":"SPRING STREET","between_street_1":"LITTLE BOURKE STREET","between_street_2":"BOURKE STREET","street_segment_id":"20204"}
+,{"pay_stay_zone":"30001614","street":"QUEEN STREET","between_street_1":"LONSDALE STREET","between_street_2":"LITTLE LONSDALE STREET","street_segment_id":"20176"}
+,{"pay_stay_zone":"30001471","street":"KING STREET","between_street_1":"LITTLE BOURKE STREET","between_street_2":"BOURKE STREET","street_segment_id":"20192"}
+,{"pay_stay_zone":"30001703","street":"WILLIAM STREET","between_street_1":"LITTLE LONSDALE STREET","between_street_2":"LA TROBE STREET","street_segment_id":"20187"}
+,{"pay_stay_zone":"30001409","street":"EXHIBITION STREET","between_street_1":"LITTLE BOURKE STREET","between_street_2":"LONSDALE STREET","street_segment_id":"20143"}
+,{"pay_stay_zone":"30001630","street":"RUSSELL STREET","between_street_1":"BOURKE STREET","between_street_2":"LITTLE COLLINS STREET","street_segment_id":"20149"}
+,{"pay_stay_zone":"30001517","street":"LITTLE BOURKE STREET","between_street_1":"KING STREET","between_street_2":"SPENCER STREET","street_segment_id":"20063"}
+,{"pay_stay_zone":"30001642","street":"SPENCER STREET","between_street_1":"BOURKE STREET","between_street_2":"LITTLE BOURKE STREET","street_segment_id":"20075"}
+,{"pay_stay_zone":"30001275","street":"SPRING STREET","between_street_1":"LITTLE LONSDALE STREET","between_street_2":"LONSDALE STREET","street_segment_id":"21848"}
+,{"pay_stay_zone":"30001529","street":"LITTLE COLLINS STREET","between_street_1":"RUSSELL STREET","between_street_2":"EXHIBITION STREET","street_segment_id":"20093"}
+,{"pay_stay_zone":"30001390","street":"ELIZABETH STREET","between_street_1":"LITTLE LONSDALE STREET","between_street_2":"LA TROBE STREET","street_segment_id":"20169"}
+,{"pay_stay_zone":"30001535","street":"LITTLE COLLINS STREET","between_street_1":"WILLIAM STREET","between_street_2":"KING STREET","street_segment_id":"20103"}
+,{"pay_stay_zone":"30001624","street":"KING STREET","between_street_1":"LITTLE LONSDALE STREET","between_street_2":"LA TROBE STREET","street_segment_id":"20195"}
+,{"pay_stay_zone":"30001210","street":"LITTLE DOCKLANDS DRIVE","between_street_1":"FOOTSCRAY ROAD","between_street_2":"WATERFRONT WAY","street_segment_id":"23226"}
+,{"pay_stay_zone":"30001487","street":"KING STREET","between_street_1":"LITTLE COLLINS STREET","between_street_2":"COLLINS STREET","street_segment_id":"20190"}
+,{"pay_stay_zone":"30001628","street":"RUSSELL STREET","between_street_1":"COLLINS STREET","between_street_2":"LITTLE COLLINS STREET","street_segment_id":"20148"}
+,{"pay_stay_zone":"30001608","street":"QUEEN STREET","between_street_1":"LITTLE COLLINS STREET","between_street_2":"BOURKE STREET","street_segment_id":"20173"}
+,{"pay_stay_zone":"30001629","street":"RUSSELL STREET","between_street_1":"LITTLE COLLINS STREET","between_street_2":"BOURKE STREET","street_segment_id":"20149"}
+,{"pay_stay_zone":"30001639","street":"RUSSELL STREET","between_street_1":"LONSDALE STREET","between_street_2":"LITTLE LONSDALE STREET","street_segment_id":"20152"}
+,{"pay_stay_zone":"30001689","street":"WILLIAM STREET","between_street_1":"BOURKE STREET","between_street_2":"LITTLE BOURKE STREET","street_segment_id":"20184"}
+,{"pay_stay_zone":"30001405","street":"EXHIBITION STREET","between_street_1":"LITTLE COLLINS STREET","between_street_2":"COLLINS STREET","street_segment_id":"20140"}
+,{"pay_stay_zone":"30001538","street":"LITTLE LONSDALE STREET","between_street_1":"RUSSELL STREET","between_street_2":"SWANSTON STREET","street_segment_id":"20038"}
+,{"pay_stay_zone":"30001691","street":"WILLIAM STREET","between_street_1":"COLLINS STREET","between_street_2":"LITTLE COLLINS STREET","street_segment_id":"20182"}
+,{"pay_stay_zone":"30001477","street":"KING STREET","between_street_1":"COLLINS STREET","between_street_2":"LITTLE COLLINS STREET","street_segment_id":"20190"}
+,{"pay_stay_zone":"30001519","street":"LITTLE BOURKE STREET","between_street_1":"QUEEN STREET","between_street_2":"WILLIAM STREET","street_segment_id":"20059"}
+,{"pay_stay_zone":"30001472","street":"KING STREET","between_street_1":"LITTLE COLLINS STREET","between_street_2":"BOURKE STREET","street_segment_id":"20191"}
+,{"pay_stay_zone":"30001615","street":"QUEEN STREET","between_street_1":"LITTLE LONSDALE STREET","between_street_2":"LA TROBE STREET","street_segment_id":"20177"}]
