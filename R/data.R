@@ -12,6 +12,7 @@ library(glue)
 #' @return dataframe
 load_json <- function(filename, ...) {
   df <- jsonlite::fromJSON(txt = filename, flatten = TRUE)
+  print(glue("Loaded dataframe with {nrow(df)} rows"))
   return(df)
 }
 
@@ -114,6 +115,55 @@ load_master_data <- function() {
     # inner_join(paystay_segments, by = "rd_seg_id") %>%
     # inner_join(paystay_restrictions, by = "pay_stay_zone") %>%
     left_join(sensors, by = c("bay_id"))
+
+  #' @debug
+  View(df)
+
+  return(df)
+}
+
+#' Loads all the required data and performs the necessary joins
+#' @returns Dataframe containing an entire set of required data
+load_master_data_local <- function() {
+  #' @section City of Melbourne parking datasets -----------------------------
+
+  # On-street parking bay sensors
+  # sensors should be 2-min live, but is currently disrupted, thus static
+  #todo use historical sensors_2019 data
+  sensors <- load_json("./data/sensors.json") %>%
+    # rename foreign key st_marker_id to marker_id for consistency
+    rename(marker_id = st_marker_id) %>%
+    # select the required info
+    select(c(bay_id, status))
+
+  # On-street parking bays
+  bays <- load_json("./data/bays.json")
+
+  # On-street car park bay restrictions
+  disability <- load_json("./data/restrictions_disability.json") %>%
+    # rename key bayid to bay_id for consistency
+    rename(bay_id = bayid, disability_deviceid = deviceid) %>%
+    select(c(bay_id, disability_deviceid))
+
+  #' @section Paystay datasets -----------------------------------------------
+
+  # Pay Stay parking restrictions
+  paystay_restrictions <- load_json(
+    "./data/paystay_restrictions_fri_0800.json"
+  )
+
+  # Pay Stay zones linked to street segments
+  paystay_segments <- load_json("./data/paystay_segments.json") %>%
+    # rename the foreign key street_segment_id to rd_segment_id
+    # for consistency
+    rename(rd_seg_id = street_segment_id) %>%
+    distinct(rd_seg_id, .keep_all = TRUE)
+
+  df <- bays %>%
+    #todo left_join(sensors_2019, by = "bay_id") %>%
+    left_join(paystay_segments, by = "rd_seg_id") %>%
+    left_join(paystay_restrictions, by = "pay_stay_zone") %>%
+    left_join(disability, by = c("bay_id"))
 
   #' @debug
   View(df)
