@@ -5,6 +5,8 @@ library(jsonlite)
 library(dplyr)
 library(RSocrata)
 library(glue)
+library(tidyr)
+library(stringr)
 
 #' Load data from either excel file or csv
 #' @param filename the filename for the file to be loaded
@@ -203,3 +205,24 @@ load_historical_sensors <- function() {
   View(df)
   return(df)
 }
+
+# Loads bay data and splits list of geom coordinates
+# to their respective latitude/longitude columns
+load_geom_bays <- function() {
+  bays <- load_json("./data/bays.json") %>%
+    select(the_geom.coordinates) %>%
+    separate(the_geom.coordinates, c('lat1', 'lat2', 'lat3', 'lat4',
+    'lat5', 'lon1', 'lon2', 'lon3', 'lon4', 'lon5'), sep = ',',
+     remove = TRUE, extra = "drop", fill = 'right') 
+  
+  bays$lat1 <- gsub("[c(]" , "", bays$lat1)
+  View(bays) 
+}
+
+
+# load_bays <- function() {
+#   bays <- load_json("./data/bays.json") %>%
+#     select(the_geom.coordinates) 
+
+#   View(bays) 
+# }
