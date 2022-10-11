@@ -93,13 +93,6 @@ load_master_data <- function() {
     # rename key bayid to bay_id for consistency
     rename(bay_id = bayid)
 
-  # On-street car parking meters with location
-  meters <- load_remote("meters") %>%
-    # rename key meterid to meter_id for consistency
-    rename(meter_id = meterid) %>%
-    # make longitude, latitude numeric
-    mutate_at(c("longitude", "latitude"), as.numeric)
-
   #' @section Paystay datasets -----------------------------------------------
 
   # Pay Stay parking restrictions
@@ -131,26 +124,35 @@ load_master_data_local <- function() {
 
   # On-street parking bay sensors
   # sensors should be 2-min live, but is currently disrupted, thus static
-  #todo use historical sensors_2019 data
-  sensors <- load_json("./data/sensors.json") %>%
-    # rename foreign key st_marker_id to marker_id for consistency
-    rename(marker_id = st_marker_id) %>%
+  # Using archived data from 27-09-2019 0800
+  sensors <- load_json("./data/sensors_2019_09_27_0800.json") %>%
+    # rename key bayid to bay_id for consistency
+    rename(bay_id = bayid, occupied_id = deviceid) %>%
     # select the required info
-    select(c(bay_id, status))
+    select(c(bay_id, occupied_id))
 
   # On-street parking bays
-  bays <- load_json("./data/bays.json") %>%
+  bays <- load_json("./data/bays.json")
+  # formats coordinates into their latitude and longitude separately
+  coordinates <- bays %>%
     separate(the_geom.coordinates, c('lat1', 'lat2', 'lat3', 'lat4',
-    'lat5', 'lon1', 'lon2', 'lon3', 'lon4', 'lon5'), sep = ',',
-     remove = TRUE, extra = "drop", fill = 'right')
-  # removes extra characters from lat1 column 
-  bays$lat1 <- gsub("[c(]" , "", bays$lat1)
+      'lat5', 'lon1', 'lon2', 'lon3', 'lon4', 'lon5'), sep = ',',
+      remove = TRUE, extra = "drop", fill = 'right')
+  # removes extra characters from lat1 column
+  # and appends first set of coordinates to bays
+  bays$lat <- gsub("[c(]" , "", coordinates$lat1)
+  bays$lon <- coordinates$lon1
+  # drops unused columns
+  bays <- bays %>%
+    select(-c(the_geom.coordinates,the_geom.type, meter_id, last_edit, rd_seg_dsc, marker_id))
 
   # On-street car park bay restrictions
-  disability <- load_json("./data/restrictions_disability.json") %>%
+  disability <- load_json("./data/restrictions_disability_only.json") %>%
     # rename key bayid to bay_id for consistency
     rename(bay_id = bayid, disability_deviceid = deviceid) %>%
     select(c(bay_id, disability_deviceid))
+
+
 
   #' @section Paystay datasets -----------------------------------------------
 
@@ -163,14 +165,13 @@ load_master_data_local <- function() {
   paystay_segments <- load_json("./data/paystay_segments.json") %>%
     # rename the foreign key street_segment_id to rd_segment_id
     # for consistency
-    rename(rd_seg_id = street_segment_id) %>%
-    distinct(rd_seg_id, .keep_all = TRUE)
+    rename(rd_seg_id = street_segment_id) 
 
   df <- bays %>%
-    #todo left_join(sensors_2019, by = "bay_id") %>%
+    left_join(sensors, by = "bay_id") %>%
+    left_join(disability, by = "bay_id") %>%
     left_join(paystay_segments, by = "rd_seg_id") %>%
-    left_join(paystay_restrictions, by = "pay_stay_zone") %>%
-    left_join(disability, by = c("bay_id"))
+    left_join(paystay_restrictions, by = "pay_stay_zone") 
 
   #' @debug
   View(df)
