@@ -70,6 +70,7 @@ load_remote <- function(dataset, params = list()) {
 }
 
 #' Loads all the required data and performs the necessary joins
+#' @note This is currently not in use, use load_master_data_local instead.
 #' @returns Dataframe containing an entire set of required data
 load_master_data <- function() {
   #' @section City of Melbourne parking datasets -----------------------------
