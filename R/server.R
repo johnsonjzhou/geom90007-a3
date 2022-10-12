@@ -59,8 +59,8 @@ server <- function(input, output, session) {
   #' @param filter_cc {bool} Filter for credit cards payment method.
   state$filter_cc <- FALSE
 
-  #' @param loc_default {c(lat, lon)} The default location, NGV.
-  state$loc_default <- c(-37.822477, 144.969162)
+  #' @param loc {c(lat, lon)} The focus location, default NGV
+  state$filter_loc <- c(-37.822477, 144.969162)
 
   #' @param loc_gps {c(lat, lon)} The user's gps coordinates.
   state$loc_gps <- NULL

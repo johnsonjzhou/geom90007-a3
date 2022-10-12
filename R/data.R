@@ -9,6 +9,7 @@ library(tidyr)
 library(stringr)
 library(geojsonio)
 library(rgeos)
+library(pracma)
 
 #' Load data from json
 #' @param filename the filename for the file to be loaded
@@ -183,7 +184,7 @@ load_master_data_local <- function() {
     left_join(paystay_restrictions, by = "pay_stay_zone") 
 
   #' @debug
-  View(df)
+  # View(df)
 
   return(df)
 }
@@ -199,12 +200,25 @@ map_data <- function(master_data, state) {
   filter_radius <- state$filter_radius
   filter_cost <- state$filter_cost
   filter_duration <- state$filter_duration
-  filter_tap <- state$filter_tap
-  filter_cc <- state$filter_cc
+  filter_loc <- state$filter_loc
 
+  # Filter master_data
   filtered <- master_data %>%
+    # Calculate the distance from the focus location
+    rowwise() %>%
+    mutate(
+      distance = pracma::haversine(c(latitude, longitude), filter_loc)
+    ) %>%
+    # Select points residing within the filter_radius
+    filter(
+      distance >= filter_radius[1] &
+      distance <= filter_radius[2]
+    ) %>%
     distinct(bay_id, .keep_all = TRUE)
-  
+
+  #' @debug
+  View(filtered)
+
   return(filtered)
 }
 
@@ -223,3 +237,17 @@ load_historical_sensors <- function() {
   View(df)
   return(df)
 }
+# library(pracma)
+
+# ngv <- c(-37.822477, 144.969162)
+# t <- load_master_data_local()
+# x <- t %>%
+#   rowwise() %>%
+#   mutate(
+#     # coords = c(latitude, longitude)
+#     dist = pracma::haversine(c(latitude, longitude), ngv)
+#   ) %>%
+#   filter(
+#     dist < 1
+#   )
+# View(x)
