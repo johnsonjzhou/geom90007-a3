@@ -10,7 +10,7 @@ library(stringr)
 library(geojsonio)
 library(rgeos)
 
-#' Load data from either excel file or csv
+#' Load data from json
 #' @param filename the filename for the file to be loaded
 #' @param ... additional parameters to pass to jsonlite::fromJSON
 #' @return dataframe
