@@ -19,7 +19,7 @@ map_renderer <- function(map_data, state) {
   mapbox_template <- paste0(
     "https://api.mapbox.com/styles/v1/bringmerocks/",
     "cl6sz4cs5002k14nx3w26n0jq",
-    "/tiles/{z}/{x}/{y}{@2x}",
+    "/tiles/{z}/{x}/{y}",
     "?access_token=",
     "pk.eyJ1IjoiYnJpbmdtZXJvY2tzIiwiYSI6ImNsNmo0dzdiMDNkMHYzanFzY3lkeHZvbGQifQ",
     ".fEx-BQJvdzz_J4-XIWazbw"
