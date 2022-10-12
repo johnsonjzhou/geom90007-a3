@@ -21,7 +21,9 @@ dependencies <- c(
   "colorspace",
   "htmltools",
   "pracma",
-  "RSocrata"
+  "RSocrata",
+  "geojsonio",
+  "rgeos"
 )
 
 #' Attempts to load packages and install them if required
