@@ -39,19 +39,19 @@ server <- function(input, output, session) {
   )
 
   #' @param filter_free {bool} Filter for free parking.
-  state$filter_free <- FALSE
+  state$filter_free <- TRUE
 
   #' @param filter_accessible {bool} Filter for disabled access.
   state$filter_accessible <- FALSE
 
   #' @param filter_radius {c(min, max)} Distance range from specified location.
-  state$filter_radius <- c(0, 0.75)
+  state$filter_radius <- c(0, 0.4)
 
   #' @param filter_cost {c(min, max)} Filter for price range.
-  state$filter_cost <- c(0, 10)
+  state$filter_cost <- c(0, 120)
 
   #' @param filter_duration {integer} Filter for parking duration.
-  state$filter_duration <- 4
+  state$filter_duration <- 180
 
   #' @param filter_tap {bool} Filter for tap and go payment method.
   state$filter_tap <- FALSE
@@ -61,12 +61,6 @@ server <- function(input, output, session) {
 
   #' @param loc {c(lat, lon)} The focus location, default NGV
   state$filter_loc <- c(-37.822477, 144.969162)
-
-  #' @param loc_gps {c(lat, lon)} The user's gps coordinates.
-  state$loc_gps <- NULL
-
-  #' @param loc_search {c(lat, lon)} The coordinates of the search location.
-  state$loc_search <- NULL
 
   #' @param loc_search_name {character} The name of the search location.
   state$loc_search_name <- ""

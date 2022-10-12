@@ -169,7 +169,8 @@ load_master_data_local <- function() {
   # Pay Stay parking restrictions
   paystay_restrictions <- load_json(
     "./data/paystay_restrictions_fri_0800.json"
-  )
+  ) %>%
+  mutate_at(c("cost_per_hour", "maximum_stay"), as.numeric)
 
   # Pay Stay zones linked to street segments
   paystay_segments <- load_json("./data/paystay_segments.json") %>%
@@ -214,6 +215,34 @@ map_data <- function(master_data, state) {
       distance >= filter_radius[1] &
       distance <= filter_radius[2]
     ) %>%
+    # Select points that satisfies the cost filter
+    # If cost_per_hour is NA, means the bay is Free
+    filter(
+      is.na(cost_per_hour) |
+      (
+        cost_per_hour >= filter_cost[1] &
+        cost_per_hour <= filter_cost[2]
+      )
+    ) %>%
+    # Select points that exceeds the duration filter
+    # If maximum_stay is NA, means no time restrictions apply
+    filter(
+      is.na(maximum_stay) |
+      maximum_stay > filter_duration
+    )
+
+  # If required, display points only if they are not occupied
+  if (filter_free) {
+    filtered <- filtered %>% filter(is.na(occupied_id))
+  }
+
+  # If required, display points only if they are disability accessible
+  if (filter_accessible) {
+    filtered <- filtered %>% filter(!is.na(disability_deviceid))
+  }
+
+  # Return only unique bays (remove any duplicates)
+  filtered <- filtered %>%
     distinct(bay_id, .keep_all = TRUE)
 
   #' @debug
@@ -237,17 +266,3 @@ load_historical_sensors <- function() {
   View(df)
   return(df)
 }
-# library(pracma)
-
-# ngv <- c(-37.822477, 144.969162)
-# t <- load_master_data_local()
-# x <- t %>%
-#   rowwise() %>%
-#   mutate(
-#     # coords = c(latitude, longitude)
-#     dist = pracma::haversine(c(latitude, longitude), ngv)
-#   ) %>%
-#   filter(
-#     dist < 1
-#   )
-# View(x)
