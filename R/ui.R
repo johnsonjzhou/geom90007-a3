@@ -33,7 +33,7 @@ headers <- tags$head(
 filter_panel <- tabPanel(
   title = "Filters",
   fluidRow(
-    class = "header-row",
+    class = "row header",
     tags$h1(
       "Filters"
     ),
@@ -43,21 +43,21 @@ filter_panel <- tabPanel(
     )
   ),
   fluidRow(
-    class = "control-row",
+    class = "row control",
     checkboxInput(
       inputId = "filter_free",
       label = "Show only free ($0) spots"
     )
   ),
   fluidRow(
-    class = "control-row",
+    class = "row control",
     checkboxInput(
       inputId = "filter_accessible",
       label = "Show only disability-friendly spots"
     )
   ),
   fluidRow(
-    class = "control-row",
+    class = "row control",
     tags$div(
       class = "label",
       "Radius"
@@ -73,7 +73,7 @@ filter_panel <- tabPanel(
     )
   ),
   fluidRow(
-    class = "control-row cost",
+    class = "row control collapse",
     tags$div(
       class = "label",
       "Cost"
@@ -90,27 +90,36 @@ filter_panel <- tabPanel(
     )
   ),
   fluidRow(
-    class = "control-row duration",
+    class = "row control collapse",
     tags$div(
       class = "label",
       "Parking duration"
     ),
-    actionButton(
-      inputId = "filter_duration_dec",
-      label = "-"
+    fluidRow(
+      class = "row duration",
+      actionButton(
+        inputId = "filter_duration_dec",
+        class = "stepwise",
+        label = "-"
+      ),
+      numericInput(
+        inputId = "filter_duration",
+        label = "Duration",
+        value = 2
+      ),
+      actionButton(
+        inputId = "filter_duration_inc",
+        class = "stepwise",
+        label = "+"
+      )
     ),
-    numericInput(
-      inputId = "filter_duration",
-      label = "Duration",
-      value = 2
+    tags$div(
+      class = "label small",
+      "hours"
     ),
-    actionButton(
-      inputId = "filter_duration_inc",
-      label = "+"
-    )
   ),
   fluidRow(
-    class = "control-row",
+    class = "row control",
     actionButton(
       inputId = "search",
       label = "Search"

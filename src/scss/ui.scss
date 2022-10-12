@@ -60,6 +60,31 @@ html {
       &.active {
         transform: translate(-50%, -50%);
       }
+      
+      .row {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        gap: 10px;
+        
+        &.header {
+          justify-content: center;
+        }
+        
+        &.control {
+          input {
+            width: 60px;
+          }
+          
+          &.collapse {
+            .shiny-input-container {
+              width: auto;
+            }
+          }
+        }
+      }
     }
   }
 }
