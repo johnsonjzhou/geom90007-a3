@@ -1,3 +1,3 @@
-html{font-size:16px}html body{color:#52525f;background-color:#fff;font-family:"brandon-grotesque","Helvetica","Arial",sans-serif;font-weight:400}.navbar{display:none}.container .tab-pane[data-value=Map]{display:block;position:fixed;width:100vw;height:100vh;top:50%;left:50%;transform:translate(-50%, -50%)}
+html{font-size:16px}html body{color:#52525f;background-color:#fff;font-family:"brandon-grotesque","Helvetica","Arial",sans-serif;font-weight:400}.navbar{display:none}.container .tab-pane[data-value=Map]{display:block;position:fixed;width:100vw;height:100vh;top:50%;left:50%;transform:translate(-50%, -50%)}.container .tab-pane[data-value=Filters]{display:block;position:fixed;top:50%;left:50%;transform:translate(-50%, 60%)}.container .tab-pane[data-value=Filters].active{transform:translate(-50%, -50%)}
 
 /*# sourceMappingURL=shiny_app.css.map*/

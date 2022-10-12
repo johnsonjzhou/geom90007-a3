@@ -11,9 +11,11 @@ server <- function(input, output, session) {
   #' Event handlers ----------------------------------------------------------
 
   # Event handling template
-  # observeEvent(input${handler}, {
-  #   session$sendCustomMessage(type = "event_name", message = "message")
-  # })
+  observeEvent(input$filters_show_hide, {
+    session$sendCustomMessage(
+      type = "filters_panel_toggle", message = "message"
+    )
+  })
 
   #' State -------------------------------------------------------------------
 

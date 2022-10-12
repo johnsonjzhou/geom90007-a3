@@ -47,5 +47,19 @@ html {
       left: 50%;
       transform: translate(-50%, -50%)
     }
+    
+    // Filters pane
+    &[data-value="Filters"] {
+      display: block;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, 60%);
+      transition: all 0.3s ease;
+      
+      &.active {
+        transform: translate(-50%, -50%);
+      }
+    }
   }
 }
