@@ -7,6 +7,8 @@ library(RSocrata)
 library(glue)
 library(tidyr)
 library(stringr)
+library(geojsonio)
+library(rgeos)
 
 #' Load data from either excel file or csv
 #' @param filename the filename for the file to be loaded
@@ -16,6 +18,16 @@ load_json <- function(filename, ...) {
   df <- jsonlite::fromJSON(txt = filename, flatten = TRUE)
   print(glue("Loaded dataframe with {nrow(df)} rows"))
   return(df)
+}
+
+#' Load data from a geojson spatial file
+#' @param filename the filename for the file to be loaded
+#' @param ... additional parameters to pass to geojsonio::geojson_read
+#' @return spatial dataframe
+load_geojson <- function(filename, ...) {
+  sp_df <- geojsonio::geojson_read(filename, what = "sp")
+  print(glue("Loaded spatial dataframe with {nrow(sp_df)} rows"))
+  return(sp_df)
 }
 
 #' Queries the Socrata API to get data
@@ -133,19 +145,15 @@ load_master_data_local <- function() {
     select(c(bay_id, occupied_id))
 
   # On-street parking bays
-  bays <- load_json("./data/bays.json")
-  # formats coordinates into their latitude and longitude separately
-  coordinates <- bays %>%
-    separate(the_geom.coordinates, c('lat1', 'lat2', 'lat3', 'lat4',
-      'lat5', 'lon1', 'lon2', 'lon3', 'lon4', 'lon5'), sep = ',',
-      remove = TRUE, extra = "drop", fill = 'right')
-  # removes extra characters from lat1 column
-  # and appends first set of coordinates to bays
-  bays$lat <- gsub("[c(]" , "", coordinates$lat1)
-  bays$lon <- coordinates$lon1
-  # drops unused columns
-  bays <- bays %>%
-    select(-c(the_geom.coordinates,the_geom.type, meter_id, last_edit, rd_seg_dsc, marker_id))
+  bays_sp <- load_geojson("./data/bays.geojson")
+  # Calculate the centroids from the spatial data
+  bay_centroids <- rgeos::gCentroid(bays_sp, byid = TRUE)
+  # Extract the dataframe from the spatial dataframe
+  # Assign the longitude, latitude from the calculated centroids
+  bays <- bays_sp@data %>% mutate(
+    longitude = bay_centroids@coords[, 1],
+    latitude = bay_centroids@coords[, 2]
+  )
 
   # On-street car park bay restrictions
   disability <- load_json("./data/restrictions_disability_only.json") %>%
@@ -194,7 +202,10 @@ map_data <- function(master_data, state) {
   filter_tap <- state$filter_tap
   filter_cc <- state$filter_cc
 
-
+  filtered <- master_data %>%
+    distinct(bay_id, .keep_all = TRUE)
+  
+  return(filtered)
 }
 
 #' Loads historical data for a given time

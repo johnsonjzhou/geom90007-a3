@@ -80,7 +80,7 @@ server <- function(input, output, session) {
   })
 
   #' Master data --------------------------------------------------------------
-  master_data <- load_master_data()
+  master_data <- load_master_data_local()
 
   #' Mapping -----------------------------------------------------------------
 
@@ -92,7 +92,7 @@ server <- function(input, output, session) {
 
   #' Render the world map in a leaflet widget
   output$leaflet_map <- renderLeaflet(
-    map_renderer(master_data, state)
+    map_renderer(map_data(master_data, state), state)
   )
 
   # Other app stuff-----------------------------------------------------------
