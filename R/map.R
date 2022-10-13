@@ -4,8 +4,23 @@
 library(dplyr)
 library(leaflet)
 library(htmltools)
+library(glue)
 
 # Map definition---------------------------------------------------------------
+
+#' Generates a symbol to indicate a parking bay
+#' @param type Either filled or unfilled
+#' @param zoom the map zoom level
+#' @return icon
+map_symbol <- function(type = "filled", zoom = 1) {
+  img <- case_when(
+    type == "filled" ~ "./www/filled.svg",
+    type == "unfilled" ~ "./www/unfilled.svg"
+  )
+  size <- 6
+  icon <- makeIcon(img, NULL, size, size, className = glue("marker {type}"))
+  return(icon)
+}
 
 #' Handles leaflet rendering functions for the world map
 #' @param map_data the dataset for the world map with spacial information
@@ -45,7 +60,7 @@ map_renderer <- function(map_data, state) {
     #todo Add Marker Layer
     leaflet::addMarkers(
       ~ longitude, ~ latitude,
-      # icon =
+      icon = map_symbol("filled")
       # label =
     ) %>%
     #todo Add legend for custom symbols
