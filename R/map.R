@@ -44,8 +44,8 @@ map_renderer <- function(map_data, state) {
     # Initialise leaflet
     leaflet::leaflet(
       options = leaflet::leafletOptions(
-        # minZoom = 3,
-        # maxZoom = 6
+        minZoom = 15,
+        maxZoom = 18
       ),
       sizingPolicy = leaflet::leafletSizingPolicy(
         defaultWidth = "100%",
@@ -57,11 +57,14 @@ map_renderer <- function(map_data, state) {
       urlTemplate = mapbox_template,
       #todo attribution =
     ) %>%
-    #todo Add Marker Layer
+    # Add Marker Layer
     leaflet::addMarkers(
       ~ longitude, ~ latitude,
-      icon = map_symbol("filled")
-      # label =
+      icon = map_symbol("filled"),
+      clusterOptions = leaflet::markerClusterOptions(
+        disableClusteringAtZoom = 18
+      ),
+      clusterId = "clusters"
     ) %>%
     #todo Add legend for custom symbols
     # addControl(
