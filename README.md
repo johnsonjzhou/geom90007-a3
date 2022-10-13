@@ -13,6 +13,11 @@ source("./R/libraries.R")
 shiny::shinyApp(ui, server)
 ```
 
+### Running the Shiny App silently
+```R
+shiny::runApp(launch.browser = FALSE)
+```
+
 ## Building
 
 ### Directory tree
