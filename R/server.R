@@ -10,10 +10,53 @@ library(plotly)
 server <- function(input, output, session) {
   #' Event handlers ----------------------------------------------------------
 
-  # Event handling template
+  # Show and hide the Filters panel
   observeEvent(input$filters_show_hide, {
     session$sendCustomMessage(
       type = "filters_panel_toggle", message = "message"
+    )
+  })
+
+  # Toggle for displaying only free spaces
+  observeEvent(input$filter_free, {
+    state$filter_free <- input$filter_free
+  })
+
+  # Toggle for displaying only disability accessible spaces
+  observeEvent(input$filter_accessible, {
+    state$filter_accessible <- input$filter_accessible
+  })
+
+  # Range slider for distance from intended location
+  observeEvent(input$filter_radius, {
+    state$filter_radius <- input$filter_radius
+  })
+
+  # Cost filters
+  observeEvent(input$filter_cost_min, {
+    state$filter_cost <- c(input$filter_cost_min, input$filter_cost_max) * 100
+  })
+
+  observeEvent(input$filter_cost_max, {
+    state$filter_cost <- c(input$filter_cost_min, input$filter_cost_max) * 100
+  })
+
+  # Duration filter with increment buttons
+  observeEvent(input$filter_duration, {
+    state$filter_duration <- input$filter_duration * 60
+  })
+
+  observeEvent(input$filter_duration_inc, {
+    updateNumericInput(
+      inputId = "filter_duration",
+      value = input$filter_duration + 1
+    )
+  })
+
+  observeEvent(input$filter_duration_dec, {
+    updateNumericInput(
+      inputId = "filter_duration",
+      value = input$filter_duration - 1
     )
   })
 
@@ -41,16 +84,16 @@ server <- function(input, output, session) {
   )
 
   #' @param filter_free {bool} Filter for free parking.
-  state$filter_free <- TRUE
+  state$filter_free <- FALSE
 
   #' @param filter_accessible {bool} Filter for disabled access.
   state$filter_accessible <- FALSE
 
   #' @param filter_radius {c(min, max)} Distance range from specified location.
-  state$filter_radius <- c(0, 0.4)
+  state$filter_radius <- c(0.25, 0.5)
 
   #' @param filter_cost {c(min, max)} Filter for price range.
-  state$filter_cost <- c(0, 120)
+  state$filter_cost <- c(0, 200)
 
   #' @param filter_duration {integer} Filter for parking duration.
   state$filter_duration <- 180

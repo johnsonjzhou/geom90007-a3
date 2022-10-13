@@ -46,14 +46,16 @@ filter_panel <- tabPanel(
     class = "row control",
     checkboxInput(
       inputId = "filter_free",
-      label = "Show only free ($0) spots"
+      label = "Show only free ($0) spots",
+      value = FALSE
     )
   ),
   fluidRow(
     class = "row control",
     checkboxInput(
       inputId = "filter_accessible",
-      label = "Show only disability-friendly spots"
+      label = "Show only disability-friendly spots",
+      value = FALSE
     )
   ),
   fluidRow(
@@ -63,13 +65,13 @@ filter_panel <- tabPanel(
       "Radius"
     ),
     sliderInput(
-      inputId = "filter_duration",
+      inputId = "filter_radius",
       min = 0,
-      max = 1000,
-      step = 250,
-      value = 250,
+      max = 1,
+      step = 0.25,
+      value = c(0.25, 0.5),
       dragRange = TRUE,
-      label = "Cost"
+      label = "Radius"
     )
   ),
   fluidRow(
@@ -105,7 +107,7 @@ filter_panel <- tabPanel(
       numericInput(
         inputId = "filter_duration",
         label = "Duration",
-        value = 2
+        value = 3
       ),
       actionButton(
         inputId = "filter_duration_inc",

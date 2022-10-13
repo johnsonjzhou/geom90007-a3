@@ -233,7 +233,11 @@ map_data <- function(master_data, state) {
 
   # If required, display points only if they are not occupied
   if (filter_free) {
-    filtered <- filtered %>% filter(is.na(occupied_id))
+    filtered <- filtered %>% 
+      filter(
+        is.na(cost_per_hour) |
+        cost_per_hour == 0
+      )
   }
 
   # If required, display points only if they are disability accessible
@@ -242,11 +246,13 @@ map_data <- function(master_data, state) {
   }
 
   # Return only unique bays (remove any duplicates)
+  # and bays that are not occupied
   filtered <- filtered %>%
+    filter(is.na(occupied_id)) %>%
     distinct(bay_id, .keep_all = TRUE)
 
   #' @debug
-  View(filtered)
+  # View(filtered)
 
   return(filtered)
 }
