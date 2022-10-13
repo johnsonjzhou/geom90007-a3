@@ -18,6 +18,34 @@ $colors: (
   "highlight": #61D095
 );
 
+// Responsive mixin
+@mixin responsive($min-screen-width) {
+  @media screen and (min-width: #{$min-screen-width}) {
+    @content;
+  }
+}
+
+// Responsive breakpoint for tablet
+@mixin responsive-tablet() {
+  @include responsive(768px) {
+    @content;
+  }
+}
+
+// Responsive breakpoint for wide tablet
+@mixin responsive-tablet-wide() {
+  @include responsive(992px) {
+    @content;
+  }
+}
+
+// Responsive breakpoint for desktop
+@mixin responsive-desktop() {
+  @include responsive(1200px) {
+    @content;
+  }
+}
+
 html {
   font-size: $font-size;
   
@@ -52,10 +80,16 @@ html {
     &[data-value="Filters"] {
       display: block;
       position: fixed;
+      z-index: 20;
       top: 50%;
       left: 50%;
       transform: translate(-50%, 60%);
       transition: all 0.3s ease;
+      width: 100%;
+      max-width: 390px; // iPhone viewport width
+      padding: 20px 40px;
+      background: map.get($colors, "background");
+      border-radius: $border-radius;
       
       &.active {
         transform: translate(-50%, -50%);
@@ -68,22 +102,48 @@ html {
         align-items: center;
         align-content: center;
         gap: 10px;
+        width: 100%;
         
         &.header {
           justify-content: center;
         }
         
         &.control {
-          input {
-            width: 60px;
-          }
-          
           &.collapse {
             .shiny-input-container {
               width: auto;
             }
           }
+          
+          input {
+            width: 60px;
+          }
+          
+          .shiny-input-container {
+            width: 100%;
+          }
         }
+      }
+    }
+    
+    // Dimmer pane, for visual effects
+    &[data-value="Dimmer"] {
+      background-color: rgba(map.get($colors, "background"), 0.3);
+      backdrop-filter: saturate(180%) blur(8px);
+      opacity: 0;
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      z-index: -10;
+      transition: 0.2s ease;
+      
+      &.dim {
+        z-index:10;
+        opacity: 1;
       }
     }
   }

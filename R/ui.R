@@ -129,6 +129,12 @@ filter_panel <- tabPanel(
   )
 )
 
+# Dimmer Panel-----------------------------------------------------------------
+
+dimmer_panel <- tabPanel(
+  title = "Dimmer"
+)
+
 # Map Panel---------------------------------------------------------------------
 
 map_panel <- tabPanel(
@@ -144,6 +150,7 @@ map_panel <- tabPanel(
 ui <- navbarPage(
   title = env$app_name,
   map_panel,
+  dimmer_panel,
   filter_panel,
   header = headers,
   windowTitle = env$app_name,
