@@ -17,7 +17,7 @@ map_symbol <- function(type = "filled", zoom = 1) {
     type == "filled" ~ "./www/filled.svg",
     type == "unfilled" ~ "./www/unfilled.svg"
   )
-  size <- 6
+  size <- 14
   icon <- makeIcon(img, NULL, size, size, className = glue("marker {type}"))
   return(icon)
 }
@@ -62,7 +62,9 @@ map_renderer <- function(map_data, state) {
       ~ longitude, ~ latitude,
       icon = map_symbol("filled"),
       clusterOptions = leaflet::markerClusterOptions(
-        disableClusteringAtZoom = 18
+        disableClusteringAtZoom = 18,
+        spiderfyOnMaxZoom = FALSE,
+        removeOutsideVisibleBounds = TRUE
       ),
       clusterId = "clusters"
     ) %>%

@@ -73,7 +73,24 @@ html {
       height: 100vh;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%)
+      transform: translate(-50%, -50%);
+      
+      .leaflet-marker-icon {
+        background: url("marker.svg");
+        background-size: contain;
+        
+        div {
+          background: transparent;
+          
+          span {
+            color: #FFFFFF;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, 0)
+          }
+        }
+      }
     }
     
     // Filters pane
