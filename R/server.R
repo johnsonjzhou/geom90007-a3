@@ -10,6 +10,11 @@ library(plotly)
 server <- function(input, output, session) {
   #' Event handlers ----------------------------------------------------------
 
+  # Handle incoming messages from Javascript
+  observeEvent(input$search_result, {
+    print(input$search_result)
+  })
+  
   # Toggle for displaying only free spaces
   observeEvent(input$filter_free, {
     state$filter_free <- input$filter_free

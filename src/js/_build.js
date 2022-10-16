@@ -6,6 +6,7 @@ import { check_user_agent } from "./user_agent.js";
 import { load_event_handlers } from "./events.js";
 import { bind_button_actions } from "./buttons";
 import { slider_context_labels } from "./ui.js";
+import { search_osm } from "./search.js";
 
 (($) => {
   
@@ -13,6 +14,7 @@ import { slider_context_labels } from "./ui.js";
   
   window.onload = () => {
     check_user_agent();
+    window.search = search_osm
   }
   
   // When shiny has loaded
