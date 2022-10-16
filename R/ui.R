@@ -37,9 +37,9 @@ filter_panel <- tabPanel(
     tags$h1(
       "Filters"
     ),
-    actionButton(
-      inputId = "filters_show_hide",
-      label = "Show/Hide"
+    tags$div(
+      id = "filters-show-hide",
+      class = "button-show",
     )
   ),
   fluidRow(

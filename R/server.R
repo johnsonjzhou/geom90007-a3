@@ -10,13 +10,6 @@ library(plotly)
 server <- function(input, output, session) {
   #' Event handlers ----------------------------------------------------------
 
-  # Show and hide the Filters panel
-  observeEvent(input$filters_show_hide, {
-    session$sendCustomMessage(
-      type = "filters_panel_toggle", message = "message"
-    )
-  })
-
   # Toggle for displaying only free spaces
   observeEvent(input$filter_free, {
     state$filter_free <- input$filter_free

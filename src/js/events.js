@@ -37,14 +37,11 @@ const deactivate_panel = (panel, apply_dimmer = true) => {
   @return void
  */
 const load_event_handlers = () => {
-  // Open the About panel
-  Shiny && Shiny.addCustomMessageHandler("filters_panel_toggle", (message) => {
-    const panel = document.querySelector("[data-value='Filters'].tab-pane");
-    panel.classList.contains("active")
-      && deactivate_panel(panel) || activate_panel(panel)
-  })
+  // Insert handlers here
 }
 
 export {
+  activate_panel,
+  deactivate_panel,
   load_event_handlers
 };

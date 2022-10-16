@@ -4,8 +4,9 @@
 
 import { check_user_agent } from "./user_agent.js"
 import { load_event_handlers } from "./events.js"
+import { bind_button_actions } from "./buttons"
 
-(() => {
+(($) => {
   
   load_event_handlers();
   
@@ -13,4 +14,9 @@ import { load_event_handlers } from "./events.js"
     check_user_agent();
   }
   
-})()
+  // When shiny has loaded
+  $(document).on("shiny:sessioninitialized", (event) => {
+    bind_button_actions();
+  })
+  
+})($)
