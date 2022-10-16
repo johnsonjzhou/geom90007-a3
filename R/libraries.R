@@ -23,7 +23,8 @@ dependencies <- c(
   "pracma",
   "RSocrata",
   "geojsonio",
-  "rgeos"
+  "rgeos",
+  "shinyalert"
 )
 
 #' Attempts to load packages and install them if required

@@ -57,7 +57,7 @@ server <- function(input, output, session) {
       value = input$filter_duration - 1
     )
   })
-
+  
   #' State -------------------------------------------------------------------
 
   #' Reactive states and settable defaults
@@ -128,5 +128,35 @@ server <- function(input, output, session) {
   )
 
   # Other app stuff-----------------------------------------------------------
+  observeEvent(input$leaflet_map_marker_click, {
+    selected_marker <- state$filtered_data %>% filter(
+      longitude == input$leaflet_map_marker_click$lng & 
+      latitude == input$leaflet_map_marker_click$lat) %>%
+      distinct(bay_id, .keep_all = TRUE)
 
+    disability <- ifelse(!is.na(selected_marker$disability_deviceid),
+                         "disabled.svg", "")
+    free <- ifelse(!is.na(selected_marker$cost_per_hour),
+                      "", "free.svg")
+    cost <- ifelse(!is.na(selected_marker$cost_per_hour),
+                  sprintf("$%.2f", selected_marker$cost_per_hour / 100), "-")
+    start_time <- ifelse(!is.na(selected_marker$start_time),
+                         selected_marker$start_time, "-")
+    end_time <- ifelse(!is.na(selected_marker$end_time),
+                       selected_marker$end_time, "-")
+    shinyalert(
+      title = "Bay Information",
+      type = "info",
+      html = TRUE,
+      showConfirmButton = FALSE,
+      closeOnClickOutside = TRUE,
+      closeOnEsc = TRUE,
+      text = paste0("Location: ", selected_marker$street, br(),
+                    "Cost Per Hour: ", cost, br(),
+                    "Start Time: ", start_time, br(),
+                    "End Time: ", end_time, br(), br(),
+                    tags$img(src=disability),
+                    tags$img(src=free))
+    )
+  })
 }
