@@ -272,6 +272,10 @@ html {
         }
       }
       
+      .shiny-input-container {
+        margin: 0;
+      }
+      
       .row {
         @include row-common();
         
@@ -320,14 +324,94 @@ html {
             .shiny-input-container {
               width: auto;
             }
+            
+            input {
+              width: 60px;
+            }
           }
-          
-          input {
-            width: 60px;
-          }
-          
+
           .shiny-input-container {
             width: 100%;
+          }
+          
+          .checkbox {
+              --toggle-height: 24px;
+              --toggle-width: calc(var(--toggle-height) * 1.5);
+              position: relative;
+              
+              input[type=checkbox] {
+                appearance: none;
+                display: none;
+                
+                &:checked {
+                  // Toggle label
+                  ~ span {
+                    // Toggle track
+                    &::before {
+                      background: map.get($colors, "accent");
+                    }
+                    
+                    // Toggle knob
+                    &::after {
+                      right: var(--toggle-offset);
+                    }
+                    
+                    &:hover {
+                      &::before {
+                        background: lighten(map.get($colors, "accent"), 15%);
+                      }
+                    }
+                  }
+                }
+              }
+              
+              // Toggle label
+              span {
+                display: block;
+                transition: all 0.3s ease;
+                
+                // Toggle track
+                &::before {
+                  content: "";
+                  display: block;
+                  position: absolute;
+                  width: var(--toggle-width);
+                  height: var(--toggle-height);
+                  border: 0;
+                  border-radius: var(--toggle-height);
+                  background: map.get($colors, "lightgray");
+                  right: 0;
+                  top: 50%;
+                  transform: translate(0, -50%);
+                  transition: all 0.3s ease;
+                }
+                
+                // Toggle knob
+                &::after {
+                  --toggle-offset: 2px;
+                  content: "";
+                  display: block;
+                  position: absolute;
+                  width: calc(var(--toggle-height) - (2 * var(--toggle-offset)));
+                  height: calc(var(--toggle-height) - (2 * var(--toggle-offset)));
+                  border-radius: var(--toggle-height);
+                  background: map.get($colors, "background");
+                  right: calc(
+                    var(--toggle-width)
+                    - var(--toggle-height) + var(--toggle-offset)
+                  );
+                  top: 50%;
+                  transform: translate(0, -50%);
+                  box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.12);
+                  transition: all 0.3s ease;
+                }
+                
+                &:hover {
+                  &::before {
+                    background: darken(map.get($colors, "lightgray"), 5%);
+                  }
+                }
+              }
           }
         }
       }
