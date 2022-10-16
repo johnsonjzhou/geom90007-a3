@@ -145,11 +145,42 @@ map_panel <- tabPanel(
   )
 )
 
+# Search Panel-----------------------------------------------------------------
+
+search_panel <- tabPanel(
+  title = "Search",
+  fluidRow(
+    class = "logo",
+    tags$img(
+      src = "logo.svg"
+    )
+  ),
+  fluidRow(
+    class = "search-bar",
+    tags$div(
+      class = "wrapper",
+      textInput(
+        inputId = "search-input",
+        label = "NGV"
+      ),
+      tags$div(
+        id = "button-gps",
+        class = "button gps"
+      ),
+      tags$div(
+        id = "button-search",
+        class = "button search"
+      )
+    )
+  )
+)
+
 # UI element-------------------------------------------------------------------
 
 ui <- navbarPage(
   title = env$app_name,
   map_panel,
+  search_panel,
   dimmer_panel,
   filter_panel,
   header = headers,

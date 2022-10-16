@@ -46,6 +46,35 @@ $colors: (
   }
 }
 
+// Common styles to floating panel elements
+@mixin panel-common() {
+  display: block;
+  position: fixed;
+  z-index: 20;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 390px; // iPhone viewport width
+  padding: 20px 40px;
+  background: map.get($colors, "background");
+  border-radius: $border-radius;
+  margin: 0;
+}
+
+
+// Common styles to row wrappers
+@mixin row-common() {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  margin: 0;
+}
+
 html {
   font-size: $font-size;
   
@@ -54,6 +83,14 @@ html {
     background-color: map.get($colors, "background");
     font-family: $font-primary;
     font-weight: 400;
+  }
+}
+
+.form-control {
+  &:focus {
+    outline: 0;
+    border: 0;
+    box-shadow: none;
   }
 }
 
@@ -93,33 +130,143 @@ html {
       }
     }
     
+    // Search pane
+    &[data-value="Search"] {
+      @include panel-common();
+      border-radius: 0;
+      top: 0;
+      transform: translate(-50%, 0);
+      
+      .row {
+        @include row-common();
+        
+        &.logo {
+          justify-content: left;
+          margin-bottom: 10px;
+          
+          img {
+            height: auto;
+            width: 60px;
+            object-fit: cover;
+          }
+        }
+        
+        &.search-bar {
+          .wrapper {
+            --search-height: 36px;
+            --btn-width: calc(var(--search-height) * 1.3);
+            position: relative;
+            width: 100%;
+            height: var(--search-height);
+            border: map.get($colors, "foreground") 1px solid;
+            border-radius: var(--search-height);
+            padding: 0 var(--btn-width);
+            
+            &::after {
+              content: "search";
+              font-family: "Material Icons";
+              display: block;
+              position: absolute;
+              left: calc(var(--btn-width) / 2);
+              top: 50%;
+              transform: translate(-50%, -50%);
+              background: transparent;
+              color: map.get($colors, "gray");
+              font-size: 1em;
+            }
+            
+            .shiny-input-container {
+              margin: 0;
+              width: 100%;
+              height: var(--search-height);
+              color: map.get($colors, "foreground");
+              border: 0;
+              
+              label {
+                display: none;
+              }
+              
+              input {
+                border: 0;
+                appearance: none;
+                padding-left: 0;
+                padding-right: 0;
+                text-overflow: ellipsis;
+              }
+            }
+            
+            .button {
+              position: absolute;
+              width: var(--btn-width);
+              height: var(--search-height);
+              top: 50%;
+              right: 0;
+              transform: translate(0, -50%);
+              background: transparent;
+              cursor: pointer;
+              transition: all 0.3s ease;
+              color: map.get($colors, "gray");
+              
+              &::after {
+                font-family: "Material Icons";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 1em;
+                color: inherit;
+              }
+              
+              &.gps {
+                right: var(--btn-width);
+                width: calc(var(--btn-width) * 0.8);
+                height: calc(var(--search-height) - 2px);
+                background: linear-gradient(
+                  90deg,
+                  transparent 0%,
+                  rgba(map.get($colors, "background"), 1) 30%
+                );
+                
+                &::after {
+                  content: "gps_fixed";
+                }
+                
+                &:hover {
+                  color: darken(map.get($colors, "foreground"), 10%)
+                }
+              }
+              
+              &.search {
+                right: 0;
+                border-radius: 0 var(--search-height) var(--search-height) 0;
+                background: map.get($colors, "accent");
+                
+                &::after {
+                  content: "arrow_forward";
+                  color: #FFFFFF;
+                }
+                
+                &:hover {
+                  background: lighten(map.get($colors, "accent"), 10%)
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    
     // Filters pane
     &[data-value="Filters"] {
-      display: block;
-      position: fixed;
-      z-index: 20;
-      top: 50%;
-      left: 50%;
+      @include panel-common();
       transform: translate(-50%, 60%);
-      transition: all 0.3s ease;
-      width: 100%;
-      max-width: 390px; // iPhone viewport width
-      padding: 20px 40px;
-      background: map.get($colors, "background");
-      border-radius: $border-radius;
       
       &.active {
         transform: translate(-50%, -50%);
       }
       
       .row {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-        align-items: center;
-        align-content: center;
-        gap: 10px;
-        width: 100%;
+        @include row-common();
         
         &.header {
           justify-content: center;
