@@ -110,6 +110,24 @@ html {
   }
 }
 
+div.spacer {
+  display: block;
+  width: 100%;
+  height: 16px;
+  
+  &.h32 {
+    height: 32px;
+  }
+  
+  &.h48 {
+    height: 48px;
+  }
+  
+  &.h64 {
+    height: 64px;
+  }
+}
+
 .form-control {
   box-shadow: none;
   
@@ -286,10 +304,14 @@ html {
     // Filters pane
     &[data-value="Filters"] {
       @include panel-common();
-      transform: translate(-50%, 60%);
+      top: auto;
+      bottom: 0;
+      transform: translate(-50%, calc(100% - 60px));
+      border-radius: 60px 60px 0 0;
+      transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.175);
       
       &.active {
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, 10px);
         
         & #filters-show-hide {
           &::after {

@@ -42,6 +42,7 @@ filter_panel <- tabPanel(
       class = "button-show",
     )
   ),
+  tags$div(class = "spacer h32"),
   fluidRow(
     class = "control",
     checkboxInput(
@@ -58,8 +59,9 @@ filter_panel <- tabPanel(
       value = FALSE
     )
   ),
+  tags$div(class = "spacer h32"),
   fluidRow(
-    class = "control v-gap",
+    class = "control",
     tags$div(
       class = "label",
       "Radius"
@@ -75,8 +77,9 @@ filter_panel <- tabPanel(
       post = "km"
     )
   ),
+  tags$div(class = "spacer h32"),
   fluidRow(
-    class = "control v-gap input-small cost",
+    class = "control input-small cost",
     tags$div(
       class = "label",
       "Cost"
@@ -95,8 +98,9 @@ filter_panel <- tabPanel(
       value = 2
     )
   ),
+  tags$div(class = "spacer h32"),
   fluidRow(
-    class = "control v-gap input-small hide-label",
+    class = "control input-small hide-label",
     tags$div(
       class = "label",
       "Parking duration"
@@ -124,13 +128,14 @@ filter_panel <- tabPanel(
     #   "hours"
     # ),
   ),
-  fluidRow(
-    class = "control v-gap v-collapse-bottom",
-    actionButton(
-      inputId = "search",
-      label = "Search"
-    )
-  )
+  tags$div(class = "spacer h32"),
+  # fluidRow(
+  #   class = "control v-collapse-bottom",
+  #   actionButton(
+  #     inputId = "search",
+  #     label = "Search"
+  #   )
+  # )
 )
 
 # Dimmer Panel-----------------------------------------------------------------
