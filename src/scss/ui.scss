@@ -133,6 +133,7 @@ html {
     // Search pane
     &[data-value="Search"] {
       @include panel-common();
+      z-index: 10;
       border-radius: 0;
       top: 0;
       transform: translate(-50%, 0);
