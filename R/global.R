@@ -16,4 +16,4 @@ source("./R/plots.R")
 
 # Environment------------------------------------------------------------------
 env <- list()
-env$app_name <- "Assignment 3"
+env$app_name <- "Parkit"
