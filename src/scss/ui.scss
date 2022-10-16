@@ -6,7 +6,7 @@ $border-radius: 6px;
 $font-primary: "brandon-grotesque", "Helvetica", "Arial", sans-serif;
 $font-serif: "PT Serif", serif;
 $font-size: 16px;
-$box-shadow: 6px 6px 20px rgba(100,100,100,0.3);
+$box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.12);
 
 $colors: (
   "background": #FFFFFF,
@@ -73,6 +73,22 @@ $colors: (
   align-content: center;
   width: 100%;
   margin: 0;
+  gap: 10px;
+  
+  &::before {
+    display: none;
+  }
+  
+  &::after {
+    display: none;
+  }
+}
+
+@mixin filter_label() {
+  font-size: 14px;
+  font-weight: 400;
+  color: map.get($colors, "foreground");
+  padding: 0;
 }
 
 html {
@@ -281,7 +297,6 @@ html {
         
         &.header {
           justify-content: center;
-          gap: 10px;
           
           h1 {
             margin: 0;
@@ -339,6 +354,10 @@ html {
               --toggle-width: calc(var(--toggle-height) * 1.5);
               position: relative;
               
+              label {
+                padding-left: 0;
+              }
+              
               input[type=checkbox] {
                 appearance: none;
                 display: none;
@@ -367,6 +386,7 @@ html {
               
               // Toggle label
               span {
+                @include filter_label();
                 display: block;
                 transition: all 0.3s ease;
                 
@@ -402,7 +422,7 @@ html {
                   );
                   top: 50%;
                   transform: translate(0, -50%);
-                  box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.12);
+                  box-shadow: $box-shadow;
                   transition: all 0.3s ease;
                 }
                 
@@ -412,6 +432,92 @@ html {
                   }
                 }
               }
+          }
+          
+          // Label
+          .label {
+            @include filter_label();
+          }
+          
+          // Ion Range Slider
+          .irs.irs--shiny {
+            --track-color: #{map.get($colors, "lightgray")};
+            --track-accent-color: #{map.get($colors, "accent")};
+            
+            &:hover {
+              --track-color: #{darken(map.get($colors, "lightgray"), 15%)};
+              --track-accent-color: #{lighten(map.get($colors, "accent"), 5%)};
+            }
+            
+            // Knob
+            .irs-handle {
+              background-color: var(--track-accent-color);
+              border: 0;
+              box-shadow: none;
+              height: 16px;
+              width: 16px;
+              top: 21px;
+              transition: background 0.3s ease;
+            }
+            
+            // Track (recreated in irs-grid)
+            .irs-line {
+              display: none;
+            }
+            
+            // min/max indicators
+            .irs-max, .irs-min {
+              display: none;
+            }
+            
+            // from/to indicators
+            .irs-from, .irs-to {
+              display: none;
+            }
+            
+            // Track indicator
+            .irs-bar {
+              background: var(--track-accent-color);
+              height: 4px;
+              top: 27px;
+              transition: background 0.3s ease;
+            }
+            
+            // Selected value
+            .irs-single {
+              display: block;
+            }
+            
+            // Scale box
+            .irs-grid {
+              height: 30px;
+              transform: translate(0, -4px);
+              
+              // Track
+              &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 3px;
+                left: 0;
+                height: 1px;
+                width: 100%;
+                border: 0;
+                background: var(--track-color);
+                transition: background 0.3s ease;
+              }
+              
+              // Scale markers
+              .irs-grid-pol {
+                background-color: var(--track-color);
+                transition: background-color 0.3s ease;
+                
+                // Minor markers
+                &.small {
+                  display: none;
+                }
+              }
+            }
           }
         }
       }

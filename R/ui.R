@@ -71,7 +71,8 @@ filter_panel <- tabPanel(
       step = 0.25,
       value = c(0.25, 0.5),
       dragRange = TRUE,
-      label = "Radius"
+      label = NULL,
+      post = "km"
     )
   ),
   fluidRow(
