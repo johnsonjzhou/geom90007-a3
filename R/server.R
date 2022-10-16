@@ -113,7 +113,8 @@ server <- function(input, output, session) {
 
   #' Observe states
   observe({
-    # states to observe
+    # Apply filtered data to state
+    state$filtered_data <- map_data(master_data, state)
   })
 
   #' Master data --------------------------------------------------------------
@@ -121,15 +122,9 @@ server <- function(input, output, session) {
 
   #' Mapping -----------------------------------------------------------------
 
-  #' Filter map data based on context
-  map_data_filter <- reactive({
-    spatial_df <- map_data(state$map_context)
-    return(spatial_df)
-  })
-
   #' Render the world map in a leaflet widget
   output$leaflet_map <- renderLeaflet(
-    map_renderer(map_data(master_data, state), state)
+    map_renderer(state$filtered_data, state)
   )
 
   # Other app stuff-----------------------------------------------------------
