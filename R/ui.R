@@ -59,7 +59,7 @@ filter_panel <- tabPanel(
     )
   ),
   fluidRow(
-    class = "control",
+    class = "control v-gap",
     tags$div(
       class = "label",
       "Radius"
@@ -76,7 +76,7 @@ filter_panel <- tabPanel(
     )
   ),
   fluidRow(
-    class = "control collapse",
+    class = "control v-gap input-small cost",
     tags$div(
       class = "label",
       "Cost"
@@ -86,6 +86,9 @@ filter_panel <- tabPanel(
       label = "min",
       value = 0
     ),
+    tags$hr(
+      class = "accent-connect"
+    ),
     numericInput(
       inputId = "filter_cost_max",
       label = "max",
@@ -93,7 +96,7 @@ filter_panel <- tabPanel(
     )
   ),
   fluidRow(
-    class = "control collapse",
+    class = "control v-gap input-small hide-label",
     tags$div(
       class = "label",
       "Parking duration"
@@ -122,7 +125,7 @@ filter_panel <- tabPanel(
     ),
   ),
   fluidRow(
-    class = "control",
+    class = "control v-gap v-collapse-bottom",
     actionButton(
       inputId = "search",
       label = "Search"

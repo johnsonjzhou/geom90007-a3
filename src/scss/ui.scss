@@ -75,6 +75,14 @@ $colors: (
   margin: 0;
   gap: 10px;
   
+  &.v-gap {
+    margin: 36px 0;
+  }
+  
+  &.v-collapse-bottom {
+    margin-bottom: 0;
+  }
+  
   &::before {
     display: none;
   }
@@ -103,6 +111,8 @@ html {
 }
 
 .form-control {
+  box-shadow: none;
+  
   &:focus {
     outline: 0;
     border: 0;
@@ -335,13 +345,73 @@ html {
         }
         
         &.control {
-          &.collapse {
+          &.input-small {
             .shiny-input-container {
               width: auto;
+              position: relative;
+              
+              input[type="number"] {
+                --border-color: #{map.get($colors, "lightgray")};
+                width: 50px;
+                margin: 0;
+                // Disable numeric input decorator on Firefox
+                -moz-appearance: textfield;
+                
+                // Disable numeric input decorator on Safari, Edge, Chrome
+                &::-webkit-outer-spin-button,
+                &::-webkit-outer-spin-button {
+                  -webkit-appearance: none;
+                }
+                
+                color: map.get($colors, "foreground");
+                border: var(--border-color) 1px solid;
+                text-align: center;
+                
+                &:hover {
+                  --border-color: #{darken(map.get($colors, "lightgray"), 15%)}
+                }
+                
+                &:focus {
+                  --border-color: #{map.get($colors, "foreground")}
+                }
+              }
+              
+              label {
+                position: absolute;
+                font-weight: 400;
+                margin: 0;
+                left: 50%;
+                bottom: 0;
+                transform: translate(-50%, 80%);
+              }
             }
             
-            input {
-              width: 60px;
+            &.cost {
+              --gap: 50px;
+              gap: var(--gap);
+              
+              hr.accent-connect {
+                border: map.get($colors, "accent") 1px solid;
+                border-bottom: none;
+                margin: 0 calc(-1 * var(--gap));
+                width: 100%;
+              }
+              
+              .shiny-input-container {
+                --indicator-gap: 1em;
+                &::after {
+                  content: "$";
+                  display: block;
+                  position: absolute;
+                  left: var(--indicator-gap);
+                  top: 50%;
+                  transform: translate(-50%, -50%);
+                }
+                
+                input[type="number"] {
+                  text-align: right;
+                }
+              }
             }
           }
 
