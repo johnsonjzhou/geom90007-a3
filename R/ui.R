@@ -102,7 +102,7 @@ filter_panel <- tabPanel(
       "Parking duration"
     ),
     fluidRow(
-      class = "duration",
+      class = "w-150",
       actionButton(
         inputId = "filter_duration_dec",
         class = "stepwise",
@@ -110,7 +110,7 @@ filter_panel <- tabPanel(
       ),
       numericInput(
         inputId = "filter_duration",
-        label = "Duration",
+        label = "hours",
         value = 3
       ),
       actionButton(
@@ -119,10 +119,10 @@ filter_panel <- tabPanel(
         label = "+"
       )
     ),
-    tags$div(
-      class = "label small",
-      "hours"
-    ),
+    # tags$div(
+    #   class = "label small",
+    #   "hours"
+    # ),
   ),
   fluidRow(
     class = "control v-gap v-collapse-bottom",

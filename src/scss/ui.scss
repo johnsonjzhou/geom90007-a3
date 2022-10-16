@@ -305,6 +305,10 @@ html {
       .row {
         @include row-common();
         
+        &.w-150 {
+          width: 150px;
+        }
+        
         &.header {
           justify-content: center;
           
@@ -382,7 +386,7 @@ html {
                 margin: 0;
                 left: 50%;
                 bottom: 0;
-                transform: translate(-50%, 80%);
+                transform: translate(-50%, 90%);
               }
             }
             
@@ -587,6 +591,25 @@ html {
                   display: none;
                 }
               }
+            }
+          }
+          
+          // Stepwise buttons
+          button.stepwise {
+            --button-size: 30px;
+            width: var(--button-size);
+            height: var(--button-size);
+            line-height: var(--button-size);
+            padding: 0;
+            text-align: center;
+            border-radius: $border-radius;
+            border: 0;
+            color: #FFFFFF;
+            background: map.get($colors, "accent");
+            transition: all 0.3s ease;
+            
+            &:hover {
+              background: lighten(map.get($colors, "accent"), 10%);
             }
           }
         }
