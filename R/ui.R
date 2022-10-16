@@ -33,7 +33,7 @@ headers <- tags$head(
 filter_panel <- tabPanel(
   title = "Filters",
   fluidRow(
-    class = "row header",
+    class = "header",
     tags$h1(
       "Filters"
     ),
@@ -43,7 +43,7 @@ filter_panel <- tabPanel(
     )
   ),
   fluidRow(
-    class = "row control",
+    class = "control",
     checkboxInput(
       inputId = "filter_free",
       label = "Show only free ($0) spots",
@@ -51,7 +51,7 @@ filter_panel <- tabPanel(
     )
   ),
   fluidRow(
-    class = "row control",
+    class = "control",
     checkboxInput(
       inputId = "filter_accessible",
       label = "Show only disability-friendly spots",
@@ -59,7 +59,7 @@ filter_panel <- tabPanel(
     )
   ),
   fluidRow(
-    class = "row control",
+    class = "control",
     tags$div(
       class = "label",
       "Radius"
@@ -75,7 +75,7 @@ filter_panel <- tabPanel(
     )
   ),
   fluidRow(
-    class = "row control collapse",
+    class = "control collapse",
     tags$div(
       class = "label",
       "Cost"
@@ -92,13 +92,13 @@ filter_panel <- tabPanel(
     )
   ),
   fluidRow(
-    class = "row control collapse",
+    class = "control collapse",
     tags$div(
       class = "label",
       "Parking duration"
     ),
     fluidRow(
-      class = "row duration",
+      class = "duration",
       actionButton(
         inputId = "filter_duration_dec",
         class = "stepwise",
@@ -121,7 +121,7 @@ filter_panel <- tabPanel(
     ),
   ),
   fluidRow(
-    class = "row control",
+    class = "control",
     actionButton(
       inputId = "search",
       label = "Search"
