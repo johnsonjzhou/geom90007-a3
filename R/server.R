@@ -117,6 +117,25 @@ server <- function(input, output, session) {
     state$filtered_data <- map_data(master_data, state)
   })
 
+  #' Observe map zoom and update map symbol
+  observe({
+    leafletProxy("leaflet_map", data = state$filtered_data) %>%
+      clearMarkers() %>%
+      clearMarkerClusters() %>%
+      leaflet::addMarkers(
+        ~ longitude, ~ latitude,
+        icon = ~ map_symbol_dynamic(
+          input$leaflet_map_zoom, cost_per_hour, maximum_stay
+        ),
+        clusterOptions = leaflet::markerClusterOptions(
+          disableClusteringAtZoom = 18,
+          spiderfyOnMaxZoom = FALSE,
+          removeOutsideVisibleBounds = TRUE
+        ),
+        clusterId = "clusters"
+      )
+  })
+
   #' Master data --------------------------------------------------------------
   master_data <- load_master_data_local()
 
