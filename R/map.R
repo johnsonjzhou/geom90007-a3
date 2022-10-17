@@ -15,10 +15,41 @@ library(glue)
 map_symbol <- function(type = "filled", zoom = 1) {
   img <- case_when(
     type == "filled" ~ "./www/filled.svg",
-    type == "unfilled" ~ "./www/unfilled.svg"
+    type == "unfilled" ~ "./www/unfilled.svg",
+    type == "placeholder" ~ "./www/placeholder.svg",
   )
   size <- 14
   icon <- makeIcon(img, NULL, size, size, className = glue("marker {type}"))
+  return(icon)
+}
+
+#' Generates a symbol to indicate a parking bay
+#' @param type Either filled or unfilled
+#' @param zoom the map zoom level
+#' @return icon
+map_symbol_dynamic <- function(zoom, cost_per_hour, maximum_stay) {
+  # Type of icon prefix to the src file
+  type <- case_when(
+    (zoom <= 18) ~ "filled",
+    (zoom > 18) & (maximum_stay == 60) ~ "1P",
+    (zoom > 18) & (maximum_stay == 120) ~ "2P",
+    (zoom > 18) & (maximum_stay == 180) ~ "3P",
+    (zoom > 18) & (maximum_stay == 240) ~ "4P",
+    TRUE ~ "P"
+  )
+
+  # Color of icon suffix to the src file
+  color <- case_when(
+    is.na(cost_per_hour) ~ "_green",
+    (cost_per_hour == 0) ~ "_green",
+    TRUE ~ ""
+  )
+
+  # Combine to create the src file path
+  img <- paste0("./www/", type, color, ".svg")
+
+  size <- ifelse(zoom <= 18, 14, 20)
+  icon <- makeIcon(img, NULL, size, size, className = glue("marker"))
   return(icon)
 }
 
@@ -45,7 +76,7 @@ map_renderer <- function(map_data, state) {
     leaflet::leaflet(
       options = leaflet::leafletOptions(
         minZoom = 15,
-        maxZoom = 18
+        maxZoom = 20,
       ),
       sizingPolicy = leaflet::leafletSizingPolicy(
         defaultWidth = "100%",
@@ -56,6 +87,11 @@ map_renderer <- function(map_data, state) {
     leaflet::addTiles(
       urlTemplate = mapbox_template,
       #todo attribution =
+      options = tileOptions(
+        minZoom = 15,
+        maxZoom = 20,
+        maxNativeZoom = 20
+      )
     ) %>%
     # Add Marker Layer
     leaflet::addMarkers(
