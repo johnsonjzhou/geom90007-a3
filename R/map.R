@@ -122,6 +122,18 @@ map_renderer <- function(map_data, state) {
       html = htmltools::tags$img(width = 36, height = 36, src = "north.svg"),
       position = "bottomright",
       className = "leaflet-control-north-arrow "
+    ) %>%
+    leaflet::addCircleMarkers(
+      lat = -37.822477,
+      lng = 144.969162,
+      radius = 500,
+      color = "green",
+      labelOptions(
+        zoomAnimation =  FALSE,
+        clickable = FALSE
+      )
     )
+    input$leaflet_map_zoom
   return(map)
+
 }
