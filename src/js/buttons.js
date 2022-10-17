@@ -42,6 +42,25 @@ const bind_button_actions = () => {
   document.getElementById("button-search").addEventListener(
     "click", search_panel_go
   )
+  
+  // Keypress events at the search input
+  document.getElementById("search-input").addEventListener(
+    "keydown",
+    (event) => {
+      switch(event.key) {
+        case "Enter":
+          event.preventDefault();
+          event.stopPropagation();
+          search_panel_go();
+        break;
+        case "Escape":
+          event.preventDefault();
+          event.stopPropagation();
+          event.target.blur();
+        default:
+      }
+    }
+  )
 }
 
 export {
