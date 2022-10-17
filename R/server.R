@@ -144,6 +144,8 @@ server <- function(input, output, session) {
                          selected_marker$start_time, "-")
     end_time <- ifelse(!is.na(selected_marker$end_time),
                        selected_marker$end_time, "-")
+    meter_type <- get_meter_type(selected_marker$maximum_stay)
+    #print(meter_type)
     shinyalert(
       title = "Bay Information",
       type = "info",
@@ -156,7 +158,20 @@ server <- function(input, output, session) {
                     "Start Time: ", start_time, br(),
                     "End Time: ", end_time, br(), br(),
                     tags$img(src=disability),
-                    tags$img(src=free))
+                    tags$img(src=free),
+                    tags$img(src=meter_type)) #todo add svgs
     )
   })
+
+  get_meter_type <- function(maximum_stay_mins) {
+    meter_hours <- maximum_stay_mins / 60
+    meter_type <- case_when(
+                    meter_hours == 1 ~ '1P.svg',
+                    meter_hours == 2 ~ '2P.svg',
+                    meter_hours == 3 ~ '3P.svg',
+                    meter_hours == 4 ~ '4P.svg',
+                    TRUE ~ 'P.svg'
+                    )
+    return(meter_type)
+  }
 }
