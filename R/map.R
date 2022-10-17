@@ -45,7 +45,7 @@ map_renderer <- function(map_data, state) {
     leaflet::leaflet(
       options = leaflet::leafletOptions(
         minZoom = 15,
-        maxZoom = 18
+        maxZoom = 20,
       ),
       sizingPolicy = leaflet::leafletSizingPolicy(
         defaultWidth = "100%",
@@ -56,6 +56,11 @@ map_renderer <- function(map_data, state) {
     leaflet::addTiles(
       urlTemplate = mapbox_template,
       #todo attribution =
+      options = tileOptions(
+        minZoom = 15,
+        maxZoom = 20,
+        maxNativeZoom = 20
+      )
     ) %>%
     # Add Marker Layer
     leaflet::addMarkers(
