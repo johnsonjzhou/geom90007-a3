@@ -2,7 +2,7 @@
   Handling of button clicks in JS
  */
 import { activate_panel, deactivate_panel } from "./events.js"
-import { search_osm } from "./search.js";
+import { search_panel_go, close_search_results } from "./search.js";
 
 /**
   Shows and hides the Filters panel
@@ -12,20 +12,6 @@ const filters_show_hide = () => {
   const panel = document.querySelector("[data-value='Filters'].tab-pane");
     panel.classList.contains("active")
       && deactivate_panel(panel) || activate_panel(panel)
-}
-
-/**
-  On click event handler for the search box button
- */
-const search_panel_go = async () => {
-  // Get the search query from the search input box
-  const query = document.getElementById("search-input").value;
-  
-  // Query the API
-  const results = await search_osm(query);
-  
-  // Send the results to Shiny
-  Shiny && Shiny.setInputValue("search_result", results);
 }
 
 /**
@@ -57,10 +43,18 @@ const bind_button_actions = () => {
           event.preventDefault();
           event.stopPropagation();
           event.target.blur();
+          close_search_results();
         default:
       }
     }
   )
+  
+  // Global click events
+  document.addEventListener("click", (event) => {
+    // Close the SearchResults panel
+    const res_panel = document.querySelector("[data-value='SearchResults'].tab-pane");
+    (event.target != res_panel) && close_search_results();
+  });
 }
 
 export {

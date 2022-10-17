@@ -184,12 +184,17 @@ search_panel <- tabPanel(
   )
 )
 
+search_results_panel <- tabPanel(
+  title = "SearchResults"
+)
+
 # UI element-------------------------------------------------------------------
 
 ui <- navbarPage(
   title = env$app_name,
   map_panel,
   search_panel,
+  search_results_panel,
   dimmer_panel,
   filter_panel,
   header = headers,

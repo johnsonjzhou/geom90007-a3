@@ -11,10 +11,13 @@ server <- function(input, output, session) {
   #' Event handlers ----------------------------------------------------------
 
   # Handle incoming messages from Javascript
-  observeEvent(input$search_result, {
-    print(input$search_result)
+  observeEvent(input$js_set_loc, {
+    print("Set incoming location from JS client")
+    lat <- as.numeric(input$js_set_loc$lat)
+    lon <- as.numeric(input$js_set_loc$lon)
+    state$filter_loc <- c(lat, lon)
   })
-  
+
   # Toggle for displaying only free spaces
   observeEvent(input$filter_free, {
     state$filter_free <- input$filter_free
