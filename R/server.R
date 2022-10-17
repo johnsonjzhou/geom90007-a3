@@ -128,12 +128,17 @@ server <- function(input, output, session) {
   )
 
   # Other app stuff-----------------------------------------------------------
+  
+  #' Function that displays information on user clicked
+  #' marker
   observeEvent(input$leaflet_map_marker_click, {
     selected_marker <- state$filtered_data %>% filter(
       longitude == input$leaflet_map_marker_click$lng & 
       latitude == input$leaflet_map_marker_click$lat) %>%
       distinct(bay_id, .keep_all = TRUE)
 
+    location <- ifelse(!is.na(selected_marker$street),
+                       selected_marker$street, "-")
     disability <- ifelse(!is.na(selected_marker$disability_deviceid),
                          "disabled.svg", "")
     free <- ifelse(!is.na(selected_marker$cost_per_hour),
@@ -145,7 +150,8 @@ server <- function(input, output, session) {
     end_time <- ifelse(!is.na(selected_marker$end_time),
                        selected_marker$end_time, "-")
     meter_type <- get_meter_type(selected_marker$maximum_stay)
-    #print(meter_type)
+    
+    # Displays popup information panel
     shinyalert(
       title = "Bay Information",
       type = "info",
@@ -153,16 +159,18 @@ server <- function(input, output, session) {
       showConfirmButton = FALSE,
       closeOnClickOutside = TRUE,
       closeOnEsc = TRUE,
-      text = paste0("Location: ", selected_marker$street, br(),
+      text = paste0("Location: ", location, br(),
                     "Cost Per Hour: ", cost, br(),
                     "Start Time: ", start_time, br(),
                     "End Time: ", end_time, br(), br(),
-                    tags$img(src=disability),
-                    tags$img(src=free),
-                    tags$img(src=meter_type)) #todo add svgs
+                    tags$img(src = disability),
+                    tags$img(src = free),
+                    tags$img(src = meter_type)) 
     )
   })
 
+  #' Calculates the number of hours that a car can be parked for
+  #' @return type of parking meter
   get_meter_type <- function(maximum_stay_mins) {
     meter_hours <- maximum_stay_mins / 60
     meter_type <- case_when(
