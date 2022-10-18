@@ -59,7 +59,7 @@ const render_search_results = (json) => {
   const res_panel = document.querySelector("[data-value='SearchResults'].tab-pane");
   
   res_panel.innerHTML = "";
-  res_panel.append(... json.map((result) => {
+  const res_elements = json.map((result) => {
     // Wrapper
     const wrapper = document.createElement("div");
     wrapper.classList.add("result-wrapper");
@@ -101,7 +101,18 @@ const render_search_results = (json) => {
     wrapper.appendChild(loc);
     
     return wrapper;
-  }))
+  })
+  
+  // Check that there are elements in res_elements, if not, add a message
+  if (res_elements.length < 1) {
+    const msg = document.createElement("div");
+    msg.classList.add("result-none");
+    msg.innerHTML = "No results found, please try again.";
+    res_elements.push(msg);
+  }
+  
+  // Add elements to the res_panel
+  res_panel.append(... res_elements);
   
   // Open the panel after results have been rendered
   open_search_results();
