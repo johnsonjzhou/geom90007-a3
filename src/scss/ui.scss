@@ -192,6 +192,25 @@ div.spacer {
       top: 0;
       transform: translate(-50%, 0);
       
+      &.busy {
+        .row.search-bar .wrapper .button.search {
+          &::after{
+            content: "sync";
+            animation: spin 1s infinite;
+            
+            @keyframes spin {
+              from {
+                transform: translate(-50%, -50%) rotate(0deg);
+              }
+              
+              to {
+                transform: translate(-50%, -50%) rotate(360deg);
+              }
+            }
+          }
+        }
+      }
+      
       .row {
         @include row-common();
         
@@ -233,7 +252,6 @@ div.spacer {
             .shiny-input-container {
               margin: 0;
               width: 100%;
-              height: var(--search-height);
               color: map.get($colors, "foreground");
               border: 0;
               
@@ -250,10 +268,13 @@ div.spacer {
               }
             }
             
+            & > * {
+              height: calc(var(--search-height) - 2px);
+            }
+            
             .button {
               position: absolute;
               width: var(--btn-width);
-              height: var(--search-height);
               top: 50%;
               right: 0;
               transform: translate(0, -50%);
@@ -275,7 +296,6 @@ div.spacer {
               &.gps {
                 right: var(--btn-width);
                 width: calc(var(--btn-width) * 0.8);
-                height: calc(var(--search-height) - 2px);
                 background: linear-gradient(
                   90deg,
                   transparent 0%,
