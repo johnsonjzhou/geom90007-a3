@@ -91,7 +91,7 @@ server <- function(input, output, session) {
   state$filter_accessible <- FALSE
 
   #' @param filter_radius {c(min, max)} Distance range from specified location.
-  state$filter_radius <- c(0.25, 0.5)
+  state$filter_radius <- c(0, 1)
 
   #' @param filter_cost {c(min, max)} Filter for price range.
   state$filter_cost <- c(0, 200)

@@ -71,7 +71,7 @@ filter_panel <- tabPanel(
       min = 0,
       max = 1,
       step = 0.25,
-      value = c(0.25, 0.5),
+      value = c(0, 1),
       dragRange = TRUE,
       label = NULL,
       post = "km"
