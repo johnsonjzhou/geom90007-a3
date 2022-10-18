@@ -127,6 +127,7 @@ server <- function(input, output, session) {
     leafletProxy("leaflet_map", data = state$filtered_data) %>%
       clearMarkers() %>%
       clearMarkerClusters() %>%
+      # Parking Bay Markers
       leaflet::addMarkers(
         ~ longitude, ~ latitude,
         icon = ~ map_symbol_dynamic(
@@ -139,11 +140,15 @@ server <- function(input, output, session) {
         ),
         clusterId = "clusters"
       ) %>%
+      # Destination Marker
       leaflet::addMarkers(
         lat = state$filter_loc[1],
         lng = state$filter_loc[2],
         icon = map_symbol("marker"),
-        clusterOptions = NULL
+        clusterOptions = NULL,
+        options = leaflet::markerOptions(
+          clickable = FALSE
+        )
       )
   })
 
