@@ -11,8 +11,11 @@ server <- function(input, output, session) {
   #' Event handlers ----------------------------------------------------------
 
   # Handle incoming messages from Javascript
-  observeEvent(input$search_result, {
-    print(input$search_result)
+  observeEvent(input$js_set_loc, {
+    print("Set incoming location from JS client")
+    lat <- as.numeric(input$js_set_loc$lat)
+    lon <- as.numeric(input$js_set_loc$lon)
+    state$filter_loc <- c(lat, lon)
   })
 
   # Toggle for displaying only free spaces
@@ -90,7 +93,7 @@ server <- function(input, output, session) {
   state$filter_accessible <- FALSE
 
   #' @param filter_radius {c(min, max)} Distance range from specified location.
-  state$filter_radius <- c(0.25, 0.5)
+  state$filter_radius <- c(0, 1)
 
   #' @param filter_cost {c(min, max)} Filter for price range.
   state$filter_cost <- c(0, 200)
