@@ -2,7 +2,7 @@
   Handling of button clicks in JS
  */
 import { activate_panel, deactivate_panel } from "./events.js"
-import { search_panel_go, close_search_results } from "./search.js";
+import { search_panel_go, close_search_results, use_geolocation } from "./search.js";
 
 /**
   Shows and hides the Filters panel
@@ -27,6 +27,11 @@ const bind_button_actions = () => {
   // Search panel go button
   document.getElementById("button-search").addEventListener(
     "click", search_panel_go
+  )
+  
+  // Search panel GPS button
+  document.getElementById("button-gps").addEventListener(
+    "click", use_geolocation
   )
   
   // Keypress events at the search input

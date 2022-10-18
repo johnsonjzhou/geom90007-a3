@@ -105,10 +105,7 @@ const render_search_results = (json) => {
   
   // Check that there are elements in res_elements, if not, add a message
   if (res_elements.length < 1) {
-    const msg = document.createElement("div");
-    msg.classList.add("result-none");
-    msg.innerHTML = "No results found, please try again.";
-    res_elements.push(msg);
+    search_res_alert("No results found, please try again.");
   }
   
   // Add elements to the res_panel
@@ -116,6 +113,26 @@ const render_search_results = (json) => {
   
   // Open the panel after results have been rendered
   open_search_results();
+}
+
+/**
+  Renders a contextual message inside the search results panel
+  @param {string} message the alert message
+  @param {boolean} [open_panel=false] whether or not to trigger the panel opening
+  @returns {void}
+ */
+const search_res_alert = (message, open_panel = false) => {
+  const res_panel = document.querySelector("[data-value='SearchResults'].tab-pane");
+  
+  // Reset panel contents and add the message
+  res_panel.innerHTML = "";
+  const msg = document.createElement("div");
+  msg.classList.add("result-none");
+  msg.innerHTML = message;
+  res_panel.append(msg);
+  
+  // Open the panel if required
+  open_panel && open_search_results();
 }
 
 /**
@@ -198,6 +215,35 @@ const on_search_done = () => {
 }
 
 /**
+  Uses the user's geolocation as the map location
+ */
+const use_geolocation = () => {
+  const on_success = (location) => {
+    //location.coords.[latitude, longitude]
+    const {coords: {
+      latitude:lat, longitude:lon
+    }} = location;
+    const input = document.getElementById("search-input");
+      
+    /** @fires set:loc */
+    input.dispatchEvent(
+      new CustomEvent("set:loc", {"detail": {lat, lon}})
+    );
+    
+    search_res_alert("Current GPS location set.", true);
+  }
+  
+  const on_failure = (reason) => {
+    //reason.message
+    search_res_alert(reason.message, true);
+  }
+  
+  // Query the navigator geolocation service
+  navigator.geolocation &&
+  navigator.geolocation.getCurrentPosition(on_success, on_failure);
+}
+
+/**
   Bind tasks related to search events
   @returns {void}
   @listens search:busy
@@ -231,5 +277,6 @@ export {
   on_search_done,
   bind_search_events,
   open_search_results,
-  close_search_results
+  close_search_results,
+  use_geolocation
 }
