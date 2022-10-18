@@ -207,6 +207,7 @@ server <- function(input, output, session) {
   })
 
   #' Calculates the number of hours that a car can be parked for
+  #' @param maximum_stay_mins max time allowed to park in minutes
   #' @return type of parking meter
   get_meter_type <- function(maximum_stay_mins) {
     meter_hours <- maximum_stay_mins / 60
@@ -222,7 +223,8 @@ server <- function(input, output, session) {
 
   #' Determines the opacity and radii (in metres) to be displayed
   #' in the highlighted radar
-  #' @return opacities vector and radii vector for radar
+  #' @param filter_radius user selected radius range
+  #' @return opacities and radii vector for radar
   get_radar_info <- function(filter_radius) {
     max_radius <- filter_radius[2]
     radar_info <- case_when(
