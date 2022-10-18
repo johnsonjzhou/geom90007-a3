@@ -138,6 +138,12 @@ server <- function(input, output, session) {
           removeOutsideVisibleBounds = TRUE
         ),
         clusterId = "clusters"
+      ) %>%
+      leaflet::addMarkers(
+        lat = state$filter_loc[1],
+        lng = state$filter_loc[2],
+        icon = map_symbol("marker"),
+        clusterOptions = NULL
       )
   })
 
