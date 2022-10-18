@@ -94,7 +94,8 @@ const render_search_results = (json) => {
     
     const loc = document.createElement("div");
     loc.classList.add("result-loc");
-    loc.innerHTML = display_names[1] || "Unknown location";
+    loc.innerHTML = display_names[1] && display_names.slice(1).join(" ")
+      || "Unknown location";
     
     wrapper.appendChild(name);
     wrapper.appendChild(loc);

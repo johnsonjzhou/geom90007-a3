@@ -343,12 +343,15 @@ div.spacer {
         padding: 5px;
         
         & > * {
+          overflow: hidden;
+          white-space: nowrap;
           text-overflow: ellipsis;
           transition: color 0.3s ease;
+          font-size: 0.9em;
         }
         
         &:hover {
-          background: map.get($colors, "accent");
+          background: rgba(map.get($colors, "accent"), 0.9);
           color: #FFFFFF;
           
           .result-loc {
