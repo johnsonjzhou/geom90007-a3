@@ -104,6 +104,16 @@ map_renderer <- function(map_data, state) {
       ),
       clusterId = "clusters"
     ) %>%
+    # Add Radar Layer
+    leaflet::addCircles(
+    lat = state$filter_loc[1],
+    lng = state$filter_loc[2],
+    radius = unlist(state$radar_info[1]),
+    color = "#61D095",
+    fillOpacity = unlist(state$radar_info[2]),
+    weight = 0.2,
+    stroke = TRUE
+    ) %>%
     #todo Add legend for custom symbols
     # addControl(
     #   position = "topright",
@@ -122,18 +132,6 @@ map_renderer <- function(map_data, state) {
       html = htmltools::tags$img(width = 36, height = 36, src = "north.svg"),
       position = "bottomright",
       className = "leaflet-control-north-arrow "
-    ) %>%
-    leaflet::addCircleMarkers(
-      lat = -37.822477,
-      lng = 144.969162,
-      radius = 500,
-      color = "green",
-      labelOptions(
-        zoomAnimation =  FALSE,
-        clickable = FALSE
-      )
     )
-    input$leaflet_map_zoom
   return(map)
-
 }

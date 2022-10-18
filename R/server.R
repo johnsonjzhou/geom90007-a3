@@ -14,7 +14,7 @@ server <- function(input, output, session) {
   observeEvent(input$search_result, {
     print(input$search_result)
   })
-  
+
   # Toggle for displaying only free spaces
   observeEvent(input$filter_free, {
     state$filter_free <- input$filter_free
@@ -28,6 +28,8 @@ server <- function(input, output, session) {
   # Range slider for distance from intended location
   observeEvent(input$filter_radius, {
     state$filter_radius <- input$filter_radius
+    # Retrieves radar vectors to be displayed
+    state$radar_info <- get_radar_info(input$filter_radius)
   })
 
   # Cost filters
@@ -57,7 +59,7 @@ server <- function(input, output, session) {
       value = input$filter_duration - 1
     )
   })
-  
+
   #' State -------------------------------------------------------------------
 
   #' Reactive states and settable defaults
@@ -147,29 +149,36 @@ server <- function(input, output, session) {
   )
 
   # Other app stuff-----------------------------------------------------------
-  
+
   #' Function that displays information on user clicked
   #' marker
   observeEvent(input$leaflet_map_marker_click, {
     selected_marker <- state$filtered_data %>% filter(
-      longitude == input$leaflet_map_marker_click$lng & 
-      latitude == input$leaflet_map_marker_click$lat) %>%
-      distinct(bay_id, .keep_all = TRUE)
+                       longitude == input$leaflet_map_marker_click$lng &
+                       latitude == input$leaflet_map_marker_click$lat
+                       ) %>%
+                       distinct(bay_id, .keep_all = TRUE)
 
     location <- ifelse(!is.na(selected_marker$street),
-                       selected_marker$street, "-")
+                        selected_marker$street,
+                        "-")
     disability <- ifelse(!is.na(selected_marker$disability_deviceid),
-                         "disabled.svg", "")
+                         "disabled.svg",
+                         "")
     free <- ifelse(!is.na(selected_marker$cost_per_hour),
-                      "", "free.svg")
+                   "",
+                   "free.svg")
     cost <- ifelse(!is.na(selected_marker$cost_per_hour),
-                  sprintf("$%.2f", selected_marker$cost_per_hour / 100), "-")
+                   sprintf("$%.2f", selected_marker$cost_per_hour / 100),
+                   "-")
     start_time <- ifelse(!is.na(selected_marker$start_time),
-                         selected_marker$start_time, "-")
+                         selected_marker$start_time,
+                         "-")
     end_time <- ifelse(!is.na(selected_marker$end_time),
-                       selected_marker$end_time, "-")
+                       selected_marker$end_time,
+                       "-")
     meter_type <- get_meter_type(selected_marker$maximum_stay)
-    
+
     # Displays popup information panel
     shinyalert(
       title = "Bay Information",
@@ -184,7 +193,7 @@ server <- function(input, output, session) {
                     "End Time: ", end_time, br(), br(),
                     tags$img(src = disability),
                     tags$img(src = free),
-                    tags$img(src = meter_type)) 
+                    tags$img(src = meter_type))
     )
   })
 
@@ -200,5 +209,21 @@ server <- function(input, output, session) {
                     TRUE ~ 'P.svg'
                     )
     return(meter_type)
+  }
+
+  #' Determines the opacity and radii (in metres) to be displayed
+  #' in the highlighted radar
+  #' @return opacities vector and radii vector for radar
+  get_radar_info <- function(filter_radius) {
+    max_radius <- filter_radius[2]
+    radar_info <- case_when(
+      max_radius == 0 ~ list(0, 0),
+      max_radius == 0.25 ~ list(250, 0.11),
+      max_radius == 0.5 ~ list(c(250, 500), c(0.12, 0.09)),
+      max_radius == 0.75 ~ list(c(250, 500, 750), c(0.15, 0.1, 0.07)),
+      max_radius == 1 ~ list(c(250, 500, 750, 1000), c(0.22, 0.13, 0.08, 0.05)),
+      TRUE ~ list(0, 0)
+      )
+    return(radar_info)
   }
 }
