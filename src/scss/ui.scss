@@ -41,12 +41,29 @@ $colors: (
 
 // Frosted panel effects
 @mixin frosted-panel {
-  background-color: map.get($colors, "background-frost");
+  background-color: rgba(map.get($colors, "background"), 0.6);
   backdrop-filter: saturate(180%) blur(20px);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   border-radius: calc($border-radius + 4px);
   border: 0;
   box-shadow: none;
+}
+
+// Dimmer panel effects
+@mixin dimmer-panel {
+  background-color: rgba(map.get($colors, "darkgray"), 0.3);
+  backdrop-filter: saturate(180%) blur(8px);
+  -webkit-backdrop-filter: saturate(180%) blur(8px);
+  opacity: 0;
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  transition: 0.2s ease;
 }
 
 // Responsive breakpoint for desktop
@@ -739,22 +756,94 @@ div.spacer {
     
     // Dimmer pane, for visual effects
     &[data-value="Dimmer"] {
-      background-color: rgba(map.get($colors, "background"), 0.3);
-      backdrop-filter: saturate(180%) blur(8px);
-      opacity: 0;
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100vw;
-      height: 100vh;
-      top: 0;
-      left: 0;
-      z-index: -10;
-      transition: 0.2s ease;
+      @include dimmer-panel();
       
       &.dim {
         z-index:10;
         opacity: 1;
+      }
+    }
+  }
+}
+
+// Shiny Alert
+.sweet-overlay.sweet-overlay {
+  @include dimmer-panel();
+  z-index: 10000;
+}
+
+.sweet-alert.sweet-alert {
+  // @include frosted-panel();
+  background: map.get($colors, "background");
+  padding: 15px !important;
+  font-family: $font-primary;
+  width: 350px !important;
+  max-width: 350px;
+  margin: 0 !important;
+  transform: translate(-50%, -50%) !important;
+  left: 50% !important;
+  
+  h2 {
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 6px;
+    display: none;
+  }
+  
+  .sa-icon {
+    display: none !important;
+  }
+  
+  .bay-info-wrapper {
+    --icon-size: 35px;
+    display: grid;
+    grid-template-columns: 1fr var(--icon-size);
+    grid-template-rows: 1fr;
+    gap: 10px;
+    justify-items: start;
+    align-items: center;
+    
+    .bay-info-details {
+      p {
+        text-align: left;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        color: map.get($colors, "foreground");
+        
+        b {
+          font-weight: 600;
+        }
+      }
+    }
+    
+    .bay-info-icons {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      width: var(--icon-size);
+      height: 100%;
+      
+      & > img {
+        width: var(--icon-size);
+        
+        &.hidden {
+          display: none;
+        }
+      }
+      
+      img.meter_type {
+        width: var(--icon-size);
+      }
+      
+      img.disability {
+        width: var(--icon-size);
+      }
+      
+      img.free {
+        width: var(--icon-size);
       }
     }
   }
