@@ -85,6 +85,9 @@ const render_search_results = (json) => {
       
       // Close the panel
       close_search_results();
+      
+      // Clean up any other indicators
+      remove_gps_indicator();
     });
     
     // Create internal elements
@@ -231,6 +234,7 @@ const use_geolocation = () => {
     );
     
     search_res_alert("Current GPS location set.", true);
+    set_gps_indicator();
   }
   
   const on_failure = (reason) => {
@@ -241,6 +245,24 @@ const use_geolocation = () => {
   // Query the navigator geolocation service
   navigator.geolocation &&
   navigator.geolocation.getCurrentPosition(on_success, on_failure);
+}
+
+/**
+  Adds styling to the GPS icon
+  @returns {void}
+ */
+const set_gps_indicator = () => {
+  const icon = document.getElementById("button-gps");
+  icon.classList.add("active");
+}
+
+/**
+  Removes styling to the GPS icon
+  @returns {void}
+ */
+const remove_gps_indicator = () => {
+  const icon = document.getElementById("button-gps");
+  icon.classList.remove("active");
 }
 
 /**
