@@ -301,6 +301,7 @@ div.spacer {
                   transparent 0%,
                   rgba(map.get($colors, "background"), 1) 30%
                 );
+                transition: color 0.3s all;
                 
                 &::after {
                   content: "gps_fixed";
@@ -308,6 +309,10 @@ div.spacer {
                 
                 &:hover {
                   color: darken(map.get($colors, "foreground"), 10%)
+                }
+                
+                &.active {
+                  color: map.get($colors, "accent");
                 }
               }
               
