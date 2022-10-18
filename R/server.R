@@ -5,6 +5,7 @@ library(dplyr)
 library(shiny)
 library(leaflet)
 library(plotly)
+library(glue)
 
 #' The server function to pass to the shiny dashboard
 server <- function(input, output, session) {
@@ -173,25 +174,38 @@ server <- function(input, output, session) {
                        ) %>%
                        distinct(bay_id, .keep_all = TRUE)
 
-    location <- ifelse(!is.na(selected_marker$street),
-                        selected_marker$street,
-                        "-")
     disability <- ifelse(!is.na(selected_marker$disability_deviceid),
-                         "disabled.svg",
-                         "")
+                         "",
+                         "hidden")
     free <- ifelse(!is.na(selected_marker$cost_per_hour),
-                   "",
-                   "free.svg")
-    cost <- ifelse(!is.na(selected_marker$cost_per_hour),
-                   sprintf("$%.2f", selected_marker$cost_per_hour / 100),
-                   "-")
-    start_time <- ifelse(!is.na(selected_marker$start_time),
-                         selected_marker$start_time,
-                         "-")
-    end_time <- ifelse(!is.na(selected_marker$end_time),
-                       selected_marker$end_time,
-                       "-")
+                   "hidden",
+                   "")
     meter_type <- get_meter_type(selected_marker$maximum_stay)
+
+    # Detail information
+    location <- selected_marker$street
+    cost <- selected_marker$cost_per_hour
+    start_time <- selected_marker$start_time
+    end_time <- selected_marker$end_time
+
+    is_restricted <- is.na(location) || is.na(cost) ||
+      is.na(start_time) || is.na(end_time)
+
+    # Display different information depending on whether it is available
+    if (is_restricted) {
+      details <- tags$div(
+        class = "bay-info-details",
+        tags$p("No restrictions apply to this bay.")
+      )
+    } else {
+      details <- tags$div(
+        class = "bay-info-details",
+        tags$p(tags$b("Location: "), location),
+        tags$p(tags$b("Cost Per Hour: "), cost),
+        tags$p(tags$b("Start Time: "), start_time),
+        tags$p(tags$b("End Time: "), end_time)
+      )
+    }
 
     # Displays popup information panel
     shinyalert(
@@ -201,13 +215,17 @@ server <- function(input, output, session) {
       showConfirmButton = FALSE,
       closeOnClickOutside = TRUE,
       closeOnEsc = TRUE,
-      text = paste0("Location: ", location, br(),
-                    "Cost Per Hour: ", cost, br(),
-                    "Start Time: ", start_time, br(),
-                    "End Time: ", end_time, br(), br(),
-                    tags$img(src = disability),
-                    tags$img(src = free),
-                    tags$img(src = meter_type))
+      text = tags$div(
+        class = "bay-info-wrapper",
+        details,
+        tags$div(
+          class = "bay-info-icons",
+          tags$img(class = "meter_type", src = meter_type),
+          tags$img(class = glue("disability {disability}"),
+                   src = "./disabled.svg"),
+          tags$img(class = glue("free {free}"), src = "./free.svg")
+        )
+      )
     )
   })
 
