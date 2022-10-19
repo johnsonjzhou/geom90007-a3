@@ -1,0 +1,9 @@
+/**
+  Mixin for panel styling
+ */
+ 
+@mixin panel($name) {
+  &[data-value=#{$name}] {
+    @content;
+  }
+}

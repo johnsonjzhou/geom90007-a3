@@ -1,0 +1,387 @@
+/**
+  Styles for the Filters panel
+ */
+ 
+// Common styles to row wrappers
+@mixin row-common() {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  margin: 0;
+  gap: 10px;
+  
+  &.v-gap {
+    margin: 36px 0;
+  }
+  
+  &.v-collapse-bottom {
+    margin-bottom: 0;
+  }
+  
+  &::before {
+    display: none;
+  }
+  
+  &::after {
+    display: none;
+  }
+}
+ 
+// Common styles to floating panel elements
+@mixin panel-common() {
+  display: block;
+  position: fixed;
+  z-index: 20;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 390px; // iPhone viewport width
+  padding: 20px 40px;
+  background: map.get($colors, "background");
+  border-radius: $border-radius;
+  margin: 0;
+}
+
+@mixin filters_panel() {
+  @include panel('Filters') {
+    @include panel-common();
+    top: auto;
+    bottom: 0;
+    transform: translate(-50%, calc(100% - 60px));
+    border-radius: 60px 60px 0 0;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.175);
+    box-shadow: 0px -8px 37px -3px rgba(#2C2424, 0.25);
+    
+    &.active {
+      transform: translate(-50%, 10px);
+      
+      & #filters-show-hide {
+        &::after {
+          transform: translate(-50%, -50%) rotate(180deg);
+        }
+      }
+    }
+    
+    .shiny-input-container {
+      margin: 0;
+    }
+    
+    .row {
+      @include row-common();
+      
+      &.w-150 {
+        width: 150px;
+      }
+      
+      &.header {
+        justify-content: center;
+        
+        h1 {
+          margin: 0;
+          font-size: 1.5em;
+        }
+        
+        @at-root #filters-show-hide {
+          --btn-size: 24px;
+          display: block;
+          height: var(--btn-size);
+          width: var(--btn-size);
+          border-radius: var(--btn-size);
+          color: map.get($colors, "foreground");
+          background: transparent;
+          margin: 0;
+          padding: 0;
+          position: relative;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          
+          &:hover {
+            background: map.get($colors, "lightgray");
+          }
+          
+          &::after {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(0);
+            background: transparent;
+            content: "keyboard_double_arrow_up";
+            font-family: "Material Icons";
+            color: inherit;
+          }
+        }
+      }
+      
+      &.control {
+        &.input-small {
+          .shiny-input-container {
+            width: auto;
+            position: relative;
+            
+            input[type="number"] {
+              --border-color: #{map.get($colors, "lightgray")};
+              width: 50px;
+              margin: 0;
+              // Disable numeric input decorator on Firefox
+              -moz-appearance: textfield;
+              
+              // Disable numeric input decorator on Safari, Edge, Chrome
+              &::-webkit-outer-spin-button,
+              &::-webkit-outer-spin-button {
+                -webkit-appearance: none;
+              }
+              
+              color: map.get($colors, "foreground");
+              border: var(--border-color) 1px solid;
+              text-align: center;
+              
+              &:hover {
+                --border-color: #{darken(map.get($colors, "lightgray"), 15%)}
+              }
+              
+              &:focus {
+                --border-color: #{map.get($colors, "foreground")}
+              }
+            }
+            
+            label {
+              position: absolute;
+              font-weight: 400;
+              margin: 0;
+              left: 50%;
+              bottom: 0;
+              transform: translate(-50%, 90%);
+            }
+          }
+          
+          &.cost {
+            --gap: 50px;
+            gap: var(--gap);
+            
+            hr.accent-connect {
+              border: map.get($colors, "accent") 1px solid;
+              border-bottom: none;
+              margin: 0 calc(-1 * var(--gap));
+              width: 100%;
+            }
+            
+            .shiny-input-container {
+              --indicator-gap: 1em;
+              &::after {
+                content: "$";
+                display: block;
+                position: absolute;
+                left: var(--indicator-gap);
+                top: 50%;
+                transform: translate(-50%, -50%);
+              }
+              
+              input[type="number"] {
+                text-align: right;
+              }
+            }
+          }
+        }
+
+        .shiny-input-container {
+          width: 100%;
+        }
+        
+        .checkbox {
+            --toggle-height: 24px;
+            --toggle-width: calc(var(--toggle-height) * 1.5);
+            position: relative;
+            
+            label {
+              padding-left: 0;
+            }
+            
+            input[type=checkbox] {
+              appearance: none;
+              display: none;
+              
+              &:checked {
+                // Toggle label
+                ~ span {
+                  // Toggle track
+                  &::before {
+                    background: map.get($colors, "accent");
+                  }
+                  
+                  // Toggle knob
+                  &::after {
+                    right: var(--toggle-offset);
+                  }
+                  
+                  &:hover {
+                    &::before {
+                      background: lighten(map.get($colors, "accent"), 15%);
+                    }
+                  }
+                }
+              }
+            }
+            
+            // Toggle label
+            span {
+              @include filter_label();
+              display: block;
+              transition: all 0.3s ease;
+              
+              // Toggle track
+              &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                width: var(--toggle-width);
+                height: var(--toggle-height);
+                border: 0;
+                border-radius: var(--toggle-height);
+                background: map.get($colors, "lightgray");
+                right: 0;
+                top: 50%;
+                transform: translate(0, -50%);
+                transition: all 0.3s ease;
+              }
+              
+              // Toggle knob
+              &::after {
+                --toggle-offset: 2px;
+                content: "";
+                display: block;
+                position: absolute;
+                width: calc(var(--toggle-height) - (2 * var(--toggle-offset)));
+                height: calc(var(--toggle-height) - (2 * var(--toggle-offset)));
+                border-radius: var(--toggle-height);
+                background: map.get($colors, "background");
+                right: calc(
+                  var(--toggle-width)
+                  - var(--toggle-height) + var(--toggle-offset)
+                );
+                top: 50%;
+                transform: translate(0, -50%);
+                box-shadow: $box-shadow;
+                transition: all 0.3s ease;
+              }
+              
+              &:hover {
+                &::before {
+                  background: darken(map.get($colors, "lightgray"), 5%);
+                }
+              }
+            }
+        }
+        
+        // Label
+        .label {
+          @include filter_label();
+        }
+        
+        // Ion Range Slider
+        .irs.irs--shiny {
+          --track-color: #{map.get($colors, "lightgray")};
+          --track-accent-color: #{map.get($colors, "accent")};
+          
+          &:hover {
+            --track-color: #{darken(map.get($colors, "lightgray"), 15%)};
+            --track-accent-color: #{lighten(map.get($colors, "accent"), 5%)};
+          }
+          
+          // Knob
+          .irs-handle {
+            background-color: var(--track-accent-color);
+            border: 0;
+            box-shadow: none;
+            height: 16px;
+            width: 16px;
+            top: 21px;
+            transition: background 0.3s ease;
+          }
+          
+          // Track (recreated in irs-grid)
+          .irs-line {
+            display: none;
+          }
+          
+          // min/max indicators
+          .irs-max, .irs-min {
+            display: none;
+          }
+          
+          // from/to indicators
+          .irs-from, .irs-to {
+            display: none;
+          }
+          
+          // Track indicator
+          .irs-bar {
+            background: var(--track-accent-color);
+            height: 4px;
+            top: 27px;
+            transition: background 0.3s ease;
+          }
+          
+          // Selected value
+          .irs-single {
+            display: block;
+          }
+          
+          // Scale box
+          .irs-grid {
+            height: 30px;
+            transform: translate(0, -4px);
+            
+            // Track
+            &::after {
+              content: "";
+              display: block;
+              position: absolute;
+              top: 3px;
+              left: 0;
+              height: 1px;
+              width: 100%;
+              border: 0;
+              background: var(--track-color);
+              transition: background 0.3s ease;
+            }
+            
+            // Scale markers
+            .irs-grid-pol {
+              background-color: var(--track-color);
+              transition: background-color 0.3s ease;
+              
+              // Minor markers
+              &.small {
+                display: none;
+              }
+            }
+          }
+        }
+        
+        // Stepwise buttons
+        button.stepwise {
+          --button-size: 30px;
+          width: var(--button-size);
+          height: var(--button-size);
+          line-height: var(--button-size);
+          padding: 0;
+          text-align: center;
+          border-radius: $border-radius;
+          border: 0;
+          color: #FFFFFF;
+          background: map.get($colors, "accent");
+          transition: all 0.3s ease;
+          
+          &:hover {
+            background: lighten(map.get($colors, "accent"), 10%);
+          }
+        }
+      }
+    }
+  }
+}
