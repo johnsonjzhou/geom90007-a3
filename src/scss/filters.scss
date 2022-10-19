@@ -50,6 +50,7 @@
 @mixin filters_panel() {
   @include panel('Filters') {
     @include panel-common();
+    @include frosted-panel();
     top: auto;
     bottom: 0;
     transform: translate(-50%, calc(100% - 60px));
