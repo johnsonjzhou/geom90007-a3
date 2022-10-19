@@ -192,7 +192,7 @@ search_results_panel <- tabPanel(
 
 intro_panel <- tabPanel(
   title = "Intro",
-  class = "active page-1",
+  class = "page-1",
   tags$img(class = "logo", src = "./logo.svg"),
   tags$div(
     class = "pages",
@@ -223,7 +223,17 @@ intro_panel <- tabPanel(
     tags$div(class = "dot seq-1"),
     tags$div(class = "dot seq-2"),
     tags$div(class = "dot seq-3")
-  )
+  ),
+  tags$div(
+    id = "intro-left",
+    class = "button left",
+    direction = "left"
+  ),
+  tags$div(
+    id = "intro-right",
+    class = "button right",
+    direction = "right"
+  ),
 )
 
 # UI element-------------------------------------------------------------------
