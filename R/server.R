@@ -108,8 +108,9 @@ server <- function(input, output, session) {
   #' @param filter_cc {bool} Filter for credit cards payment method.
   state$filter_cc <- FALSE
 
-  #' @param loc {c(lat, lon)} The focus location, default NGV
-  state$filter_loc <- c(-37.822477, 144.969162)
+  #' @param loc {c(lat, lon)} The focus location, default Melbourne Central
+  # -37.810513, 144.962840
+  state$filter_loc <- c(-37.810513, 144.962840)
 
   #' @param loc_search_name {character} The name of the search location.
   state$loc_search_name <- ""
