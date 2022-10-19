@@ -145,7 +145,7 @@ server <- function(input, output, session) {
       leaflet::addMarkers(
         lat = state$filter_loc[1],
         lng = state$filter_loc[2],
-        icon = map_symbol("marker"),
+        icon = map_symbol("pos_1"),
         clusterOptions = NULL,
         options = leaflet::markerOptions(
           clickable = FALSE
