@@ -85,51 +85,51 @@ load_remote <- function(dataset, params = list()) {
 #' Loads all the required data and performs the necessary joins
 #' @note This is currently not in use, use load_master_data_local instead.
 #' @returns Dataframe containing an entire set of required data
-load_master_data <- function() {
-  #' @section City of Melbourne parking datasets -----------------------------
+# load_master_data <- function() {
+#   #' @section City of Melbourne parking datasets -----------------------------
 
-  # On-street parking bay sensors
-  # sensors should be 2-min live, but is currently disrupted, thus static
-  sensors <- load_remote("sensors") %>%
-    # rename foreign key st_marker_id to marker_id for consistency
-    rename(marker_id = st_marker_id) %>%
-    # select the required info
-    select(c(bay_id, status))
+#   # On-street parking bay sensors
+#   # sensors should be 2-min live, but is currently disrupted, thus static
+#   sensors <- load_remote("sensors") %>%
+#     # rename foreign key st_marker_id to marker_id for consistency
+#     rename(marker_id = st_marker_id) %>%
+#     # select the required info
+#     select(c(bay_id, status))
 
-  # On-street parking bays
-  bays <- load_remote("bays", params = list(
-    # return only the following columns
-    "$select" = "marker_id,meter_id,bay_id,rd_seg_id,rd_seg_dsc"
-  ))
+#   # On-street parking bays
+#   bays <- load_remote("bays", params = list(
+#     # return only the following columns
+#     "$select" = "marker_id,meter_id,bay_id,rd_seg_id,rd_seg_dsc"
+#   ))
 
-  # On-street car park bay restrictions
-  restrictions <- load_remote("restrictions") %>%
-    # rename key bayid to bay_id for consistency
-    rename(bay_id = bayid)
+#   # On-street car park bay restrictions
+#   restrictions <- load_remote("restrictions") %>%
+#     # rename key bayid to bay_id for consistency
+#     rename(bay_id = bayid)
 
-  #' @section Paystay datasets -----------------------------------------------
+#   #' @section Paystay datasets -----------------------------------------------
 
-  # Pay Stay parking restrictions
-  paystay_restrictions <- load_remote("paystay_restrictions")
+#   # Pay Stay parking restrictions
+#   paystay_restrictions <- load_remote("paystay_restrictions")
 
-  # Pay Stay zones linked to street segments
-  # paystay_segments <- load_remote("paystay_segments") %>%
-  #   # rename the foreign key street_segment_id to rd_segment_id
-  #   # for consistency
-  #   rename(rd_seg_id = street_segment_id)
+#   # Pay Stay zones linked to street segments
+#   # paystay_segments <- load_remote("paystay_segments") %>%
+#   #   # rename the foreign key street_segment_id to rd_segment_id
+#   #   # for consistency
+#   #   rename(rd_seg_id = street_segment_id)
 
-  df <- bays %>%
-    left_join(restrictions, by = "bay_id") %>%
-    # inner_join(meters, by = "meter_id") %>%
-    # inner_join(paystay_segments, by = "rd_seg_id") %>%
-    # inner_join(paystay_restrictions, by = "pay_stay_zone") %>%
-    left_join(sensors, by = c("bay_id"))
+#   df <- bays %>%
+#     left_join(restrictions, by = "bay_id") %>%
+#     # inner_join(meters, by = "meter_id") %>%
+#     # inner_join(paystay_segments, by = "rd_seg_id") %>%
+#     # inner_join(paystay_restrictions, by = "pay_stay_zone") %>%
+#     left_join(sensors, by = c("bay_id"))
 
-  #' @debug
-  View(df)
+#   #' @debug
+#   View(df)
 
-  return(df)
-}
+#   return(df)
+# }
 
 #' Loads all the required data and performs the necessary joins
 #' @returns Dataframe containing an entire set of required data
