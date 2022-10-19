@@ -82,7 +82,7 @@ filter_panel <- tabPanel(
     class = "control input-small cost",
     tags$div(
       class = "label",
-      "Cost"
+      "Cost per hour"
     ),
     numericInput(
       inputId = "filter_cost_min",
