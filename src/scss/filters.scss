@@ -87,33 +87,7 @@
         }
         
         @at-root #filters-show-hide {
-          --btn-size: 24px;
-          display: block;
-          height: var(--btn-size);
-          width: var(--btn-size);
-          border-radius: var(--btn-size);
-          color: map.get($colors, "foreground");
-          background: transparent;
-          margin: 0;
-          padding: 0;
-          position: relative;
-          cursor: pointer;
-          transition: all 0.3s ease;
-          
-          &:hover {
-            background: map.get($colors, "lightgray");
-          }
-          
-          &::after {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%) rotate(0);
-            background: transparent;
-            content: "keyboard_double_arrow_up";
-            font-family: "Material Icons";
-            color: inherit;
-          }
+          @include button-common("keyboard_double_arrow_up");
         }
       }
       

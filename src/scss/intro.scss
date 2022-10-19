@@ -9,7 +9,6 @@
     position: fixed;
     width: 100%;
     height: 100%;
-    z-index: 50;
     top: 0;
     left: 0;
     padding: 50px calc((100% - (390px)) / 2);
@@ -18,10 +17,14 @@
     background: map.get($colors, "background");
     justify-items: center;
     align-items: center;
-    display: none;
+    display: grid;
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.3s ease;
     
     &.active {
-      display: grid;
+      opacity: 1;
+      z-index: 50;
     }
     
     @for $i from 1 through 4 {
@@ -65,7 +68,7 @@
         justify-items: center;
         align-items: center;
         opacity: 0;
-        transition: opacity 0.3s ease;
+        transition: opacity 0.1s ease;
         
         img {
           display: block;
@@ -153,6 +156,33 @@
           &.seq-#{$i} {
             grid-column-start: $i + 1;
           }
+        }
+      }
+    }
+    
+    .button {
+      top: 50%;
+      transform: translate(0, -50%);
+      
+      &.left {
+        @include button-common("keyboard_double_arrow_left");
+        color: map.get($colors, "gray");
+        position: absolute;
+        left: calc(((100% - 390px)/2) + 1%);
+        
+        @include responsive-tablet() {
+          left: calc(((100% - 390px)/2) - 8%);
+        }
+      }
+      
+      &.right {
+        @include button-common("keyboard_double_arrow_right");
+        color: map.get($colors, "gray");
+        position: absolute;
+        right: calc(((100% - 390px)/2) + 1%);
+        
+        @include responsive-tablet() {
+          right: calc(((100% - 390px)/2) - 8%);
         }
       }
     }
