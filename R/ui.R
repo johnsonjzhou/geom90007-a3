@@ -8,6 +8,11 @@ library(htmltools)
 # Headers----------------------------------------------------------------------
 
 headers <- tags$head(
+  # favicon
+  tags$link(
+    rel = "icon", type = "image/x-icon",
+    href = "favicon.svg"
+  ),
   # web fonts
   tags$link(
     rel = "stylesheet", type = "text/css",
