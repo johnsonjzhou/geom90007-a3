@@ -22,19 +22,6 @@
 @mixin dimmer_panel() {
   @include panel('Dimmer') {
     @include dimmer-style();
-    // background-color: rgba(map.get($colors, "darkgray"), 0.3);
-    // backdrop-filter: saturate(180%) blur(8px);
-    // -webkit-backdrop-filter: saturate(180%) blur(8px);
-    // opacity: 0;
-    // content: "";
-    // display: block;
-    // position: absolute;
-    // width: 100vw;
-    // height: 100vh;
-    // top: 0;
-    // left: 0;
-    // z-index: -10;
-    // transition: 0.2s ease;
       
     &.dim {
       z-index:10;
