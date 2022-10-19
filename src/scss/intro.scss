@@ -1,0 +1,160 @@
+/**
+  Styles for the Intro panel
+ */
+
+@mixin intro_panel() {
+  @include panel('Intro') {
+    --text-block-height: 100px;
+    --page-offset: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    padding: 50px calc((100% - (390px)) / 2);
+    grid-template-columns: 100%;
+    grid-template-rows: 15vh 1fr var(--text-block-height) 10vh;
+    background: map.get($colors, "background");
+    justify-items: center;
+    align-items: center;
+    display: none;
+    
+    &.active {
+      display: grid;
+    }
+    
+    @for $i from 1 through 4 {
+      &.page-#{$i} {
+        --page-offset: #{$i - 1};
+        
+        .page:nth-child(#{$i}) {
+          opacity: 1;
+        }
+        
+        .dot:nth-child(#{$i}) {
+          --size: 20px;
+          background: map.get($colors, "accent");
+        }
+      }
+    }
+    
+    img.logo {
+      grid-column-start: 1;
+      grid-row-start: 1;
+      display: block;
+      width: 30%;
+    }
+    
+    .pages {
+      grid-column-start: 1;
+      grid-row-start: 2;
+      grid-row-end: 4;
+      display: grid;
+      grid-template-columns: 100% 100% 100%;
+      grid-template-rows: 100%;
+      transition: transform 0.3s ease;
+      width: 100%;
+      height: 100%;
+      transform: translate(calc(-100% * var(--page-offset)), 0);
+      
+      .page {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr var(--text-block-height);
+        justify-items: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        
+        img {
+          display: block;
+          width: 50%;
+        }
+        
+        p {
+          margin: 0;
+          font-size: 2vh;
+          padding: 0 15%;
+          text-align: center;
+        }
+      }
+    }
+    
+    .bubble {
+      grid-column-start: 1;
+      grid-row-start: 2;
+      display: block;
+      width: 40vh;
+      height: 40vh;
+      border-radius: 50% 49% 48% 52% / 62% 44% 56% 38%;
+      animation: 16s bubble infinite;
+      animation-timing-function: linear;
+      background: mix(
+        map.get($colors, "highlight"),
+        map.get($colors, "background"),
+        31%
+      );
+      z-index: -1;
+      
+      &.one {
+        transform: rotate(60deg) scale(0.9);
+      }
+      
+      @keyframes bubble {
+        0% {
+          border-radius: 50% 49% 48% 52% / 62% 44% 56% 38%;
+        }
+        
+        10% {
+          border-radius: 45% 62% 78% 49% / 62% 44% 56% 64%;
+        }
+        
+        25% {
+          border-radius: 44% 56% 46% 54% / 36% 50% 50% 64%;
+        }
+        
+        50% {
+          border-radius: 45% 62% 78% 49% / 62% 44% 56% 64%;
+        }
+        
+        75% {
+          border-radius: 44% 56% 46% 54% / 36% 50% 50% 64%;
+        }
+        
+        100% {
+          border-radius: 50% 49% 48% 52% / 62% 44% 56% 38%;
+        }
+      }
+    }
+    
+    .dots {
+      grid-column-start: 1;
+      grid-row-start: 4;
+      display: grid;
+      grid-template-columns: 1fr 20px 20px 20px 1fr;
+      grid-template-rows: 100%;
+      justify-items: center;
+      align-items: center;
+      gap: 8px;
+      
+      .dot {
+        --size: 15px;
+        display: block;
+        width: var(--size);
+        height: var(--size);
+        border: 0;
+        border-radius: var(--size);
+        background: map.get($colors, "lightgray");
+        grid-row-start: 1;
+        transition: all 0.3s ease;
+        
+        @for $i from 1 through 4 {
+          &.seq-#{$i} {
+            grid-column-start: $i + 1;
+          }
+        }
+      }
+    }
+  }
+}

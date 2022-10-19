@@ -188,6 +188,44 @@ search_results_panel <- tabPanel(
   title = "SearchResults"
 )
 
+# Intro panel------------------------------------------------------------------
+
+intro_panel <- tabPanel(
+  title = "Intro",
+  class = "active page-1",
+  tags$img(class = "logo", src = "./logo.svg"),
+  tags$div(
+    class = "pages",
+    tags$div(
+      class = "page",
+      tags$img(src = "./parking_area.svg"),
+      tags$p("Access parking spot availability in Melbourne in real-time.")
+    ),
+    tags$div(
+      class = "page",
+      tags$img(src = "./location.svg"),
+      tags$p(
+        "Find spots near your location, filter by how much you want to walk."
+      )
+    ),
+    tags$div(
+      class = "page",
+      tags$img(src = "./city.svg"),
+      tags$p(
+        "It just got easier to live in the most liveable city in the world."
+      )
+    )
+  ),
+  tags$div(class = "bubble one"),
+  tags$div(class = "bubble two"),
+  tags$div(
+    class = "dots",
+    tags$div(class = "dot seq-1"),
+    tags$div(class = "dot seq-2"),
+    tags$div(class = "dot seq-3")
+  )
+)
+
 # UI element-------------------------------------------------------------------
 
 ui <- navbarPage(
@@ -197,6 +235,7 @@ ui <- navbarPage(
   search_results_panel,
   dimmer_panel,
   filter_panel,
+  intro_panel,
   header = headers,
   windowTitle = env$app_name,
   fluid = FALSE,
