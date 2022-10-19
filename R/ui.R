@@ -170,7 +170,8 @@ search_panel <- tabPanel(
       class = "wrapper",
       textInput(
         inputId = "search-input",
-        label = "NGV"
+        label = "NGV",
+        placeholder = "Search Destination"
       ),
       tags$div(
         id = "button-gps",
