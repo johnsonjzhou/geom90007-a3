@@ -100,7 +100,7 @@ filter_panel <- tabPanel(
     numericInput(
       inputId = "filter_cost_max",
       label = "max",
-      value = 2
+      value = 6
     )
   ),
   tags$div(class = "spacer h32"),
@@ -120,7 +120,7 @@ filter_panel <- tabPanel(
       numericInput(
         inputId = "filter_duration",
         label = "hours",
-        value = 3
+        value = 2
       ),
       actionButton(
         inputId = "filter_duration_inc",

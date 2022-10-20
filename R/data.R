@@ -228,7 +228,7 @@ map_data <- function(master_data, state) {
     # If maximum_stay is NA, means no time restrictions apply
     filter(
       is.na(maximum_stay) |
-      maximum_stay > filter_duration
+      maximum_stay >= filter_duration
     )
 
   # If required, display points only if they are not occupied

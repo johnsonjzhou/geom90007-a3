@@ -97,10 +97,10 @@ server <- function(input, output, session) {
   state$filter_radius <- c(0, 1)
 
   #' @param filter_cost {c(min, max)} Filter for price range.
-  state$filter_cost <- c(0, 200)
+  state$filter_cost <- c(0, 600)
 
   #' @param filter_duration {integer} Filter for parking duration.
-  state$filter_duration <- 180
+  state$filter_duration <- 120
 
   #' @param filter_tap {bool} Filter for tap and go payment method.
   state$filter_tap <- FALSE
