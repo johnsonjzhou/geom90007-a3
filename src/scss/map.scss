@@ -2,6 +2,17 @@
   Styles for the Map panel
  */
 
+// Zoom in/out button border radius
+@mixin border-radius-zoom-out {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+@mixin border-radius-zoom-in {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
 @mixin map_panel() {
   @include panel('Map') {
     display: block;
@@ -26,6 +37,77 @@
           left: 50%;
           transform: translate(-50%, 0)
         }
+      }
+    }
+    
+    // Leaflet control responsive spacing
+    .leaflet-top {
+      top: 60px;
+      
+      @include responsive-tablet() {
+        top: 0;
+      }
+    }
+    
+    .leaflet-bottom {
+      bottom: 60px;
+      
+      @include responsive-tablet() {
+        bottom: 0;
+      }
+    }
+    
+    .leaflet-control {
+      // Zoom controls
+      &.leaflet-control-zoom {
+        @include frosted-panel();
+        border: 0;
+        
+        & a.leaflet-control-zoom-in {
+          @include border-radius-zoom-in();
+          background: transparent;
+          
+          &:not(.leaflet-disabled):hover {
+            @include frosted-panel-btn();
+            @include border-radius-zoom-in()
+          }
+        }
+        
+        & a.leaflet-control-zoom-out {
+          @include border-radius-zoom-out();
+          background: transparent;
+          
+          &:not(.leaflet-disabled):hover {
+            @include frosted-panel-btn();
+            @include border-radius-zoom-out();
+          }
+        }
+      }
+      
+      // Reference scale
+      &.leaflet-control-scale {
+        padding: 6px;
+        border-radius: 6px;
+        
+        .leaflet-control-scale-line {
+          background: transparent;
+          border: 1px solid map.get($colors, "foreground");
+          border-top: none;
+          font-family: "Inter", sans-serif;
+          font-size: 10px;
+          color: map.get($colors, "foreground");
+        }
+      }
+      
+      // North arrow
+      &.leaflet-control-north-arrow {
+        width: 36px;
+        height: 36px;
+      }
+      
+      // Hide "Leaflet" logo
+      &.leaflet-control-attribution {
+        display: none;
       }
     }
   }

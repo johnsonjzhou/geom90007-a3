@@ -17,9 +17,12 @@ map_symbol <- function(type = "filled", zoom = 1) {
     type == "filled" ~ "./www/filled.svg",
     type == "unfilled" ~ "./www/unfilled.svg",
     type == "placeholder" ~ "./www/placeholder.svg",
-    type == "marker" ~ "./www/marker.svg"
+    type == "marker" ~ "./www/marker.svg",
+    type == "pin" ~ "./www/pin.png",
+    type == "pos_1" ~ "./www/pos_1.svg",
+    type == "pos_2" ~ "./www/pos_2.svg"
   )
-  size <- 14
+  size <- 24
   icon <- makeIcon(img, NULL, size, size, className = glue("marker {type}"))
   return(icon)
 }

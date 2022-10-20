@@ -49,12 +49,18 @@ $colors: (
 
 // Frosted panel effects
 @mixin frosted-panel {
-  background-color: rgba(map.get($colors, "background"), 0.6);
+  background-color: rgba(map.get($colors, "background"), 0.9);
   backdrop-filter: saturate(180%) blur(20px);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   border-radius: calc($border-radius + 4px);
   border: 0;
   box-shadow: none;
+}
+
+@mixin frosted-panel-btn {
+  background-color: rgba(255,255,255,0.9);
+  backdrop-filter: saturate(180%) brightness(150%) blur(5px);
+  -webkit-backdrop-filter: saturate(180%) brightness(150%) blur(5px);
 }
 
 // Responsive breakpoint for desktop
