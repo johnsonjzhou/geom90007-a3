@@ -107,7 +107,7 @@
               
               // Disable numeric input decorator on Safari, Edge, Chrome
               &::-webkit-outer-spin-button,
-              &::-webkit-outer-spin-button {
+              &::-webkit-inner-spin-button {
                 -webkit-appearance: none;
               }
               
