@@ -147,6 +147,7 @@ div.spacer {
 // Shiny Alert
 .sweet-overlay.sweet-overlay {
   @include dimmer-style();
+  transition: none;
   z-index: 10000;
 }
 
@@ -160,6 +161,7 @@ div.spacer {
   margin: 0 !important;
   transform: translate(-50%, -50%) !important;
   left: 50% !important;
+  animation: none !important;
   
   h2 {
     font-size: 18px;
