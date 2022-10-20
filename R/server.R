@@ -185,7 +185,7 @@ server <- function(input, output, session) {
 
     # Detail information
     location <- selected_marker$street
-    cost <- sprintf("$%.2f", selected_marker$cost_per_hour)
+    cost <- sprintf("$%.2f", selected_marker$cost_per_hour/100)
     start_time <- selected_marker$start_time
     end_time <- selected_marker$end_time
 
