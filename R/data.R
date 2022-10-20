@@ -218,7 +218,7 @@ map_data <- function(master_data, state) {
     # Select points that satisfies the cost filter
     # If cost_per_hour is NA, means the bay is Free
     filter(
-      is.na(cost_per_hour) |
+      (filter_cost[1] == 0 & is.na(cost_per_hour)) |
       (
         cost_per_hour >= filter_cost[1] &
         cost_per_hour <= filter_cost[2]
