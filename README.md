@@ -1,6 +1,13 @@
-# Assignment 3 GEOM90007 Information Visualisation
+# ParkIt
 
+Assignment 3 GEOM90007 Information Visualisation at the University of Melbourne.  
+
+![screenshot](/doc/ParkIt.gif)
+
+---
 ## Run App
+
+> This app uses CSS style that are not supported by the built-in browser of RStudio. For best experience, please use an external (modern) browser.
 
 ### Install dependencies
 ```R
