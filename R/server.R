@@ -6,6 +6,7 @@ library(shiny)
 library(leaflet)
 library(plotly)
 library(glue)
+library(shinyalert)
 
 #' The server function to pass to the shiny dashboard
 server <- function(input, output, session) {
