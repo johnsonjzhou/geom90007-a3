@@ -9,6 +9,7 @@
 @import "./search_results.scss";
 @import "./dimmer.scss";
 @import "./intro.scss";
+@import "./loading.scss";
 
 $border-radius: 6px;
 $font-primary: "brandon-grotesque", "Helvetica", "Arial", sans-serif;
@@ -141,6 +142,9 @@ div.spacer {
     
     // Intro pane, for visual effects
     @include intro_panel();
+    
+    // Loading pane
+    @include loading_panel();
   }
 }
 

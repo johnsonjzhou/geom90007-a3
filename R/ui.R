@@ -242,6 +242,16 @@ intro_panel <- tabPanel(
   ),
 )
 
+# Loading panel----------------------------------------------------------------
+
+loading_panel <- tabPanel(
+  title = "Loading",
+  class = "container",
+  tags$div(
+    class = "pulse"
+  )
+)
+
 # UI element-------------------------------------------------------------------
 
 ui <- navbarPage(
@@ -250,6 +260,7 @@ ui <- navbarPage(
   search_panel,
   search_results_panel,
   dimmer_panel,
+  loading_panel,
   filter_panel,
   intro_panel,
   header = headers,
