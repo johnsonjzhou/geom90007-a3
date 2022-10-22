@@ -1,3 +1,9 @@
+# rsconnect
+rsconnect/
+
+# deployment with secret
+_deploy.R
+
 # test scripts
 /test
 

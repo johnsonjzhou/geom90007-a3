@@ -245,7 +245,7 @@ intro_panel <- tabPanel(
 # UI element-------------------------------------------------------------------
 
 ui <- navbarPage(
-  title = env$app_name,
+  title = "ParkIt",
   map_panel,
   search_panel,
   search_results_panel,
@@ -253,7 +253,7 @@ ui <- navbarPage(
   filter_panel,
   intro_panel,
   header = headers,
-  windowTitle = env$app_name,
+  windowTitle = "ParkIt",
   fluid = FALSE,
   position = "fixed-top",
   lang = "en"

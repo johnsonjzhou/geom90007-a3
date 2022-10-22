@@ -41,4 +41,8 @@ load_dependencies <- function(dependencies) {
   }
 }
 
-load_dependencies(dependencies)
+# Load dependencies if running locally,
+# avoid if hosted on shinyapps.io
+if (!grepl("srv/connect", getwd())) {
+  load_dependencies(dependencies)
+}

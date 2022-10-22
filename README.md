@@ -2,6 +2,9 @@
 
 Assignment 3 GEOM90007 Information Visualisation at the University of Melbourne.  
 
+Live demo is available at:  
+[https://johnsonzhou.shinyapps.io/parkit/](https://johnsonzhou.shinyapps.io/parkit/)
+
 ![screenshot](/doc/ParkIt.gif)
 
 ---
@@ -46,4 +49,15 @@ npm install
 
 # build
 npm run build
+```
+
+### Deployment to shinyapps.io
+Use script `deploy.R` and ensuring to change the following parameters:
+```R
+deploy <- list(
+  "account" = "CHANGEME",
+  "token" = "CHANGEME",
+  "secret" = "CHANGEME",
+  "appName" = "parkit"
+)
 ```
